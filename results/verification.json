@@ -1,0 +1,112 @@
+{
+  "verified_at": "2026-10-16T00:43:28.697Z",
+  "runtime_ms": 28482,
+  "node": "v24.20.0",
+  "unit_tests": 6,
+  "browser": "156.0.8078.4",
+  "checks": [
+    "No page injection or storage before explicit activation; minimal permissions",
+    "External page and worker HTTP(S) blocked",
+    "Real extension action → selection → persisted note with selector",
+    "Edit, reload, explicit reactivation, persistence",
+    "Keyboard passage navigation and CSS highlight",
+    "Hostile quote and note rendered as text",
+    "Unicode, code blocks and repeated quotations",
+    "Deterministic downloaded JSON export",
+    "Actual chrome.storage.local quota failure preserves notes and draft",
+    "Injected delete/import storage failures preserve existing notebook",
+    "Malformed, oversized and conflicting imports fail atomically",
+    "DOM invalidation, unique recovery, repeated ambiguity and missing passages",
+    "Root removal, document limit, body limit and CSS-only stale selection; export remains available",
+    "320px viewport, keyboard Escape, reopen, no panel horizontal overflow",
+    "280 seeded DOM mutations and ten negative DOM cases",
+    "Fresh-profile import and identical duplicate skipping",
+    "Source mismatch diagnostics, no cross-source attachment",
+    "Concurrent tab conflict retains draft; refresh and retry succeeds",
+    "500 notes reachable across 25 pages; 20 mounted rows/highlights; capacity rejection",
+    "Confirmed keyboard deletion persists"
+  ],
+  "network": {
+    "pageBlocked": 2,
+    "proxyBlocked": 59
+  },
+  "dom": {
+    "maxMountedRows": 20,
+    "maxPanelElements": 203,
+    "maxHighlights": 20,
+    "reachableNotes": 500,
+    "fixtureElements": 20
+  },
+  "mutation_summary": {
+    "seed": "0x5eedc0de",
+    "cases": 280,
+    "counts": {
+      "inserted": 40,
+      "moved": 40,
+      "duplicate": 40,
+      "whitespace": 40,
+      "unicode": 40,
+      "removed": 40,
+      "markup": 40
+    },
+    "statuses": {
+      "exact": 80,
+      "uniquely reanchored": 120,
+      "ambiguous": 40,
+      "missing": 40
+    },
+    "negative": [
+      "split surrogate rejected",
+      "hidden crossing rejected",
+      "unpaired surrogate rejected",
+      "normalized document limit",
+      "raw document limit",
+      "DOM node limit",
+      "selection limit",
+      "unsupported content excluded",
+      "multiple roots",
+      "missing root"
+    ]
+  },
+  "artifacts": {
+    "extensionBytes": 27981,
+    "extensionFiles": [
+      {
+        "path": "extension/core.js",
+        "bytes": 5801
+      },
+      {
+        "path": "extension/dom.js",
+        "bytes": 3685
+      },
+      {
+        "path": "extension/manifest.json",
+        "bytes": 477
+      },
+      {
+        "path": "extension/panel.js",
+        "bytes": 15218
+      },
+      {
+        "path": "extension/worker.js",
+        "bytes": 2800
+      }
+    ],
+    "treeFiles": 23,
+    "treeBytes": 288662,
+    "note": "Tree counts are measured before replacing this report and test log; node_modules and git metadata excluded."
+  },
+  "sha256": {
+    "extension/core.js": "79047db79973f2e31baa4ebf2840488beec1593da84ab70b015df4a27efeebdf",
+    "extension/dom.js": "7d2e7d8560e0f685395079719137cc0c415a689e092e24bdd12a74d65076d869",
+    "extension/manifest.json": "4b53d1b63f959c09342d4057ca6644c242b9858fa39f44feda1625e9b9562342",
+    "extension/panel.js": "c9ebbe7ef720b09fe101cad5651c411927169775e13f9b6a4810e4b394792b9c",
+    "extension/worker.js": "825ef5227bb620790018bb92491e16f1300d4a2b228bc82ef62b23576cc4aa2b",
+    "fixtures/conversation.html": "a6d9c9d266526d534d9e5e561b7084f610e0d61bfff3d384145029b69723a3d8",
+    "fixtures/second.html": "5a1a11848019de6b207738026daee106ea009afef856d701b6ab16f55925cf43",
+    "tests/browser.mjs": "98ebb0fc00a0bfdc50067094491cecebb46d5ffe448e6c9f5262afb739ad3a72",
+    "tests/core.test.mjs": "78e34c70eb33ec37a9c8249a4364e3eb6b226a24eb94bd80c6ebb75ca1d74ab0",
+    "tests/mutations.mjs": "c4f1d31a319a299bb6a41b04264513badf98ccbf53fd48ade6ab03fa4e9b1817",
+    "tests/verify.mjs": "a9367a93e2c416a3681ca963afa161c391884228aef5a6fe0f4b65fe6aae4fc8"
+  }
+}
