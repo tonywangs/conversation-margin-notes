@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A changing conversation · Margin Notes example</title>
+<style>
+body{font:17px/1.7 system-ui,sans-serif;color:#203835;background:#f7f5ed;max-width:850px;margin:40px auto;padding:0 24px 80px}h1{font:40px Georgia,serif}button{font:inherit;margin:4px;padding:7px 12px;border:1px solid #78968e;border-radius:6px;background:white;color:#203835;cursor:pointer}button:focus-visible{outline:3px solid #cb8319}main{padding:24px;background:white;border:1px solid #ccd9d2;border-radius:8px;margin-top:24px}#target{border-left:3px solid #cb8319;padding-left:18px}.hint{font-size:14px;color:#50645e}
+</style>
+<header><p>LOCAL SYNTHETIC EXAMPLE</p><h1>A conversation that changes</h1>
+<p>Activate Margin Notes, select the gold-bordered passage, and save a note. Then try the controls. Open an edit and leave a draft while the conversation streams.</p>
+<div id="controls">
+<button data-action="append">Append message</button><button data-action="edit">Edit passage</button><button data-action="duplicate">Duplicate passage</button><button data-action="move">Move passage</button><button data-action="remove">Remove passage</button><button data-action="replace">Replace container</button><button data-action="stream">Stream / stop</button><button data-action="incomplete">Toggle incomplete</button><button data-action="restore">Restore original</button>
+</div><p id="activity" role="status">Original conversation.</p>
+<p class="hint">Appends and moves should reanchor uniquely; duplicates should be ambiguous; edits/removal should be missing. Restore should be exact. Streaming stays pending until quiet. “Incomplete” models a page that reports unloaded history. The extension cannot infer unreported missing history.</p></header>
+<main data-margin-notes-root><p>Ada: What should we preserve from tonight’s observation?</p><p id="target">Keep the uncertain results. 🌙 café café 日本語</p><p>Bea: Write down the conditions as well as the conclusion.</p></main>
+<script src="dynamic.js"></script></html>

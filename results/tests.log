@@ -1,9 +1,9 @@
-✔ Unicode offsets, context, digest and normalization (19.748473ms)
-✔ conservative anchoring: changed duplicates never use position or context to guess (4.176772ms)
-✔ deterministic portable envelope and atomic duplicate policy (5.162896ms)
-✔ malformed imports rejected in full (15.054989ms)
-✔ 500-note capacity, 2 MiB limit and hostile text remain data (272.804603ms)
-✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.071801ms)
+✔ Unicode offsets, context, digest and normalization (14.568866ms)
+✔ conservative anchoring: changed duplicates never use position or context to guess (3.893517ms)
+✔ deterministic portable envelope and atomic duplicate policy (5.366977ms)
+✔ malformed imports rejected in full (28.639818ms)
+✔ 500-note capacity, 2 MiB limit and hostile text remain data (250.577719ms)
+✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.331922ms)
 ℹ tests 6
 ℹ suites 0
 ℹ pass 6
@@ -11,10 +11,12 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 506.169859
+ℹ duration_ms 514.41143
 
-Browser checks: 20 passed
+Browser checks: 22 passed
 Chromium: 156.0.8078.4
 Mutation cases: 280
+Installed dynamic sequences: 256
+Intermediate anchor checks: 608
 DOM negatives: 10
-Runtime: 28482 ms
+Runtime: 160842 ms

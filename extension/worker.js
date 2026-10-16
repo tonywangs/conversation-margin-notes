@@ -44,7 +44,7 @@ chrome.runtime.onMessage.addListener((message,sender,respond)=>{
 chrome.action.onClicked.addListener(async tab=>{
   try {
     C.sourceURL(tab.url);
-    await chrome.scripting.executeScript({target:{tabId:tab.id},files:['core.js','dom.js','panel.js']});
+    await chrome.scripting.executeScript({target:{tabId:tab.id},files:['core.js','dom.js','tracker.js','panel.js']});
     await chrome.action.setBadgeText({tabId:tab.id,text:''});
   } catch (e) {
     await chrome.action.setBadgeText({tabId:tab.id,text:'!'});

@@ -10,3 +10,24 @@ Reviewed 2026-10-16 before implementation:
 Passage annotation and quote anchoring are established techniques. No novelty claim
 is made. The useful scope here is an offline, bounded, inspectable workflow with
 explicit uncertainty and a reproducible synthetic mutation suite.
+
+
+Dynamic-page milestone review (2026-10-16):
+
+- [WHATWG DOM mutation observers](https://dom.spec.whatwg.org/#mutation-observers)
+  specifies queued record delivery and observation registration. This controller
+  treats delivered mutations as invalidating an epoch, then drains queued records
+  before committing asynchronous work.
+- [MDN observe()](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe)
+  documents subtree options and continued observation of removed descendants until
+  removal delivery. Observing the Document here also covers body/root replacement;
+  bounded callback work avoids rewalking the document for every streaming chunk.
+- [Hypothesis HTML anchoring implementation](https://github.com/hypothesis/client/blob/main/src/annotator/anchoring/html.ts)
+  was reviewed again: it tries several selector types and checks quotes. This
+  project's dynamic controller retains its narrower literal-uniqueness policy.
+  It does not claim to improve on Hypothesis's general anchoring or reproduce its
+  complete dynamic-page behavior.
+
+Mutation observation, debouncing and annotation recovery are established patterns.
+The contribution here is a small bounded implementation with explicit incomplete
+states and a reproducible installed-extension mutation oracle, not novelty.

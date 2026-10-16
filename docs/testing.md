@@ -47,3 +47,72 @@ reader, all OS keyboard shortcut conflicts, malicious host-page UI spoofing,
 browser crashes mid-write, storage corruption repair, arbitrary CSS visual ordering,
 closed shadow roots, virtualized content, and unlimited histories. No precision or
 recall measurement beyond the stated synthetic construction is claimed.
+
+
+## Installed-extension dynamic verification
+
+The original 280-case DOM experiment remains unchanged. A second experiment,
+`tests/dynamic.mjs`, runs **256 seeded multi-step sequences** (32 each of streaming,
+duplication, Unicode/whitespace, moving, container replacement, removal, text editing
+and inline markup). Seed: `0x72ac19ef`. It uses the actual installed panel and one
+persisted note, not direct calls to production anchoring functions.
+
+Its reference consists of a separate array of expected paragraphs. It normalizes
+that model according to the contract, compares full text for exactness, and searches
+code-point arrays by an independent brute-force loop. It compares row statuses,
+highlight counts, DOM range text and start positions. It checks **608 settled
+intermediate/final anchors**, plus immediate pending states and cleared highlights
+at each mutation. Streaming chunks are also checked while pending. A manual refresh
+resets the budget between independent sequences; intermediate steps recover solely
+through the observer. The suite retains a draft through all sequences, asserting
+unchanged field value, focus, caret direction and mounted note row. A separate case
+preserves a page selection and keyboard-focused jump control. Browser-driven
+selection changes inside removed/edited host content are outside that guarantee.
+
+`tests/dynamic-limits.mjs` covers continuous streaming with no intermediate indexes,
+a 1,001-record flood, 125 small mutation batches, the 8-attempt rate budget,
+missing/multiple/hidden/editable roots, busy markers, depth/raw/text/node/discovery
+bounds, and automatic recovery when incomplete content becomes available. It checks
+that automatic updates and cancelled/failed edits leave stored bytes unchanged.
+For a deterministic asynchronous race, the native digest function is delayed in
+the extension's isolated world without changing its result; the stale generation
+must be discarded. The hook is restored after the test. Closing the panel must
+suppress highlights during subsequent updates. Manual refresh recovers latched
+processing limits.
+
+Frozen workload measurements include five changes with 1,000 additional paragraphs,
+35 stream chunks at nominal 30 ms intervals, and one automatic update of a full
+500-note notebook (20 mounted rows). Actual update times, index attempts, commits,
+visited/discovery nodes, panel DOM counts and Chromium version are recorded in
+`results/dynamic.json` and `results/verification.json`. Latencies include debounce,
+scheduling and, for Node-side measurements, automation round trips. These are local
+measurements, not cross-device performance guarantees. The dynamic example's real
+controls are also exercised in the network-blocked browser.
+
+Historical artifacts under `results/baseline-v1/` are preserved copies of the
+catalog baseline. They are not regenerated or relabeled as new measurements.
+Current evidence is written only after successful browser verification; failures
+are recorded in `results/tests.log`. Final artifact sizes include the regenerated
+report and test log. No live-provider or human screen-reader validation is claimed.
+
+
+Two expanded browser runs timed out waiting for panel activation on a new
+synthetic tab or fresh profile. Another full run passed; the timeout's cause was
+not established. The harness now waits for the service worker's action listener
+to be registered before triggering the CDP action, since worker creation alone
+does not establish listener readiness. The harness now includes extension-action
+title diagnostics on activation failure. This work does not establish a browser
+flakiness rate or claim that every development run passed. Missing Chromium in the
+initial environment was resolved by installing the pinned Playwright browser into
+temporary storage before the successful baseline rerun.
+
+
+Counter interpretation: controller counters are cumulative for that panel instance.
+The limits suite deliberately delays hashing by 250 ms, so its lifetime
+`maxIndexMs` includes that injected wait; it is not a CPU benchmark of indexing.
+Use the frozen workload's individual end-to-end `latenciesMs` and attempt/commit
+deltas for that workload. The streaming case distinguishes `nominalDurationMs` (35 × 30 ms) from measured
+`elapsedMs`; `quietToReadyMs` is measured by the controller. The frozen workload
+also records mean index time over that workload alone. Two development retries could not launch Chromium due
+to temporary thread-resource exhaustion after an interrupted verifier; those
+attempts are not successful verification evidence.

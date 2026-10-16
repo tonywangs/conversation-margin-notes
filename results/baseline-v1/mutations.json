@@ -1,0 +1,1713 @@
+{
+  "seed": "0x5eedc0de",
+  "cases": 280,
+  "counts": {
+    "inserted": 40,
+    "moved": 40,
+    "duplicate": 40,
+    "whitespace": 40,
+    "unicode": 40,
+    "removed": 40,
+    "markup": 40
+  },
+  "statuses": {
+    "exact": 80,
+    "uniquely reanchored": 120,
+    "ambiguous": 40,
+    "missing": 40
+  },
+  "negative": [
+    "split surrogate rejected",
+    "hidden crossing rejected",
+    "unpaired surrogate rejected",
+    "normalized document limit",
+    "raw document limit",
+    "DOM node limit",
+    "selection limit",
+    "unsupported content excluded",
+    "multiple roots",
+    "missing root"
+  ],
+  "results": [
+    {
+      "trial": 0,
+      "kind": "inserted",
+      "token": "fljymd",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 0,
+      "kind": "moved",
+      "token": "9xpqa1",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 0,
+      "kind": "duplicate",
+      "token": "1xbj5vu",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 0,
+      "kind": "whitespace",
+      "token": "wil0m0",
+      "status": "exact"
+    },
+    {
+      "trial": 0,
+      "kind": "unicode",
+      "token": "1ta0eed",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 0,
+      "kind": "removed",
+      "token": "1pqzf2h",
+      "status": "missing"
+    },
+    {
+      "trial": 0,
+      "kind": "markup",
+      "token": "4btq0v",
+      "status": "exact"
+    },
+    {
+      "trial": 1,
+      "kind": "inserted",
+      "token": "154kcld",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 1,
+      "kind": "moved",
+      "token": "b8sk35",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 1,
+      "kind": "duplicate",
+      "token": "oaxf89",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 1,
+      "kind": "whitespace",
+      "token": "181llif",
+      "status": "exact"
+    },
+    {
+      "trial": 1,
+      "kind": "unicode",
+      "token": "c3rtaj",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 1,
+      "kind": "removed",
+      "token": "1moqwu3",
+      "status": "missing"
+    },
+    {
+      "trial": 1,
+      "kind": "markup",
+      "token": "tzz7wx",
+      "status": "exact"
+    },
+    {
+      "trial": 2,
+      "kind": "inserted",
+      "token": "16g2cjg",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 2,
+      "kind": "moved",
+      "token": "pkr6ny",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 2,
+      "kind": "duplicate",
+      "token": "1cbokvj",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 2,
+      "kind": "whitespace",
+      "token": "10rty4w",
+      "status": "exact"
+    },
+    {
+      "trial": 2,
+      "kind": "unicode",
+      "token": "tiwuud",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 2,
+      "kind": "removed",
+      "token": "apdi37",
+      "status": "missing"
+    },
+    {
+      "trial": 2,
+      "kind": "markup",
+      "token": "15c8xxg",
+      "status": "exact"
+    },
+    {
+      "trial": 3,
+      "kind": "inserted",
+      "token": "7qkzd",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 3,
+      "kind": "moved",
+      "token": "17g098h",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 3,
+      "kind": "duplicate",
+      "token": "pq5yn8",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 3,
+      "kind": "whitespace",
+      "token": "1bcromq",
+      "status": "exact"
+    },
+    {
+      "trial": 3,
+      "kind": "unicode",
+      "token": "1qm4icw",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 3,
+      "kind": "removed",
+      "token": "10fb80q",
+      "status": "missing"
+    },
+    {
+      "trial": 3,
+      "kind": "markup",
+      "token": "1w293uk",
+      "status": "exact"
+    },
+    {
+      "trial": 4,
+      "kind": "inserted",
+      "token": "fbzl7z",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 4,
+      "kind": "moved",
+      "token": "1uljie4",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 4,
+      "kind": "duplicate",
+      "token": "1h667bm",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 4,
+      "kind": "whitespace",
+      "token": "17m8762",
+      "status": "exact"
+    },
+    {
+      "trial": 4,
+      "kind": "unicode",
+      "token": "1gknlbr",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 4,
+      "kind": "removed",
+      "token": "1x3mqc1",
+      "status": "missing"
+    },
+    {
+      "trial": 4,
+      "kind": "markup",
+      "token": "1ahwund",
+      "status": "exact"
+    },
+    {
+      "trial": 5,
+      "kind": "inserted",
+      "token": "qj3klw",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 5,
+      "kind": "moved",
+      "token": "1usuigq",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 5,
+      "kind": "duplicate",
+      "token": "1argctx",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 5,
+      "kind": "whitespace",
+      "token": "1ij5slq",
+      "status": "exact"
+    },
+    {
+      "trial": 5,
+      "kind": "unicode",
+      "token": "1kuugfu",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 5,
+      "kind": "removed",
+      "token": "1ci6tfo",
+      "status": "missing"
+    },
+    {
+      "trial": 5,
+      "kind": "markup",
+      "token": "1oua7c4",
+      "status": "exact"
+    },
+    {
+      "trial": 6,
+      "kind": "inserted",
+      "token": "pf764w",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 6,
+      "kind": "moved",
+      "token": "1u7icua",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 6,
+      "kind": "duplicate",
+      "token": "1s72351",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 6,
+      "kind": "whitespace",
+      "token": "gyfja5",
+      "status": "exact"
+    },
+    {
+      "trial": 6,
+      "kind": "unicode",
+      "token": "1l4f7k6",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 6,
+      "kind": "removed",
+      "token": "1yemsy1",
+      "status": "missing"
+    },
+    {
+      "trial": 6,
+      "kind": "markup",
+      "token": "h8t25y",
+      "status": "exact"
+    },
+    {
+      "trial": 7,
+      "kind": "inserted",
+      "token": "deb7ep",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 7,
+      "kind": "moved",
+      "token": "txtqpt",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 7,
+      "kind": "duplicate",
+      "token": "1qh465m",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 7,
+      "kind": "whitespace",
+      "token": "3knw25",
+      "status": "exact"
+    },
+    {
+      "trial": 7,
+      "kind": "unicode",
+      "token": "1asndh9",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 7,
+      "kind": "removed",
+      "token": "15g14vl",
+      "status": "missing"
+    },
+    {
+      "trial": 7,
+      "kind": "markup",
+      "token": "mil4k1",
+      "status": "exact"
+    },
+    {
+      "trial": 8,
+      "kind": "inserted",
+      "token": "qhojz5",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 8,
+      "kind": "moved",
+      "token": "1ok8ke7",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 8,
+      "kind": "duplicate",
+      "token": "jcim1a",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 8,
+      "kind": "whitespace",
+      "token": "lls1f7",
+      "status": "exact"
+    },
+    {
+      "trial": 8,
+      "kind": "unicode",
+      "token": "fwaxv2",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 8,
+      "kind": "removed",
+      "token": "x2xiut",
+      "status": "missing"
+    },
+    {
+      "trial": 8,
+      "kind": "markup",
+      "token": "1nlu6pf",
+      "status": "exact"
+    },
+    {
+      "trial": 9,
+      "kind": "inserted",
+      "token": "1nu7gmp",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 9,
+      "kind": "moved",
+      "token": "1xh0anu",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 9,
+      "kind": "duplicate",
+      "token": "180dhpg",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 9,
+      "kind": "whitespace",
+      "token": "1q4mt8k",
+      "status": "exact"
+    },
+    {
+      "trial": 9,
+      "kind": "unicode",
+      "token": "12pwzih",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 9,
+      "kind": "removed",
+      "token": "olb9gj",
+      "status": "missing"
+    },
+    {
+      "trial": 9,
+      "kind": "markup",
+      "token": "6zg0g9",
+      "status": "exact"
+    },
+    {
+      "trial": 10,
+      "kind": "inserted",
+      "token": "mfg1ci",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 10,
+      "kind": "moved",
+      "token": "e6bp51",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 10,
+      "kind": "duplicate",
+      "token": "1xtwh2m",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 10,
+      "kind": "whitespace",
+      "token": "9jwzny",
+      "status": "exact"
+    },
+    {
+      "trial": 10,
+      "kind": "unicode",
+      "token": "su6v8h",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 10,
+      "kind": "removed",
+      "token": "1bcd1ho",
+      "status": "missing"
+    },
+    {
+      "trial": 10,
+      "kind": "markup",
+      "token": "9vpksw",
+      "status": "exact"
+    },
+    {
+      "trial": 11,
+      "kind": "inserted",
+      "token": "1ccxlld",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 11,
+      "kind": "moved",
+      "token": "1yy5g19",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 11,
+      "kind": "duplicate",
+      "token": "1r7a78x",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 11,
+      "kind": "whitespace",
+      "token": "1977o8m",
+      "status": "exact"
+    },
+    {
+      "trial": 11,
+      "kind": "unicode",
+      "token": "1l4ij4i",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 11,
+      "kind": "removed",
+      "token": "1mrq48m",
+      "status": "missing"
+    },
+    {
+      "trial": 11,
+      "kind": "markup",
+      "token": "1epavlq",
+      "status": "exact"
+    },
+    {
+      "trial": 12,
+      "kind": "inserted",
+      "token": "uo9u2l",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 12,
+      "kind": "moved",
+      "token": "nj78ho",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 12,
+      "kind": "duplicate",
+      "token": "107vujz",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 12,
+      "kind": "whitespace",
+      "token": "xz90vx",
+      "status": "exact"
+    },
+    {
+      "trial": 12,
+      "kind": "unicode",
+      "token": "1anvsbh",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 12,
+      "kind": "removed",
+      "token": "qm1kju",
+      "status": "missing"
+    },
+    {
+      "trial": 12,
+      "kind": "markup",
+      "token": "1qadjcq",
+      "status": "exact"
+    },
+    {
+      "trial": 13,
+      "kind": "inserted",
+      "token": "1ecmb68",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 13,
+      "kind": "moved",
+      "token": "cio22y",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 13,
+      "kind": "duplicate",
+      "token": "1hgm7il",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 13,
+      "kind": "whitespace",
+      "token": "98ysub",
+      "status": "exact"
+    },
+    {
+      "trial": 13,
+      "kind": "unicode",
+      "token": "1vm8kdd",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 13,
+      "kind": "removed",
+      "token": "1de4bnu",
+      "status": "missing"
+    },
+    {
+      "trial": 13,
+      "kind": "markup",
+      "token": "108445n",
+      "status": "exact"
+    },
+    {
+      "trial": 14,
+      "kind": "inserted",
+      "token": "100ckj",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 14,
+      "kind": "moved",
+      "token": "190hb6c",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 14,
+      "kind": "duplicate",
+      "token": "7g6vj8",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 14,
+      "kind": "whitespace",
+      "token": "1bil63e",
+      "status": "exact"
+    },
+    {
+      "trial": 14,
+      "kind": "unicode",
+      "token": "1mlhzh7",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 14,
+      "kind": "removed",
+      "token": "7ia9f2",
+      "status": "missing"
+    },
+    {
+      "trial": 14,
+      "kind": "markup",
+      "token": "1sw26ff",
+      "status": "exact"
+    },
+    {
+      "trial": 15,
+      "kind": "inserted",
+      "token": "quzt8t",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 15,
+      "kind": "moved",
+      "token": "12fugx2",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 15,
+      "kind": "duplicate",
+      "token": "wa11a9",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 15,
+      "kind": "whitespace",
+      "token": "nn4eav",
+      "status": "exact"
+    },
+    {
+      "trial": 15,
+      "kind": "unicode",
+      "token": "2cxl23",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 15,
+      "kind": "removed",
+      "token": "1y0yy6u",
+      "status": "missing"
+    },
+    {
+      "trial": 15,
+      "kind": "markup",
+      "token": "18q2wnz",
+      "status": "exact"
+    },
+    {
+      "trial": 16,
+      "kind": "inserted",
+      "token": "bbugr2",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 16,
+      "kind": "moved",
+      "token": "gjcguo",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 16,
+      "kind": "duplicate",
+      "token": "jysii0",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 16,
+      "kind": "whitespace",
+      "token": "t1uxvc",
+      "status": "exact"
+    },
+    {
+      "trial": 16,
+      "kind": "unicode",
+      "token": "6a3rgd",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 16,
+      "kind": "removed",
+      "token": "1a1ze2f",
+      "status": "missing"
+    },
+    {
+      "trial": 16,
+      "kind": "markup",
+      "token": "1fbhnja",
+      "status": "exact"
+    },
+    {
+      "trial": 17,
+      "kind": "inserted",
+      "token": "1ao8dbu",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 17,
+      "kind": "moved",
+      "token": "tvaygm",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 17,
+      "kind": "duplicate",
+      "token": "1fz1h96",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 17,
+      "kind": "whitespace",
+      "token": "emjvrv",
+      "status": "exact"
+    },
+    {
+      "trial": 17,
+      "kind": "unicode",
+      "token": "1bdc69l",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 17,
+      "kind": "removed",
+      "token": "3n0cgu",
+      "status": "missing"
+    },
+    {
+      "trial": 17,
+      "kind": "markup",
+      "token": "14ocwpd",
+      "status": "exact"
+    },
+    {
+      "trial": 18,
+      "kind": "inserted",
+      "token": "1ufsi1l",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 18,
+      "kind": "moved",
+      "token": "ru6edx",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 18,
+      "kind": "duplicate",
+      "token": "16bzvsq",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 18,
+      "kind": "whitespace",
+      "token": "1g52za0",
+      "status": "exact"
+    },
+    {
+      "trial": 18,
+      "kind": "unicode",
+      "token": "1re2fjg",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 18,
+      "kind": "removed",
+      "token": "9mypyd",
+      "status": "missing"
+    },
+    {
+      "trial": 18,
+      "kind": "markup",
+      "token": "1f7p9tx",
+      "status": "exact"
+    },
+    {
+      "trial": 19,
+      "kind": "inserted",
+      "token": "1505l32",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 19,
+      "kind": "moved",
+      "token": "7cr2w5",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 19,
+      "kind": "duplicate",
+      "token": "qb6gmr",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 19,
+      "kind": "whitespace",
+      "token": "naen8x",
+      "status": "exact"
+    },
+    {
+      "trial": 19,
+      "kind": "unicode",
+      "token": "3ig3f9",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 19,
+      "kind": "removed",
+      "token": "igblbo",
+      "status": "missing"
+    },
+    {
+      "trial": 19,
+      "kind": "markup",
+      "token": "kxzm3j",
+      "status": "exact"
+    },
+    {
+      "trial": 20,
+      "kind": "inserted",
+      "token": "38h2oy",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 20,
+      "kind": "moved",
+      "token": "e0ax6w",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 20,
+      "kind": "duplicate",
+      "token": "4ggjoe",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 20,
+      "kind": "whitespace",
+      "token": "zofjf3",
+      "status": "exact"
+    },
+    {
+      "trial": 20,
+      "kind": "unicode",
+      "token": "4povb8",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 20,
+      "kind": "removed",
+      "token": "sisfaa",
+      "status": "missing"
+    },
+    {
+      "trial": 20,
+      "kind": "markup",
+      "token": "bmak75",
+      "status": "exact"
+    },
+    {
+      "trial": 21,
+      "kind": "inserted",
+      "token": "7zjjvl",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 21,
+      "kind": "moved",
+      "token": "btner",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 21,
+      "kind": "duplicate",
+      "token": "1pwc3lk",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 21,
+      "kind": "whitespace",
+      "token": "1i8460x",
+      "status": "exact"
+    },
+    {
+      "trial": 21,
+      "kind": "unicode",
+      "token": "9ih7ke",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 21,
+      "kind": "removed",
+      "token": "7n3zpe",
+      "status": "missing"
+    },
+    {
+      "trial": 21,
+      "kind": "markup",
+      "token": "73bw27",
+      "status": "exact"
+    },
+    {
+      "trial": 22,
+      "kind": "inserted",
+      "token": "14uffux",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 22,
+      "kind": "moved",
+      "token": "1b8far7",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 22,
+      "kind": "duplicate",
+      "token": "l7ql4e",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 22,
+      "kind": "whitespace",
+      "token": "p3lfgy",
+      "status": "exact"
+    },
+    {
+      "trial": 22,
+      "kind": "unicode",
+      "token": "w5h0rk",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 22,
+      "kind": "removed",
+      "token": "7ipsiq",
+      "status": "missing"
+    },
+    {
+      "trial": 22,
+      "kind": "markup",
+      "token": "161k9b9",
+      "status": "exact"
+    },
+    {
+      "trial": 23,
+      "kind": "inserted",
+      "token": "1arlrgq",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 23,
+      "kind": "moved",
+      "token": "1qq3zmg",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 23,
+      "kind": "duplicate",
+      "token": "709jfl",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 23,
+      "kind": "whitespace",
+      "token": "w98gb",
+      "status": "exact"
+    },
+    {
+      "trial": 23,
+      "kind": "unicode",
+      "token": "1yikk86",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 23,
+      "kind": "removed",
+      "token": "15rx90i",
+      "status": "missing"
+    },
+    {
+      "trial": 23,
+      "kind": "markup",
+      "token": "4w2jcb",
+      "status": "exact"
+    },
+    {
+      "trial": 24,
+      "kind": "inserted",
+      "token": "mftqbd",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 24,
+      "kind": "moved",
+      "token": "xjpvdt",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 24,
+      "kind": "duplicate",
+      "token": "yr0tjr",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 24,
+      "kind": "whitespace",
+      "token": "w3lc4h",
+      "status": "exact"
+    },
+    {
+      "trial": 24,
+      "kind": "unicode",
+      "token": "osb57n",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 24,
+      "kind": "removed",
+      "token": "id1jkr",
+      "status": "missing"
+    },
+    {
+      "trial": 24,
+      "kind": "markup",
+      "token": "11iudns",
+      "status": "exact"
+    },
+    {
+      "trial": 25,
+      "kind": "inserted",
+      "token": "1vx09d7",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 25,
+      "kind": "moved",
+      "token": "1j07uha",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 25,
+      "kind": "duplicate",
+      "token": "14ygaa9",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 25,
+      "kind": "whitespace",
+      "token": "7i30zi",
+      "status": "exact"
+    },
+    {
+      "trial": 25,
+      "kind": "unicode",
+      "token": "14n57b5",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 25,
+      "kind": "removed",
+      "token": "1aypz2g",
+      "status": "missing"
+    },
+    {
+      "trial": 25,
+      "kind": "markup",
+      "token": "1e7u8c5",
+      "status": "exact"
+    },
+    {
+      "trial": 26,
+      "kind": "inserted",
+      "token": "ncg8r3",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 26,
+      "kind": "moved",
+      "token": "1k632ca",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 26,
+      "kind": "duplicate",
+      "token": "d5q44k",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 26,
+      "kind": "whitespace",
+      "token": "996hqs",
+      "status": "exact"
+    },
+    {
+      "trial": 26,
+      "kind": "unicode",
+      "token": "p7vykc",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 26,
+      "kind": "removed",
+      "token": "cqo8gl",
+      "status": "missing"
+    },
+    {
+      "trial": 26,
+      "kind": "markup",
+      "token": "1meyyi5",
+      "status": "exact"
+    },
+    {
+      "trial": 27,
+      "kind": "inserted",
+      "token": "p2cvlu",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 27,
+      "kind": "moved",
+      "token": "7exgk9",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 27,
+      "kind": "duplicate",
+      "token": "8gl2is",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 27,
+      "kind": "whitespace",
+      "token": "1nu0z17",
+      "status": "exact"
+    },
+    {
+      "trial": 27,
+      "kind": "unicode",
+      "token": "1rjzkqk",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 27,
+      "kind": "removed",
+      "token": "7cn380",
+      "status": "missing"
+    },
+    {
+      "trial": 27,
+      "kind": "markup",
+      "token": "y4jn1q",
+      "status": "exact"
+    },
+    {
+      "trial": 28,
+      "kind": "inserted",
+      "token": "1q4clt0",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 28,
+      "kind": "moved",
+      "token": "145cplv",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 28,
+      "kind": "duplicate",
+      "token": "16tv3kw",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 28,
+      "kind": "whitespace",
+      "token": "y7frr4",
+      "status": "exact"
+    },
+    {
+      "trial": 28,
+      "kind": "unicode",
+      "token": "1fq1j00",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 28,
+      "kind": "removed",
+      "token": "1irupqa",
+      "status": "missing"
+    },
+    {
+      "trial": 28,
+      "kind": "markup",
+      "token": "19wxquy",
+      "status": "exact"
+    },
+    {
+      "trial": 29,
+      "kind": "inserted",
+      "token": "q3gbl8",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 29,
+      "kind": "moved",
+      "token": "17bkv8w",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 29,
+      "kind": "duplicate",
+      "token": "7gkfuq",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 29,
+      "kind": "whitespace",
+      "token": "hxtqo7",
+      "status": "exact"
+    },
+    {
+      "trial": 29,
+      "kind": "unicode",
+      "token": "1tb7j7k",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 29,
+      "kind": "removed",
+      "token": "tluafl",
+      "status": "missing"
+    },
+    {
+      "trial": 29,
+      "kind": "markup",
+      "token": "1mdchum",
+      "status": "exact"
+    },
+    {
+      "trial": 30,
+      "kind": "inserted",
+      "token": "7vkuz6",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 30,
+      "kind": "moved",
+      "token": "1fjxai6",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 30,
+      "kind": "duplicate",
+      "token": "rmnlgu",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 30,
+      "kind": "whitespace",
+      "token": "1n9lvtt",
+      "status": "exact"
+    },
+    {
+      "trial": 30,
+      "kind": "unicode",
+      "token": "oqkxm",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 30,
+      "kind": "removed",
+      "token": "7v6q68",
+      "status": "missing"
+    },
+    {
+      "trial": 30,
+      "kind": "markup",
+      "token": "1g3iakc",
+      "status": "exact"
+    },
+    {
+      "trial": 31,
+      "kind": "inserted",
+      "token": "bojxqo",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 31,
+      "kind": "moved",
+      "token": "wn42mc",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 31,
+      "kind": "duplicate",
+      "token": "d6tw5e",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 31,
+      "kind": "whitespace",
+      "token": "y3vw2u",
+      "status": "exact"
+    },
+    {
+      "trial": 31,
+      "kind": "unicode",
+      "token": "1unftuq",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 31,
+      "kind": "removed",
+      "token": "6z1vzb",
+      "status": "missing"
+    },
+    {
+      "trial": 31,
+      "kind": "markup",
+      "token": "1exx79g",
+      "status": "exact"
+    },
+    {
+      "trial": 32,
+      "kind": "inserted",
+      "token": "1dqa6rk",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 32,
+      "kind": "moved",
+      "token": "v9qtu9",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 32,
+      "kind": "duplicate",
+      "token": "uw48ap",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 32,
+      "kind": "whitespace",
+      "token": "9p3l22",
+      "status": "exact"
+    },
+    {
+      "trial": 32,
+      "kind": "unicode",
+      "token": "emha2u",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 32,
+      "kind": "removed",
+      "token": "u34srs",
+      "status": "missing"
+    },
+    {
+      "trial": 32,
+      "kind": "markup",
+      "token": "2325id",
+      "status": "exact"
+    },
+    {
+      "trial": 33,
+      "kind": "inserted",
+      "token": "1y71nux",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 33,
+      "kind": "moved",
+      "token": "wxkarb",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 33,
+      "kind": "duplicate",
+      "token": "subdyg",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 33,
+      "kind": "whitespace",
+      "token": "qy7lyf",
+      "status": "exact"
+    },
+    {
+      "trial": 33,
+      "kind": "unicode",
+      "token": "1f2dwk9",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 33,
+      "kind": "removed",
+      "token": "14ycz5p",
+      "status": "missing"
+    },
+    {
+      "trial": 33,
+      "kind": "markup",
+      "token": "psrtq7",
+      "status": "exact"
+    },
+    {
+      "trial": 34,
+      "kind": "inserted",
+      "token": "1r2y7y7",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 34,
+      "kind": "moved",
+      "token": "q0h6m0",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 34,
+      "kind": "duplicate",
+      "token": "x3rlz7",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 34,
+      "kind": "whitespace",
+      "token": "1nr949g",
+      "status": "exact"
+    },
+    {
+      "trial": 34,
+      "kind": "unicode",
+      "token": "1s71sl2",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 34,
+      "kind": "removed",
+      "token": "41aq93",
+      "status": "missing"
+    },
+    {
+      "trial": 34,
+      "kind": "markup",
+      "token": "1vy92hw",
+      "status": "exact"
+    },
+    {
+      "trial": 35,
+      "kind": "inserted",
+      "token": "hh436i",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 35,
+      "kind": "moved",
+      "token": "wsyn9i",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 35,
+      "kind": "duplicate",
+      "token": "1us62n3",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 35,
+      "kind": "whitespace",
+      "token": "gei9wq",
+      "status": "exact"
+    },
+    {
+      "trial": 35,
+      "kind": "unicode",
+      "token": "1o1vqof",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 35,
+      "kind": "removed",
+      "token": "1ajjz6s",
+      "status": "missing"
+    },
+    {
+      "trial": 35,
+      "kind": "markup",
+      "token": "36x8dh",
+      "status": "exact"
+    },
+    {
+      "trial": 36,
+      "kind": "inserted",
+      "token": "1tlbkh1",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 36,
+      "kind": "moved",
+      "token": "1wpevwg",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 36,
+      "kind": "duplicate",
+      "token": "m73klr",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 36,
+      "kind": "whitespace",
+      "token": "xpdnwv",
+      "status": "exact"
+    },
+    {
+      "trial": 36,
+      "kind": "unicode",
+      "token": "fzd6qv",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 36,
+      "kind": "removed",
+      "token": "ilr4zw",
+      "status": "missing"
+    },
+    {
+      "trial": 36,
+      "kind": "markup",
+      "token": "1h4c94q",
+      "status": "exact"
+    },
+    {
+      "trial": 37,
+      "kind": "inserted",
+      "token": "1mopt3o",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 37,
+      "kind": "moved",
+      "token": "13j81t8",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 37,
+      "kind": "duplicate",
+      "token": "17jsa8j",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 37,
+      "kind": "whitespace",
+      "token": "4qomr8",
+      "status": "exact"
+    },
+    {
+      "trial": 37,
+      "kind": "unicode",
+      "token": "dpb8jw",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 37,
+      "kind": "removed",
+      "token": "k51ih9",
+      "status": "missing"
+    },
+    {
+      "trial": 37,
+      "kind": "markup",
+      "token": "1f6e0qy",
+      "status": "exact"
+    },
+    {
+      "trial": 38,
+      "kind": "inserted",
+      "token": "1jxicwb",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 38,
+      "kind": "moved",
+      "token": "ia5zyl",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 38,
+      "kind": "duplicate",
+      "token": "195bd0r",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 38,
+      "kind": "whitespace",
+      "token": "bxys0a",
+      "status": "exact"
+    },
+    {
+      "trial": 38,
+      "kind": "unicode",
+      "token": "1vdcuz",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 38,
+      "kind": "removed",
+      "token": "144mhkh",
+      "status": "missing"
+    },
+    {
+      "trial": 38,
+      "kind": "markup",
+      "token": "749i86",
+      "status": "exact"
+    },
+    {
+      "trial": 39,
+      "kind": "inserted",
+      "token": "1nuga6k",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 39,
+      "kind": "moved",
+      "token": "d8ibpo",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 39,
+      "kind": "duplicate",
+      "token": "1kbj86i",
+      "status": "ambiguous"
+    },
+    {
+      "trial": 39,
+      "kind": "whitespace",
+      "token": "6704ed",
+      "status": "exact"
+    },
+    {
+      "trial": 39,
+      "kind": "unicode",
+      "token": "1r4jdq0",
+      "status": "uniquely reanchored"
+    },
+    {
+      "trial": 39,
+      "kind": "removed",
+      "token": "wxyum2",
+      "status": "missing"
+    },
+    {
+      "trial": 39,
+      "kind": "markup",
+      "token": "104zvhc",
+      "status": "exact"
+    }
+  ]
+}

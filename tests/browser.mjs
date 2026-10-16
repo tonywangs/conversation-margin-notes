@@ -5,6 +5,7 @@ import {existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {mutationSuite} from './mutations.mjs';
+import {dynamicSuite} from './dynamic.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 if(!process.env.PLAYWRIGHT_BROWSERS_PATH && existsSync('/tmp/margin-browsers'))process.env.PLAYWRIGHT_BROWSERS_PATH='/tmp/margin-browsers';
 const {chromium}=await import('playwright');
@@ -14,8 +15,8 @@ export async function browserSuite() {
   const check=description=>{checks.push(description);console.log('PASS '+description);};
   const server=createServer(async(req,res)=>{
     const file=new URL(req.url,'http://localhost').pathname;
-    if(!['/conversation.html','/second.html','/blank.html'].includes(file)){res.writeHead(404);res.end();return;}
-    res.setHeader('Content-Type','text/html; charset=utf-8');
+    if(!['/conversation.html','/second.html','/blank.html','/dynamic.html','/dynamic.js'].includes(file)){res.writeHead(404);res.end();return;}
+    res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript; charset=utf-8':'text/html; charset=utf-8');
     res.end(file==='/blank.html'?'<!doctype html><html><body><main>blank</main></body></html>':await readFile(path.join(root,'fixtures',file.slice(1))));
   });
   const proxy=createServer((_req,res)=>{network.proxyBlocked++;res.writeHead(403);res.end('External networking disabled by verification harness.');});
@@ -29,15 +30,28 @@ export async function browserSuite() {
     const context=await chromium.launchPersistentContext(path.join(scratch,name),{channel:'chromium',headless:true,viewport:{width:1280,height:900},env,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--enable-unsafe-extension-debugging','--renderer-process-limit=3',`--proxy-server=http://127.0.0.1:${proxy.address().port}`,'--proxy-bypass-list=127.0.0.1','--disable-quic','--force-webrtc-ip-handling-policy=disable_non_proxied_udp']});
     contexts.push(context);
     await context.route('**/*',route=>{const url=new URL(route.request().url());if(url.origin===origin || ['chrome-extension:','data:','blob:'].includes(url.protocol))return route.continue();network.pageBlocked++;return route.abort('blockedbyclient');});
+    context.setDefaultTimeout(10000);
     context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
     const worker=context.serviceWorkers()[0]||await context.waitForEvent('serviceworker');
     const browserCDP=await context.browser().newBrowserCDPSession();
     async function activate(page) {
+      // A serviceworker event announces creation, not completion of its script.
+      // Wait for the real action listener before issuing the experimental CDP action.
+      await worker.evaluate(async()=>{
+        const started=Date.now();
+        while(!chrome.action.onClicked.hasListeners()) {
+          if(Date.now()-started>10000)throw new Error('Extension action listener did not initialize.');
+          await new Promise(resolve=>setTimeout(resolve,10));
+        }
+      });
       await page.bringToFront();
       const {targetInfos}=await browserCDP.send('Target.getTargets',{filter:[{type:'tab'}]});
       const target=targetInfos.find(t=>t.url===page.url());assert(target,'tab target found');
       await browserCDP.send('Extensions.triggerAction',{id:worker.url().split('/')[2],targetId:target.targetId});
-      await page.locator('#conversation-margin-notes-panel').waitFor();
+      try {await page.locator('#conversation-margin-notes-panel').waitFor();} catch(error) {
+        const diagnostic=await worker.evaluate(async()=>{const tabs=await chrome.tabs.query({});return Promise.all(tabs.map(async tab=>({url:tab.url,title:await chrome.action.getTitle({tabId:tab.id})})));});
+        throw new Error(`${error.message} Action diagnostics: ${JSON.stringify(diagnostic)}`);
+      }
       await page.waitForFunction(()=>!document.querySelector('#conversation-margin-notes-panel').shadowRoot.getElementById('refresh').disabled);
     }
     return {context,worker,activate,browserCDP};
@@ -45,7 +59,7 @@ export async function browserSuite() {
   const panel=p=>p.locator('#conversation-margin-notes-panel');
   const item=p=>panel(p).locator('article');
   const status=p=>panel(p).locator('#status');
-  async function message(p,pattern) {await status(p).filter({hasText:pattern}).waitFor({timeout:10000});}
+  async function message(p,pattern) {await panel(p).locator('#status, #anchors').filter({hasText:pattern}).first().waitFor({timeout:10000});}
   async function select(p,id,start=0,end=null) {
     await p.evaluate(({id,start,end})=>{const n=document.getElementById(id).firstChild;const r=document.createRange();r.setStart(n,start);r.setEnd(n,end??n.length);const s=getSelection();s.removeAllRanges();s.addRange(r);},{id,start,end});
     await panel(p).getByRole('button',{name:'Annotate selection',exact:true}).click();
@@ -98,8 +112,10 @@ export async function browserSuite() {
     await p.evaluate(()=>{const main=document.createElement('main');main.textContent='x'.repeat(200001);document.body.append(main);});await refresh(p);await message(p,/200,000/);assert.equal(await download(p),exported);
     await p.reload();await activate(p);await select(p,'ending');await panel(p).getByLabel('Your note',{exact:true}).fill('x'.repeat(4001));assert(await panel(p).getByRole('button',{name:'Save note',exact:true}).isDisabled());await panel(p).getByRole('button',{name:'Cancel draft',exact:true}).click();
     // A CSS-only visibility change does not emit a root mutation. Capture must reindex.
-    await p.evaluate(()=>{const style=document.createElement('style');style.textContent='#unique { visibility:hidden }';document.head.append(style);});
-    await p.evaluate(()=>{const n=document.querySelector('#ending').firstChild,r=document.createRange();r.selectNodeContents(n);getSelection().removeAllRanges();getSelection().addRange(r);});await panel(p).getByRole('button',{name:'Annotate selection',exact:true}).click();await message(p,/Page changed/);assert(await panel(p).locator('#composer').isHidden());assert.equal(await download(p),exported);
+    await p.evaluate(()=>{const style=document.createElement('style');style.id='cssom-test';document.head.append(style);});
+    await p.waitForFunction(()=>document.querySelector('#conversation-margin-notes-panel').shadowRoot.getElementById('anchors').dataset.state==='ready');
+    await p.evaluate(()=>document.querySelector('#cssom-test').sheet.insertRule('#unique { visibility:hidden }'));
+    await p.evaluate(()=>{const n=document.querySelector('#ending').firstChild,r=document.createRange();r.selectNodeContents(n);getSelection().removeAllRanges();getSelection().addRange(r);});await panel(p).getByRole('button',{name:'Annotate selection',exact:true}).click();await message(p,/Page changed|Refresh anchors/);assert(await panel(p).locator('#composer').isHidden());assert.equal(await download(p),exported);
     await p.reload();await activate(p);check('Root removal, document limit, body limit and CSS-only stale selection; export remains available');
     await p.setViewportSize({width:320,height:640});const bounds=await panel(p).boundingBox();assert(bounds.x>=0 && bounds.width<=320);
     const overflow=await panel(p).locator('.panel').evaluate(el=>el.scrollWidth>el.clientWidth);assert.equal(overflow,false);
@@ -109,6 +125,17 @@ export async function browserSuite() {
     const experiment=await context.newPage();await experiment.goto(origin+'/blank.html');await experiment.addScriptTag({path:path.join(root,'extension/core.js')});await experiment.addScriptTag({path:path.join(root,'extension/dom.js')});const mutations=await mutationSuite(experiment);check('280 seeded DOM mutations and ten negative DOM cases');
     await p.setViewportSize({width:1280,height:900});await p.reload();await activate(p);await p.screenshot({path:path.join(root,'results','desktop.png')});
     const browserVersion=context.browser().version(),fixtureElements=await p.locator('main *').count();
+    const dynamicPage=await context.newPage();
+    const dynamic=await dynamicSuite({page:dynamicPage,worker,activate,create,refresh,stored,origin});check('256 installed-extension mutation sequences; independent intermediate and final anchor oracle; draft, focus, caret and selection preservation');
+    const demo=await context.newPage();await demo.setViewportSize({width:1800,height:1000});await demo.goto(origin+'/dynamic.html');await activate(demo);await create(demo,'target','Synthetic demo note.');
+    await demo.getByRole('button',{name:'Duplicate passage',exact:true}).click();
+    await panel(demo).locator('.tag').filter({hasText:'ambiguous'}).waitFor();
+    await demo.getByRole('button',{name:'Restore original',exact:true}).click();
+    await panel(demo).locator('.tag').filter({hasText:'exact'}).waitFor();
+    await demo.getByRole('button',{name:'Toggle incomplete',exact:true}).click();
+    await panel(demo).locator('.tag').filter({hasText:'incomplete'}).waitFor();
+    await demo.getByRole('button',{name:'Toggle incomplete',exact:true}).click();
+    await panel(demo).locator('.tag').filter({hasText:'exact'}).waitFor();check('Bundled dynamic example controls recover ambiguous, exact and incomplete states');
     await context.close();
     // Fresh profile restores actual downloaded bytes, without copying browser storage.
     const second=await launch('fresh');const p2=await second.context.newPage();await p2.goto(origin+'/conversation.html');await second.activate(p2);assert.equal(await item(p2).count(),0);await upload(p2,exported);await message(p2,/Imported 5/);assert.equal(await item(p2).count(),5);assert.equal(await download(p2),exported);
@@ -122,6 +149,10 @@ export async function browserSuite() {
     await p2.goto(origin+'/conversation.html');await second.activate(p2);let current=await stored(second.worker);const base=JSON.parse(exported).notes[0];const many={version:1,notes:[]};
     for(let i=0;i<500-current.data.notes.length;i++)many.notes.push({...base,id:`11111111-1111-4111-8111-${String(i).padStart(12,'0')}`,body:`Capacity note ${i}`});
     await upload(p2,JSON.stringify(many));await message(p2,/Imported/);await panel(p2).getByLabel('Show notes',{exact:true}).selectOption('all');assert.equal((await stored(second.worker)).data.notes.length,500);
+    const fullUpdateStarted=performance.now();
+    await p2.evaluate(()=>document.querySelector('main').lastElementChild.append(' Full notebook update.'));
+    await p2.waitForFunction(()=>document.querySelector('#conversation-margin-notes-panel').shadowRoot.getElementById('anchors').dataset.state==='ready');
+    const fullNotebookUpdateMs=performance.now()-fullUpdateStarted;
     const reached=new Set();let maxRows=0,maxDOM=0,maxHighlights=0;
     for(let i=0;i<25;i++) {
       const ids=await item(p2).evaluateAll(items=>items.map(el=>el.dataset.noteId));ids.forEach(id=>reached.add(id));maxRows=Math.max(maxRows,ids.length);
@@ -133,6 +164,6 @@ export async function browserSuite() {
     // Delete persists, with explicit confirmation and keyboard activation.
     const deleteTarget=item(p2).first();const deletedID=await deleteTarget.getAttribute('data-note-id');await deleteTarget.getByRole('button',{name:'Delete',exact:true}).click();await deleteTarget.getByRole('button',{name:'Confirm delete',exact:true}).focus();await p2.keyboard.press('Enter');await message(p2,/Note deleted/);assert(!(await stored(second.worker)).data.notes.some(n=>n.id===deletedID));check('Confirmed keyboard deletion persists');
     assert.deepEqual(errors,[],'no uncaught page errors');
-    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements},mutations};
+    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements,fullNotebookUpdateMs},mutations,dynamic};
   } finally {for(const c of contexts)await c.close();await new Promise(resolve=>server.close(resolve));await new Promise(resolve=>proxy.close(resolve));await rm(scratch,{recursive:true,force:true});}
 }
