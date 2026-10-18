@@ -125,6 +125,7 @@ export async function navigationSuite({page,worker,activate,create,refresh,store
       }
       const destinationMs=performance.now()-started;
       history.pushState({},'',urlA);invalid('return A');const blocks=render(urlA,{token:returnToken});await wait('ready');steps.push(inspect(urlA,blocks,'return A'));
+      const recoveryStart=performance.now();while(shadow.getElementById('refresh').disabled){if(performance.now()-recoveryStart>5000)throw new Error('Recovery refresh did not settle');await sleep(5);}
       assert(!shadow.getElementById('recover').disabled,'original draft can be recovered');
       results.push({trial,kind,token,rapidCount,delayMs,duplicateFirst,returnToken,steps,destinationMs,totalMs:performance.now()-started});
       if(results.length%32===0)await globalThis.marginNavigationProgress(results.length);
@@ -158,7 +159,7 @@ export async function navigationSuite({page,worker,activate,create,refresh,store
   // A write accepted for A may finish after navigation; its immutable target is
   // still A. Its UI reply cannot cancel a draft in B or attach an A highlight.
   await panel.getByRole('button',{name:'Edit',exact:true}).click();await panel.getByLabel('Your note',{exact:true}).fill('A write completed after navigation');
-  await worker.evaluate(()=>{globalThis.navigationSet=chrome.storage.local.set.bind(chrome.storage.local);globalThis.writeStarted=false;chrome.storage.local.set=async(...args)=>{globalThis.writeStarted=true;await new Promise(r=>setTimeout(r,300));return navigationSet(...args);};});
+  await worker.evaluate(()=>{globalThis.navigationSet=chrome.storage.local.set.bind(chrome.storage.local);globalThis.writeStarted=false;chrome.storage.local.set=async(...args)=>{if(!args[0].notebook)return navigationSet(...args);globalThis.writeStarted=true;await new Promise(r=>setTimeout(r,300));return navigationSet(...args);};});
   await panel.locator('#save').click();await waitWorker(()=>globalThis.writeStarted);
   await page.locator('#b').click();await ready();
   await page.waitForFunction(()=>!document.querySelector('#conversation-margin-notes-panel').shadowRoot.getElementById('refresh').disabled);

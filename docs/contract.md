@@ -40,7 +40,7 @@ notes, 2 MiB UTF-8 import/export/storage payload, 20 mounted note rows, 20 curre
 page highlights. Literal matching stops at the second occurrence. Document limits fail
 closed; notes remain exportable. No automatic trimming or eviction.
 
-Storage is a single versioned envelope in chrome.storage.local, written by a
+Saved-note storage is a single versioned envelope in chrome.storage.local, written by a
 serialized service-worker queue. Optimistic revisions reject concurrent stale
 writes. UI state changes only after a successful write. Import validates the entire
 envelope before merging: identical UUID+content is skipped; conflicting UUID or
@@ -156,17 +156,18 @@ merged. Same-URL History API navigation is invalidated, but two distinct convers
 that share a canonical URL cannot be represented by this schema. Such applications
 need an adapter and an explicit future data-format design.
 
-One in-memory draft is retained across same-document transitions, including its
+One active editor is retained across same-document transitions, including its
 original source, original edit ID (or stable new-note UUID), selector and text. It
 stays visible and selectable but suspended; destination navigation cannot change
 its source. A second draft cannot replace it. Return to its original source and
 choose **Recover draft on this source** to reread storage and explicitly resume.
 Recovery checks the original ID, including a create that completed after navigation;
 it will not duplicate that note. A deleted original edit remains retained with a
-copy/cancel diagnostic. **Cancel draft** is explicit discard. Closing the panel
-retains the draft. Full reload, tab close or cross-document navigation destroys
-in-memory drafts; a browser beforeunload warning is requested but is subject to
-browser policy. Draft persistence across those actions is not promised.
+conflict diagnostic and export/separate-note recovery actions. **Cancel draft** is explicit discard. Closing the panel
+retains the draft. Full reload, tab close or cross-document navigation destroys the active editor;
+acknowledged drafts remain in local storage for explicit recovery. Edits not yet
+acknowledged can be lost. A beforeunload warning is requested for pending edits
+but is subject to browser policy. See the [persistent draft contract](drafts.md).
 
 Read replies are committed only to their originating page session. Stale replies
 trigger a fresh read. The worker serializes writes, checks revision and the exact

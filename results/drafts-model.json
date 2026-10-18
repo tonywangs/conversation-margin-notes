@@ -1,0 +1,1940 @@
+{
+  "seed": 3568267528,
+  "cases": 320,
+  "counts": {
+    "edit": 2038,
+    "ack": 2233,
+    "delayedAck": 320,
+    "failure": 842,
+    "navigation": 320,
+    "reload": 320,
+    "recovery": 320,
+    "conflict": 160,
+    "discard": 160,
+    "save": 160,
+    "staleWriter": 320
+  },
+  "sequences": [
+    {
+      "trial": 0,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 1,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 2,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 3,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 4,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 5,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 6,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 7,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 8,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 9,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 10,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 11,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 12,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 13,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 14,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 15,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 16,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 17,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 18,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 19,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 20,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 21,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 22,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 23,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 24,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 25,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 26,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 27,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 28,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 29,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 30,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 31,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 32,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 33,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 34,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 35,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 36,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 37,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 38,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 39,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 40,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 41,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 42,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 43,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 44,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 45,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 46,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 47,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 48,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 49,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 50,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 51,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 52,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 53,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 16
+    },
+    {
+      "trial": 54,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 55,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 56,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 57,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 58,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 59,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 60,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 61,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 62,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 63,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 64,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 65,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 66,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 67,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 68,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 69,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 70,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 71,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 72,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 73,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 74,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 75,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 76,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 77,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 78,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 79,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 80,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 81,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 82,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 83,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 84,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 85,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 86,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 87,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 88,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 89,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 90,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 17
+    },
+    {
+      "trial": 91,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 92,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 93,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 94,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 95,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 96,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 97,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 98,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 99,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 100,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 101,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 102,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 103,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 104,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 105,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 106,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 107,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 17
+    },
+    {
+      "trial": 108,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 109,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 110,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 111,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 112,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 113,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 114,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 115,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 116,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 117,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 118,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 119,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 120,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 121,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 122,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 123,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 124,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 125,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 126,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 127,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 128,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 129,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 130,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 131,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 132,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 133,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 134,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 135,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 136,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 137,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 138,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 139,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 140,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 141,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 142,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 143,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 144,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 145,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 146,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 147,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 148,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 16
+    },
+    {
+      "trial": 149,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 150,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 151,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 152,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 153,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 16
+    },
+    {
+      "trial": 154,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 155,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 156,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 157,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 158,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 159,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 160,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 161,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 162,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 163,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 164,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 165,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 166,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 167,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 168,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 169,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 170,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 171,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 172,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 173,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 174,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 175,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 176,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 177,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 178,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 179,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 180,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 181,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 182,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 183,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 184,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 185,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 186,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 187,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 188,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 189,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 190,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 191,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 192,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 193,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 16
+    },
+    {
+      "trial": 194,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 195,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 196,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 197,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 198,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 199,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 200,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 201,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 202,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 203,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 204,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 205,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 206,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 207,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 208,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 209,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 210,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 211,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 212,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 213,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 214,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 215,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 216,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 217,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 218,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 219,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 220,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 221,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 222,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 223,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 224,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 225,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 226,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 227,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 228,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 229,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 230,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 231,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 232,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 233,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 234,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 235,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 236,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 237,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 238,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 239,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 240,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 241,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 242,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 243,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 244,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 245,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 246,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 247,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 248,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 249,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 250,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 251,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 252,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 253,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 254,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 255,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 256,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 257,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 258,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 259,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 260,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 261,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 262,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 263,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 264,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 265,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 266,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 267,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 268,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 269,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 270,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 271,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 272,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 273,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 274,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 275,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 276,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 277,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 15
+    },
+    {
+      "trial": 278,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 279,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 280,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 281,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 282,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 283,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 12
+    },
+    {
+      "trial": 284,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 285,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 286,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 287,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 288,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 289,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 290,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 291,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 292,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 293,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 294,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 295,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 296,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 297,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 298,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 10
+    },
+    {
+      "trial": 299,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 300,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 8
+    },
+    {
+      "trial": 301,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 302,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 14
+    },
+    {
+      "trial": 303,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 304,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 305,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 12
+    },
+    {
+      "trial": 306,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 307,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 13
+    },
+    {
+      "trial": 308,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 14
+    },
+    {
+      "trial": 309,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 310,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 15
+    },
+    {
+      "trial": 311,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    },
+    {
+      "trial": 312,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 10
+    },
+    {
+      "trial": 313,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 9
+    },
+    {
+      "trial": 314,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 315,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 11
+    },
+    {
+      "trial": 316,
+      "mode": "edit",
+      "outcome": "conflict then discard",
+      "storageWrites": 13
+    },
+    {
+      "trial": 317,
+      "mode": "create",
+      "outcome": "conflict then discard",
+      "storageWrites": 11
+    },
+    {
+      "trial": 318,
+      "mode": "edit",
+      "outcome": "saved",
+      "storageWrites": 9
+    },
+    {
+      "trial": 319,
+      "mode": "create",
+      "outcome": "saved",
+      "storageWrites": 16
+    }
+  ],
+  "limitations": "Deterministic simulated storage with production worker and writer. Navigation and restart are harness events; installed browser tests separately validate panel/session behavior and native persistence."
+}

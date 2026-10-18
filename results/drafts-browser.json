@@ -1,0 +1,120 @@
+{
+  "checks": [
+    "Native storage → reload → fresh browser-process restart → source-locked keyboard recovery → save → portable export",
+    "Delayed native draft acknowledgment coalesces newer input; explicit discard waits for the writer",
+    "Discard during an in-flight native write waits for its acknowledgment and cannot resurrect on reload",
+    "Navigation during native persistence retains original identity and requires explicit recovery after reload",
+    "Concurrent recovery uses draft versions; losing edits export, stale discard cannot delete winning text",
+    "Refresh and restart cannot rebase stale edits; separate-note recovery preserves newer notes; deleted notes stay deleted",
+    "Real local-storage quota exhaustion preserves saved notes and last acknowledged draft; pending text exports and retries",
+    "Failed recovery read leaves the composer closed and stored draft intact",
+    "Failed post-save cleanup retains a recovery copy and identifies already-saved content without duplication",
+    "32-draft bound rejects extra persistence without eviction; old drafts remain listed and usable at 320px",
+    "Recovered saved notes retain the existing portable notebook format in a fresh profile"
+  ],
+  "latency_ms": [
+    379.10810299997684,
+    819.3118900000118,
+    814.9278160000104,
+    382.77445600001374,
+    873.267807999975,
+    884.8465629999992,
+    811.4239349999698,
+    838.7057900000364,
+    385.9116829999839
+  ],
+  "writer_samples": [
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 306.30000019073486,
+      "lastWriteMs": 5.400000095367432,
+      "maxWriteMs": 5.400000095367432,
+      "totalWriteMs": 5.400000095367432,
+      "writes": 1
+    },
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 306.2999997138977,
+      "lastWriteMs": 5.5,
+      "maxWriteMs": 5.5,
+      "totalWriteMs": 5.5,
+      "writes": 1
+    },
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 306.2000002861023,
+      "lastWriteMs": 5.700000286102295,
+      "maxWriteMs": 5.700000286102295,
+      "totalWriteMs": 5.700000286102295,
+      "writes": 1
+    },
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 305.80000019073486,
+      "lastWriteMs": 5,
+      "maxWriteMs": 5,
+      "totalWriteMs": 5,
+      "writes": 1
+    },
+    {
+      "acknowledgments": 2,
+      "failures": 0,
+      "lastInputToAckMs": 305.5,
+      "lastWriteMs": 5.199999809265137,
+      "maxWriteMs": 5.199999809265137,
+      "totalWriteMs": 10.199999809265137,
+      "writes": 2
+    },
+    {
+      "acknowledgments": 2,
+      "failures": 0,
+      "lastInputToAckMs": 304.69999980926514,
+      "lastWriteMs": 4.300000190734863,
+      "maxWriteMs": 23.90000009536743,
+      "totalWriteMs": 28.200000286102295,
+      "writes": 2
+    },
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 308.90000009536743,
+      "lastWriteMs": 8.100000381469727,
+      "maxWriteMs": 8.100000381469727,
+      "totalWriteMs": 8.100000381469727,
+      "writes": 1
+    },
+    {
+      "acknowledgments": 3,
+      "failures": 1,
+      "lastInputToAckMs": 307,
+      "lastWriteMs": 6.5,
+      "maxWriteMs": 8.100000381469727,
+      "totalWriteMs": 22.600000381469727,
+      "writes": 4
+    },
+    {
+      "acknowledgments": 1,
+      "failures": 0,
+      "lastInputToAckMs": 305.59999990463257,
+      "lastWriteMs": 4.900000095367432,
+      "maxWriteMs": 4.900000095367432,
+      "totalWriteMs": 4.900000095367432,
+      "writes": 1
+    }
+  ],
+  "metrics": {
+    "beforeRestartStorageBytes": 702,
+    "browser": "156.0.8078.4",
+    "capacityStorageBytes": 14709,
+    "finalStorageBytes": 15716
+  },
+  "limitations": [
+    "Synthetic bundled pages; no live provider or human screen-reader testing.",
+    "Latency includes debounce, IPC, native storage and Playwright scheduling.",
+    "Fresh-process restart is graceful; hardware crash durability is not tested."
+  ]
+}

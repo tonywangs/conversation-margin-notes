@@ -54,3 +54,24 @@ The chosen scope is fragment-free same-document HTTP(S) transitions in Chromium,
 with explicit identity markers for automatic recovery and a manual confirmation
 path for unmarked destinations. Hash routes are detected but deliberately remain
 unresolved because the existing portable schema identifies fragment-free sources.
+
+## Persistent drafts (reviewed 2026-10-18)
+
+- [Chrome storage API](https://developer.chrome.com/docs/extensions/reference/api/storage):
+  local storage survives restarts, is asynchronous, and has a 10 MB quota without
+  additional permissions. Rejected writes must not be reported as persisted.
+  This implementation uses trusted-context access and a smaller draft budget.
+- [Extension worker lifecycle](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle):
+  worker globals disappear on termination. Durable versions and draft contents
+  belong in storage; the in-memory queue is only serialization for the running worker.
+- [Hypothesis draft store](https://github.com/hypothesis/client/blob/main/src/sidebar/store/modules/drafts.ts):
+  the inspected implementation separates unsaved annotation edits from saved
+  annotations and matches drafts using annotation IDs or local tags. Its store
+  module supplies update/remove/select operations; that module alone does not
+  establish browser-restart durability. We use a separate draft UUID and stable
+  note identity, with local persistence and explicit conflict recovery. No novelty
+  claim is made for drafts, optimistic revisions, or annotation recovery.
+
+See [draft contract](drafts.md) for this implementation's retention, concurrency
+and failure policy. These are engineering choices, not guarantees of disk survival
+under hardware failure or of provider-specific conversation identity.

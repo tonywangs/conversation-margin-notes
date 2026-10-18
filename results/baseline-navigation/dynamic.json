@@ -1,0 +1,4916 @@
+{
+  "sequences": {
+    "seed": "0x72ac19ef",
+    "cases": 256,
+    "counts": {
+      "streaming": 32,
+      "duplicate": 32,
+      "unicode": 32,
+      "moved": 32,
+      "replaced": 32,
+      "removed": 32,
+      "edited": 32,
+      "markup": 32
+    },
+    "intermediateChecks": 608,
+    "results": [
+      {
+        "trial": 0,
+        "kind": "streaming",
+        "token": "1ia3vt3",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "duplicate",
+        "token": "5m8bor",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.09999990463257
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 169.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "unicode",
+        "token": "14etx1i",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 173.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "moved",
+        "token": "1wwndz0",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 170.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "replaced",
+        "token": "18i13h3",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 169.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "removed",
+        "token": "1hwfyu3",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "edited",
+        "token": "c7ugsb",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 0,
+        "kind": "markup",
+        "token": "1amqex4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "streaming",
+        "token": "19rghpv",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "duplicate",
+        "token": "1old9tb",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "unicode",
+        "token": "12ois9s",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "moved",
+        "token": "1hkazou",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 171.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "replaced",
+        "token": "21lvtm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "removed",
+        "token": "1nh9u00",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 172.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 159.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "edited",
+        "token": "aqlth9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167
+          },
+          {
+            "status": "missing",
+            "latencyMs": 159.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "kind": "markup",
+        "token": "mck8sg",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 159.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "streaming",
+        "token": "cr7nee",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "duplicate",
+        "token": "1iu77sp",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.40000009536743
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "unicode",
+        "token": "11fxbw8",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "moved",
+        "token": "69bwaf",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "replaced",
+        "token": "1y3pbib",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "removed",
+        "token": "15q7cug",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "missing",
+            "latencyMs": 170.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.60000038146973
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "edited",
+        "token": "kni31x",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 160.2999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "kind": "markup",
+        "token": "xg3rwt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 164.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 170.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "streaming",
+        "token": "1s9en23",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "duplicate",
+        "token": "pz9c5",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 29,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 167.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 29,
+            "latencyMs": 167.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "unicode",
+        "token": "b1uno9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "moved",
+        "token": "l4ev7a",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "replaced",
+        "token": "1tjx029",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "removed",
+        "token": "vckukp",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.39999961853027
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "edited",
+        "token": "6kdcmj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "kind": "markup",
+        "token": "tv0rd9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "streaming",
+        "token": "1pbtg3w",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "duplicate",
+        "token": "nfjaer",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "unicode",
+        "token": "8neb9p",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "moved",
+        "token": "yjcjcz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.39999961853027
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "replaced",
+        "token": "sdis0v",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 162.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "removed",
+        "token": "1ktw9u0",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.2000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "edited",
+        "token": "m0wqy5",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 160.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 4,
+        "kind": "markup",
+        "token": "dazeij",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "streaming",
+        "token": "1ylfik7",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "duplicate",
+        "token": "14m9egb",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "unicode",
+        "token": "1je11vz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "moved",
+        "token": "3ss6ar",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 170.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 167.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "replaced",
+        "token": "1mhrz79",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "removed",
+        "token": "188j3z6",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.2999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 159.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 159
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "edited",
+        "token": "1r3dcez",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 5,
+        "kind": "markup",
+        "token": "1re8ml4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 173.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "streaming",
+        "token": "q67szy",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "duplicate",
+        "token": "730d5b",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.09999990463257
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 167.60000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 182.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "unicode",
+        "token": "pddl90",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 161.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "moved",
+        "token": "ou7ssx",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "replaced",
+        "token": "1yhbr1m",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "removed",
+        "token": "fs8qde",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 170.40000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 164.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "edited",
+        "token": "1wnq5bf",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.19999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.10000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 164.39999961853027
+          }
+        ]
+      },
+      {
+        "trial": 6,
+        "kind": "markup",
+        "token": "1xyylg4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "streaming",
+        "token": "mw2vk2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "duplicate",
+        "token": "7i7b0m",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 162.69999980926514
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 169.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "unicode",
+        "token": "1p72azc",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "moved",
+        "token": "1vdcj8u",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "replaced",
+        "token": "q593nj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 159.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "removed",
+        "token": "1uev01l",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "edited",
+        "token": "1ysub0r",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 7,
+        "kind": "markup",
+        "token": "11ks4g9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "streaming",
+        "token": "17hykoq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "duplicate",
+        "token": "1nvu36j",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 168.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "unicode",
+        "token": "zt6h6j",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 173.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "moved",
+        "token": "1gt3wo4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 161
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 159.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "replaced",
+        "token": "kj6f27",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 164.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "removed",
+        "token": "mv0mt0",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "edited",
+        "token": "15pna2p",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 8,
+        "kind": "markup",
+        "token": "1manlkn",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 158.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "streaming",
+        "token": "1t4ttl2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "duplicate",
+        "token": "1pd7m89",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "unicode",
+        "token": "1fafgnc",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 165.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "moved",
+        "token": "ympiec",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "replaced",
+        "token": "2n1zp",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 29,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 29,
+            "latencyMs": 167.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "removed",
+        "token": "1mauesp",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "edited",
+        "token": "5d5f4w",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 9,
+        "kind": "markup",
+        "token": "li59np",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "streaming",
+        "token": "ywaz9g",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "duplicate",
+        "token": "15pdtbq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.30000019073486
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "unicode",
+        "token": "1lguzne",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 199.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 163.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "moved",
+        "token": "x494i2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 168.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "replaced",
+        "token": "10npmc4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 200.5
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "removed",
+        "token": "1l6npb2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.89999961853027
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "edited",
+        "token": "13sss6n",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 10,
+        "kind": "markup",
+        "token": "5wwyjx",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "streaming",
+        "token": "1q5nya6",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "duplicate",
+        "token": "1n2ye3s",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 164.09999990463257
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "unicode",
+        "token": "189a0pt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 161.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "moved",
+        "token": "1g96w4z",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 170.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "replaced",
+        "token": "csr8lm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 176.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "removed",
+        "token": "gy3w66",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 168.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "edited",
+        "token": "135ckb1",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 169.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 11,
+        "kind": "markup",
+        "token": "spt231",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "streaming",
+        "token": "12gsdzj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "duplicate",
+        "token": "1xhwrnm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.09999990463257
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "unicode",
+        "token": "wvi3qm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "moved",
+        "token": "lcm6dx",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "replaced",
+        "token": "1bxpi4x",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "removed",
+        "token": "18kg9cy",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 158.7999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "edited",
+        "token": "1r737b8",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 12,
+        "kind": "markup",
+        "token": "dlwo22",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "streaming",
+        "token": "1243zhj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 175.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "duplicate",
+        "token": "1pdq8sv",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 169.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.60000038146973
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "unicode",
+        "token": "19j238z",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "moved",
+        "token": "1hmp7on",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "replaced",
+        "token": "c0edm9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "removed",
+        "token": "1l851zm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "edited",
+        "token": "xcys60",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.39999961853027
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 13,
+        "kind": "markup",
+        "token": "1pex60k",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "streaming",
+        "token": "1u2m9g7",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "duplicate",
+        "token": "12mlrg2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "unicode",
+        "token": "1ark2sq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "moved",
+        "token": "f5i2wd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 168.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "replaced",
+        "token": "1v2a9mp",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "removed",
+        "token": "pxopfw",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "edited",
+        "token": "1ej2sss",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.19999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 168.60000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 14,
+        "kind": "markup",
+        "token": "4bsljq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 159.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "streaming",
+        "token": "tilmjn",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "duplicate",
+        "token": "9mc9qd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 167.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 161.10000038146973
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "unicode",
+        "token": "19rjtsn",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 167.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "moved",
+        "token": "15dw5ie",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "replaced",
+        "token": "t6of5o",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "removed",
+        "token": "kga3fk",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "edited",
+        "token": "zso485",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 15,
+        "kind": "markup",
+        "token": "2xnssy",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.60000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "streaming",
+        "token": "10xi8vn",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "duplicate",
+        "token": "al7hug",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "unicode",
+        "token": "4qmqal",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.89999961853027
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "moved",
+        "token": "1vdt3z2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "replaced",
+        "token": "1ft52hi",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 158.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "removed",
+        "token": "1l8as6f",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 169.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "edited",
+        "token": "112d1jo",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.60000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 16,
+        "kind": "markup",
+        "token": "3kw3xq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "streaming",
+        "token": "cvkuzd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "duplicate",
+        "token": "1qhmyxs",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 168
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "unicode",
+        "token": "dwrr71",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.2000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "moved",
+        "token": "1soe6ai",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "replaced",
+        "token": "e3sggy",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 164
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 163.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "removed",
+        "token": "1pnxtfj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 169.5
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 168.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "edited",
+        "token": "1dmcuqr",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 163
+          }
+        ]
+      },
+      {
+        "trial": 17,
+        "kind": "markup",
+        "token": "1a7cigy",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "streaming",
+        "token": "1l5zemh",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "duplicate",
+        "token": "106cwk6",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.40000009536743
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 168.39999961853027
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 179.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "unicode",
+        "token": "16o8poa",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 167.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "moved",
+        "token": "1svzs5f",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 170.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 162.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "replaced",
+        "token": "1bsl5ah",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "removed",
+        "token": "a6pbop",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "edited",
+        "token": "18sv278",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 167
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 18,
+        "kind": "markup",
+        "token": "1lzs7ox",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "streaming",
+        "token": "5umjzw",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "duplicate",
+        "token": "1uxhy2k",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "unicode",
+        "token": "1uwuoqj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 162
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.89999961853027
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "moved",
+        "token": "1ptsu5g",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 167.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "replaced",
+        "token": "1yf8bes",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "removed",
+        "token": "t8kqgf",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.2000002861023
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 167.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "edited",
+        "token": "epw041",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.30000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.39999961853027
+          }
+        ]
+      },
+      {
+        "trial": 19,
+        "kind": "markup",
+        "token": "1yh2vke",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "streaming",
+        "token": "1hwide9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "duplicate",
+        "token": "13kypfa",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.90000009536743
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 161.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "unicode",
+        "token": "jxjrpt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 176.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "moved",
+        "token": "ys10gr",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "replaced",
+        "token": "1aihhdq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "removed",
+        "token": "1ikxm0c",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.59999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "edited",
+        "token": "1nvu6kt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.10000038146973
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 187.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 20,
+        "kind": "markup",
+        "token": "kndzdk",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "streaming",
+        "token": "1xxfuki",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "duplicate",
+        "token": "uc9fnd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "unicode",
+        "token": "1dofmq",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "moved",
+        "token": "s6jdfg",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.39999961853027
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "replaced",
+        "token": "1rm1orj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.2000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "removed",
+        "token": "1f10vpj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.90000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.2000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 167
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "edited",
+        "token": "1qipnm3",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 21,
+        "kind": "markup",
+        "token": "15iulj2",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "streaming",
+        "token": "12pfecm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "duplicate",
+        "token": "1s39ryo",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "unicode",
+        "token": "1hm3akj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.2000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 165.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "moved",
+        "token": "bzgy4a",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "replaced",
+        "token": "v6sp94",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 159.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "removed",
+        "token": "go6nr5",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "edited",
+        "token": "c1jcra",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.7000002861023
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 22,
+        "kind": "markup",
+        "token": "1iwahr4",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "streaming",
+        "token": "1pr71ix",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "duplicate",
+        "token": "22eos7",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.69999980926514
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "unicode",
+        "token": "lesakh",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "moved",
+        "token": "he9m2k",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "replaced",
+        "token": "17vw7lm",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "removed",
+        "token": "1qmwsmw",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.2999997138977
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "edited",
+        "token": "14c2hjc",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.2999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 23,
+        "kind": "markup",
+        "token": "18toqdv",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 159.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "streaming",
+        "token": "lt4qkt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "duplicate",
+        "token": "17u48ug",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "unicode",
+        "token": "dgv4wa",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 169.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 166.60000038146973
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "moved",
+        "token": "kkkudj",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "replaced",
+        "token": "rg2l3t",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "removed",
+        "token": "157ese1",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 168
+          },
+          {
+            "status": "missing",
+            "latencyMs": 159.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "edited",
+        "token": "12eky7v",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 169
+          }
+        ]
+      },
+      {
+        "trial": 24,
+        "kind": "markup",
+        "token": "1ivvlil",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "streaming",
+        "token": "bytdzz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "duplicate",
+        "token": "3dyz8u",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 162.60000038146973
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "unicode",
+        "token": "1k9e7nu",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "moved",
+        "token": "1762124",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 160
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 160.39999961853027
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "replaced",
+        "token": "yyupmz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "removed",
+        "token": "imxgho",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "edited",
+        "token": "1ya2u1e",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 166.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 173
+          }
+        ]
+      },
+      {
+        "trial": 25,
+        "kind": "markup",
+        "token": "1bdfl3y",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "streaming",
+        "token": "1fui110",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "duplicate",
+        "token": "5o87b5",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 172.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "unicode",
+        "token": "muhbew",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 161.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 167.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "moved",
+        "token": "1ofuy8z",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.10000038146973
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "replaced",
+        "token": "1q7te3b",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 163.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "removed",
+        "token": "k513jk",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.30000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 170.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "edited",
+        "token": "70o13d",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.39999961853027
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 26,
+        "kind": "markup",
+        "token": "80uf9w",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.89999961853027
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.60000038146973
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "streaming",
+        "token": "16pnwjb",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 169.10000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "duplicate",
+        "token": "apr654",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.60000038146973
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 159.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "unicode",
+        "token": "1o8z8t6",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 38,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "moved",
+        "token": "mj2465",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "replaced",
+        "token": "5oyagd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "removed",
+        "token": "1j7wm6x",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "edited",
+        "token": "dqabwt",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.30000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          }
+        ]
+      },
+      {
+        "trial": 27,
+        "kind": "markup",
+        "token": "1gegljz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 162.60000038146973
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "streaming",
+        "token": "1k33uxs",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.30000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "duplicate",
+        "token": "1wozw6v",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.80000019073486
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "unicode",
+        "token": "nq0a92",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 166.7999997138977
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "moved",
+        "token": "ehn7l3",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "replaced",
+        "token": "brh5ux",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.09999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "removed",
+        "token": "gacej9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.10000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "edited",
+        "token": "ys566d",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.2999997138977
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.10000038146973
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 28,
+        "kind": "markup",
+        "token": "1ylz7cw",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 163.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "streaming",
+        "token": "1acvj95",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "duplicate",
+        "token": "1wno97n",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 164
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "unicode",
+        "token": "z6f068",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 168
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "moved",
+        "token": "fw4gem",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.5
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "replaced",
+        "token": "u5hx8t",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 168.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "removed",
+        "token": "1cvrcz",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.19999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 165.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "edited",
+        "token": "dkunv9",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 29,
+        "kind": "markup",
+        "token": "1jk3014",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "streaming",
+        "token": "hpwhhv",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "duplicate",
+        "token": "19zmbz8",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.40000009536743
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 165.5
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.89999961853027
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "unicode",
+        "token": "4ujuvd",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "moved",
+        "token": "k26i9x",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 169
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.09999990463257
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "replaced",
+        "token": "20je9v",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 164.40000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "removed",
+        "token": "1m7lor6",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.59999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.7999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.7000002861023
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "edited",
+        "token": "t50cpa",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.60000038146973
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.5
+          }
+        ]
+      },
+      {
+        "trial": 30,
+        "kind": "markup",
+        "token": "eam5w8",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.59999990463257
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166.40000009536743
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "streaming",
+        "token": "4k3dno",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 165.2999997138977
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "duplicate",
+        "token": "10eskx8",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165
+          },
+          {
+            "status": "ambiguous",
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 167.2000002861023
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "unicode",
+        "token": "xls35r",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 37,
+            "latencyMs": 165.30000019073486
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "moved",
+        "token": "1cr8zbi",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.7000002861023
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 43,
+            "latencyMs": 166.19999980926514
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "replaced",
+        "token": "177v3i",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 175.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 166
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "removed",
+        "token": "tfyv39",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 30,
+            "latencyMs": 167.40000009536743
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.69999980926514
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 42,
+            "latencyMs": 166.90000009536743
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "edited",
+        "token": "1hg6ccl",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 166.09999990463257
+          },
+          {
+            "status": "missing",
+            "latencyMs": 165.90000009536743
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.69999980926514
+          }
+        ]
+      },
+      {
+        "trial": 31,
+        "kind": "markup",
+        "token": "1a1fzh0",
+        "steps": [
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.80000019073486
+          },
+          {
+            "status": "uniquely reanchored",
+            "start": 31,
+            "latencyMs": 165.89999961853027
+          }
+        ]
+      }
+    ]
+  },
+  "sequenceMetrics": {
+    "async": {
+      "cancelledImports": 0,
+      "recoveries": 0,
+      "staleReads": 0,
+      "staleWrites": 0
+    },
+    "batches": 993,
+    "commits": 866,
+    "discarded": 0,
+    "epoch": 1250,
+    "failures": 0,
+    "indexAttempts": 866,
+    "inspectedRecords": 993,
+    "lastQuietToReadyMs": 156,
+    "lastUpdateMs": 156,
+    "limits": {
+      "attempts": 8,
+      "batches": 120,
+      "quietMs": 150,
+      "records": 1000,
+      "windowMs": 10000
+    },
+    "maxBatchRecords": 2,
+    "maxDiscoveryNodes": 81,
+    "maxIndexMs": 41.200000286102295,
+    "maxInspectedRecords": 1,
+    "maxUpdateMs": 274.69999980926514,
+    "maxVisitedNodes": 72,
+    "navigationAvailable": true,
+    "navigationEvents": 0,
+    "needsConfirmation": false,
+    "notifications": 1731,
+    "paused": false,
+    "records": 1025,
+    "session": 0,
+    "source": "http://127.0.0.1:43389/blank.html?dynamic",
+    "status": "ready",
+    "totalIndexMs": 849.099995136261
+  },
+  "selection": {
+    "selection": "Selection",
+    "focused": true,
+    "tag": "uniquely reanchored"
+  },
+  "limits": {
+    "measurements": [
+      {
+        "name": "continuous streaming",
+        "pendingChecks": 35,
+        "nominalDurationMs": 1050,
+        "elapsedMs": 1073.8000001907349,
+        "indexAttempts": 1,
+        "quietToReadyMs": 150.69999980926514
+      },
+      {
+        "name": "1001-record overflow",
+        "maxBatchRecords": 1001,
+        "inspectedDelta": 0,
+        "paused": true
+      },
+      {
+        "name": "125 small mutation batches",
+        "paused": true
+      },
+      {
+        "name": "index rate budget",
+        "automaticAttempts": 7,
+        "paused": true
+      },
+      {
+        "name": "busy marker",
+        "status": "incomplete"
+      },
+      {
+        "name": "editable root",
+        "status": "incomplete"
+      },
+      {
+        "name": "hidden root",
+        "status": "incomplete"
+      },
+      {
+        "name": "missing root",
+        "status": "incomplete"
+      },
+      {
+        "name": "multiple roots",
+        "status": "incomplete"
+      },
+      {
+        "name": "normalized text bound",
+        "status": "incomplete"
+      },
+      {
+        "name": "raw text bound",
+        "status": "incomplete"
+      },
+      {
+        "name": "visited node bound",
+        "status": "incomplete"
+      },
+      {
+        "name": "depth bound",
+        "status": "incomplete"
+      },
+      {
+        "name": "discovery bound",
+        "status": "incomplete"
+      },
+      {
+        "name": "automatic incomplete and removed-root recovery",
+        "status": "exact"
+      },
+      {
+        "name": "unsupported URL identity",
+        "status": "incomplete"
+      },
+      {
+        "name": "normalization and identical replacement",
+        "status": "exact"
+      },
+      {
+        "name": "failed edit during automatic updates and cancellation",
+        "storedNotesUnchanged": true
+      },
+      {
+        "name": "mutation during fingerprint",
+        "discarded": 1,
+        "status": "missing"
+      },
+      {
+        "name": "1000-paragraph workload",
+        "mutations": 5,
+        "latenciesMs": [
+          198.43595299997833,
+          192.0651899999939,
+          197.17065799998818,
+          185.4829000000027,
+          184.34183400002075
+        ],
+        "indexAttempts": 5,
+        "commits": 5,
+        "maxVisitedNodes": 2007,
+        "maxDiscoveryNodes": 2016,
+        "meanIndexMs": 30.60000009536743,
+        "lifetimeMaxIndexMsIncludingFaultDelay": 293.7000002861023,
+        "domElements": 1003,
+        "mountedRows": 1,
+        "panelElements": 54
+      }
+    ],
+    "finalMetrics": {
+      "async": {
+        "cancelledImports": 0,
+        "recoveries": 0,
+        "staleReads": 0,
+        "staleWrites": 0
+      },
+      "batches": 1209,
+      "commits": 907,
+      "discarded": 1,
+      "epoch": 1498,
+      "failures": 14,
+      "indexAttempts": 922,
+      "inspectedRecords": 1202,
+      "lastQuietToReadyMs": 185.90000009536743,
+      "lastUpdateMs": 185.90000009536743,
+      "limits": {
+        "attempts": 8,
+        "batches": 120,
+        "quietMs": 150,
+        "records": 1000,
+        "windowMs": 10000
+      },
+      "maxBatchRecords": 1001,
+      "maxDiscoveryNodes": 2017,
+      "maxIndexMs": 293.7000002861023,
+      "maxInspectedRecords": 2,
+      "maxUpdateMs": 1193.8999996185303,
+      "maxVisitedNodes": 2008,
+      "navigationAvailable": true,
+      "navigationEvents": 4,
+      "needsConfirmation": false,
+      "notifications": 1846,
+      "paused": false,
+      "records": 2400,
+      "session": 4,
+      "source": "http://127.0.0.1:43389/blank.html?dynamic",
+      "status": "ready",
+      "totalIndexMs": 2051.4999947547913
+    }
+  }
+}

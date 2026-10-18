@@ -4,15 +4,17 @@ import {readFile,mkdtemp,mkdir,rm,writeFile} from 'node:fs/promises';
 import {existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
+import {draftBrowserSuite} from './drafts-browser.mjs';
 import {mutationSuite} from './mutations.mjs';
 import {dynamicSuite} from './dynamic.mjs';
 import {navigationSuite,navigationImport} from './navigation.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 if(!process.env.PLAYWRIGHT_BROWSERS_PATH && existsSync('/tmp/margin-browsers'))process.env.PLAYWRIGHT_BROWSERS_PATH='/tmp/margin-browsers';
 const {chromium}=await import('playwright');
-export async function browserSuite({navigationOnly=false}={}) {
+export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
   const start=performance.now(),scratch=await mkdtemp(path.join(tmpdir(),'margin-verify-'));
   const checks=[],contexts=[],errors=[],network={pageBlocked:0,proxyBlocked:0};
+  async function deadline(work,label,ms=15000) {let timer;try{return await Promise.race([work,new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error(label+' timed out')),ms);})]);}finally{clearTimeout(timer);}}
   const check=description=>{checks.push(description);console.log('PASS '+description);};
   const server=createServer(async(req,res)=>{
     const file=new URL(req.url,'http://localhost').pathname;
@@ -21,20 +23,22 @@ export async function browserSuite({navigationOnly=false}={}) {
     res.end(file==='/blank.html'?'<!doctype html><html><body><main>blank</main></body></html>':await readFile(path.join(root,'fixtures',file.slice(1))));
   });
   const proxy=createServer((_req,res)=>{network.proxyBlocked++;res.writeHead(403);res.end('External networking disabled by verification harness.');});
-  proxy.on('connect',(_req,socket)=>{network.proxyBlocked++;socket.end('HTTP/1.1 403 Forbidden\r\n\r\n');});
+  proxy.on('connect',(_req,socket)=>{socket.on('error',()=>{});network.proxyBlocked++;socket.end('HTTP/1.1 403 Forbidden\r\n\r\n');});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));await new Promise(resolve=>proxy.listen(0,'127.0.0.1',resolve));
   const origin=`http://127.0.0.1:${server.address().port}`;
   const env={...process.env,XDG_CONFIG_HOME:path.join(scratch,'config'),XDG_CACHE_HOME:path.join(scratch,'cache')};
   await mkdir(env.XDG_CONFIG_HOME);await mkdir(env.XDG_CACHE_HOME);
   async function launch(name) {
     const extension=path.join(root,'extension');
-    const context=await chromium.launchPersistentContext(path.join(scratch,name),{channel:'chromium',headless:true,viewport:{width:1280,height:900},env,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--enable-unsafe-extension-debugging','--renderer-process-limit=3',`--proxy-server=http://127.0.0.1:${proxy.address().port}`,'--proxy-bypass-list=127.0.0.1','--disable-quic','--force-webrtc-ip-handling-policy=disable_non_proxied_udp']});
+    const context=await chromium.launchPersistentContext(path.join(scratch,name),{channel:'chromium',headless:true,timeout:30000,viewport:{width:1280,height:900},env,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--enable-unsafe-extension-debugging','--renderer-process-limit=2','--num-raster-threads=1',`--proxy-server=http://127.0.0.1:${proxy.address().port}`,'--proxy-bypass-list=127.0.0.1','--disable-quic','--force-webrtc-ip-handling-policy=disable_non_proxied_udp']});
     contexts.push(context);
     await context.route('**/*',route=>{const url=new URL(route.request().url());if(url.origin===origin || ['chrome-extension:','data:','blob:'].includes(url.protocol))return route.continue();network.pageBlocked++;return route.abort('blockedbyclient');});
     context.setDefaultTimeout(10000);
+    const nativeNewPage=context.newPage.bind(context);context.newPage=(...args)=>deadline(nativeNewPage(...args),'New browser page');
     context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
     const worker=context.serviceWorkers()[0]||await context.waitForEvent('serviceworker');
-    const browserCDP=await context.browser().newBrowserCDPSession();
+    const nativeEvaluate=worker.evaluate.bind(worker);worker.evaluate=(...args)=>deadline(nativeEvaluate(...args),'Worker evaluation');
+    const browserCDP=await deadline(context.browser().newBrowserCDPSession(),'Browser CDP session');
     async function activate(page) {
       // A serviceworker event announces creation, not completion of its script.
       // Wait for the real action listener before issuing the experimental CDP action.
@@ -60,7 +64,7 @@ export async function browserSuite({navigationOnly=false}={}) {
   const panel=p=>p.locator('#conversation-margin-notes-panel');
   const item=p=>panel(p).locator('article');
   const status=p=>panel(p).locator('#status');
-  async function message(p,pattern) {await panel(p).locator('#status, #anchors').filter({hasText:pattern}).first().waitFor({timeout:10000});}
+  async function message(p,pattern) {try{await panel(p).locator('#status, #anchors').filter({hasText:pattern}).first().waitFor({timeout:10000});}catch(e){throw new Error(`${e.message} Panel: ${await panel(p).locator('#status, #persistence').allTextContents()}`);}}
   async function select(p,id,start=0,end=null) {
     await p.evaluate(({id,start,end})=>{const n=document.getElementById(id).firstChild;const r=document.createRange();r.setStart(n,start);r.setEnd(n,end??n.length);const s=getSelection();s.removeAllRanges();s.addRange(r);},{id,start,end});
     await panel(p).getByRole('button',{name:'Annotate selection',exact:true}).click();
@@ -72,6 +76,7 @@ export async function browserSuite({navigationOnly=false}={}) {
   async function upload(p,text) {await panel(p).locator('#file').setInputFiles({name:'notes.json',mimeType:'application/json',buffer:Buffer.from(text)});}
   async function stored(worker) {return worker.evaluate(async()=> (await chrome.storage.local.get('notebook')).notebook);}
   try {
+    if(draftsOnly)return await draftBrowserSuite({launch,origin,panel,select,create,refresh,stored,download,upload});
     const first=await launch('first');const {context,worker,activate}=first;const p=await context.newPage();
     await p.goto(origin+'/conversation.html');assert.equal(await panel(p).count(),0);assert.equal(await stored(worker),undefined);
     const manifest=await worker.evaluate(()=>chrome.runtime.getManifest());assert.deepEqual(manifest.permissions,['activeTab','scripting','storage']);assert(!manifest.host_permissions && !manifest.content_scripts);check('No page injection or storage before explicit activation; minimal permissions');
@@ -152,7 +157,7 @@ export async function browserSuite({navigationOnly=false}={}) {
     // Multi-tab optimistic concurrency: two genuine panels share one worker queue.
     await p2.goto(origin+'/conversation.html?tab=second');await second.activate(p2);await create(p2,'unique','Tab two');
     const p3=await second.context.newPage();await p3.goto(origin+'/conversation.html?tab=third');await second.activate(p3);await select(p2,'ending');await panel(p2).getByLabel('Your note',{exact:true}).fill('Retained concurrent draft');
-    await create(p3,'opening','Concurrent committed note');const concurrent=await stored(second.worker);await panel(p2).getByRole('button',{name:'Save note',exact:true}).click();await message(p2,/another tab/);assert.deepEqual(await stored(second.worker),concurrent);assert.equal(await panel(p2).getByLabel('Your note',{exact:true}).inputValue(),'Retained concurrent draft');await refresh(p2);await panel(p2).getByRole('button',{name:'Save note',exact:true}).click();await message(p2,/Note saved/);check('Concurrent tab conflict retains draft; refresh and retry succeeds');
+    await create(p3,'opening','Concurrent committed note');const concurrent=await stored(second.worker);await panel(p2).getByRole('button',{name:'Save note',exact:true}).click();await message(p2,/another tab/);assert.deepEqual(await stored(second.worker),concurrent);assert.equal(await panel(p2).getByLabel('Your note',{exact:true}).inputValue(),'Retained concurrent draft');await refresh(p2);assert(await panel(p2).locator('#save').isDisabled());await panel(p2).locator('#separate').click();await message(p2,/Separate draft persisted/);await panel(p2).getByRole('button',{name:'Save note',exact:true}).click();await message(p2,/Note saved/);check('Concurrent tab conflict retains draft; refresh cannot bypass base revision; explicit separate note succeeds');
     // Exercise a full notebook through real import and bounded UI pagination.
     await p2.goto(origin+'/conversation.html');await second.activate(p2);let current=await stored(second.worker);const base=JSON.parse(exported).notes[0];const many={version:1,notes:[]};
     for(let i=0;i<500-current.data.notes.length;i++)many.notes.push({...base,id:`11111111-1111-4111-8111-${String(i).padStart(12,'0')}`,body:`Capacity note ${i}`});
@@ -172,7 +177,9 @@ export async function browserSuite({navigationOnly=false}={}) {
     // Delete persists, with explicit confirmation and keyboard activation.
     await panel(p2).getByLabel('Show notes',{exact:true}).selectOption('current');
     const deleteTarget=item(p2).first();const deletedID=await deleteTarget.getAttribute('data-note-id');await deleteTarget.getByRole('button',{name:'Delete',exact:true}).click();await deleteTarget.getByRole('button',{name:'Confirm delete',exact:true}).focus();await p2.keyboard.press('Enter');await message(p2,/Note deleted/);assert(!(await stored(second.worker)).data.notes.some(n=>n.id===deletedID));check('Confirmed keyboard deletion persists');
+    await second.context.close();
+    const drafts=await draftBrowserSuite({launch,origin,panel,select,create,refresh,stored,download,upload});
     assert.deepEqual(errors,[],'no uncaught page errors');
-    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements,fullNotebookUpdateMs},mutations,dynamic,navigation};
+    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements,fullNotebookUpdateMs},mutations,dynamic,navigation,drafts};
   } finally {for(const c of contexts)await c.close();await new Promise(resolve=>server.close(resolve));await new Promise(resolve=>proxy.close(resolve));await rm(scratch,{recursive:true,force:true});}
 }

@@ -1,23 +1,26 @@
-✔ Unicode offsets, context, digest and normalization (11.000654ms)
-✔ conservative anchoring: changed duplicates never use position or context to guess (3.537456ms)
-✔ deterministic portable envelope and atomic duplicate policy (4.918118ms)
-✔ malformed imports rejected in full (30.11821ms)
-✔ 500-note capacity, 2 MiB limit and hostile text remain data (230.261021ms)
-✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.184192ms)
-ℹ tests 6
+✔ Unicode offsets, context, digest and normalization (12.078777ms)
+✔ conservative anchoring: changed duplicates never use position or context to guess (3.70621ms)
+✔ deterministic portable envelope and atomic duplicate policy (5.520177ms)
+✔ malformed imports rejected in full (29.556495ms)
+✔ 500-note capacity, 2 MiB limit and hostile text remain data (241.743202ms)
+✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.026229ms)
+✔ draft versions reject stale writes, stale discard, identity changes and deleted records (15.580545ms)
+✔ draft bounds never evict records; Unicode, schema and note format are validated (197.950539ms)
+✔ base revision survives refresh; conflicts and exact already-saved content are distinct (1.024153ms)
+✔ coalesced writer acknowledges only its snapshot, retries failures and stops before discard (12.649483ms)
+ℹ tests 10
 ℹ suites 0
-ℹ pass 6
+ℹ pass 10
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 487.013106
+ℹ duration_ms 856.477771
 
-Browser checks: 24 passed
-Chromium: 156.0.8078.4
-Mutation cases: 280
-Installed navigation sequences: 256
-Installed dynamic sequences: 256
-Intermediate anchor checks: 608
-DOM negatives: 10
-Runtime: 310649 ms
+FAIL: Error: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#conversation-margin-notes-panel') to be visible
+ Action diagnostics: [{"title":"Open Margin Notes"},{"url":"http://127.0.0.1:36603/conversation.html","title":"Open Margin Notes"},{"title":"Open Margin Notes"},{"url":"http://127.0.0.1:36603/blank.html?dynamic","title":"Open Margin Notes"},{"url":"http://127.0.0.1:36603/dynamic.html","title":"Cannot open Margin Notes: Cannot access contents of the page. Extension manifest must request permission to access the respective host."}]
+    at activate (file:///var/lib/dailybuilder/projects/conversation-margin-notes/tests/browser.mjs:58:15)
+    at async browserSuite (file:///var/lib/dailybuilder/projects/conversation-margin-notes/tests/browser.mjs:140:133)
+    at async file:///var/lib/dailybuilder/projects/conversation-margin-notes/tests/verify.mjs:13:68

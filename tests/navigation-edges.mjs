@@ -11,7 +11,7 @@ export async function navigationEdges({page,worker,panel,ready,refresh,stored,ur
     assert.equal(await panel.locator('article').count(),0);assert(await panel.locator('#save').isDisabled());
   }
   async function delayWrite(fail=false) {
-    await worker.evaluate(fail=>{globalThis.edgeSet=chrome.storage.local.set.bind(chrome.storage.local);globalThis.edgeWrite=false;chrome.storage.local.set=async(...args)=>{globalThis.edgeWrite=true;await new Promise(r=>setTimeout(r,250));if(fail)throw new Error('Delayed navigation write failure');return edgeSet(...args);};},fail);
+    await worker.evaluate(fail=>{globalThis.edgeSet=chrome.storage.local.set.bind(chrome.storage.local);globalThis.edgeWrite=false;chrome.storage.local.set=async(...args)=>{if(!args[0].notebook)return edgeSet(...args);globalThis.edgeWrite=true;await new Promise(r=>setTimeout(r,250));if(fail)throw new Error('Delayed navigation write failure');return edgeSet(...args);};},fail);
   }
   async function restoreWrite() {await worker.evaluate(()=>{chrome.storage.local.set=globalThis.edgeSet;delete globalThis.edgeSet;});}
   await page.locator('#a').click();await ready();await refresh(page);
@@ -53,7 +53,9 @@ export async function navigationEdges({page,worker,panel,ready,refresh,stored,ur
   await panel.locator('#recover').click();await panel.locator('#status').filter({hasText:'Navigation read failure'}).waitFor();
   assert(await panel.locator('#save').isDisabled());assert.equal(await panel.locator('#body').inputValue(),'Read failure recovery draft');
   await worker.evaluate(()=>{chrome.storage.local.get=globalThis.edgeGet;delete globalThis.edgeGet;});
-  await refresh(page);await panel.locator('#recover').click();assert.equal(await panel.locator('#save').isDisabled(),false);
+  await refresh(page);await panel.locator('#recover').click();
+  await panel.locator('#status').filter({hasText:'Draft recovered on its original source'}).waitFor();
+  assert.equal(await panel.locator('#save').isDisabled(),false);
   await panel.locator('#cancel').click();assert.deepEqual(await stored(worker),beforeFailure);
   await refresh(page);
   results.push('Storage-read failure prevents draft recovery; explicit retry succeeds without writes');

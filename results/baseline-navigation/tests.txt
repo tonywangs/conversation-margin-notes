@@ -1,0 +1,23 @@
+✔ Unicode offsets, context, digest and normalization (11.000654ms)
+✔ conservative anchoring: changed duplicates never use position or context to guess (3.537456ms)
+✔ deterministic portable envelope and atomic duplicate policy (4.918118ms)
+✔ malformed imports rejected in full (30.11821ms)
+✔ 500-note capacity, 2 MiB limit and hostile text remain data (230.261021ms)
+✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.184192ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 487.013106
+
+Browser checks: 24 passed
+Chromium: 156.0.8078.4
+Mutation cases: 280
+Installed navigation sequences: 256
+Installed dynamic sequences: 256
+Intermediate anchor checks: 608
+DOM negatives: 10
+Runtime: 310649 ms

@@ -1,8 +1,8 @@
 {
-  "verified_at": "2026-10-18T04:37:58.024Z",
-  "runtime_ms": 310649,
+  "verified_at": "2026-10-18T22:11:05.128Z",
+  "runtime_ms": 372204,
   "node": "v24.20.0",
-  "unit_tests": 6,
+  "unit_tests": 10,
   "browser": "156.0.8078.4",
   "checks": [
     "No page injection or storage before explicit activation; minimal permissions",
@@ -26,21 +26,158 @@
     "Fresh-profile navigation import preserves both conversation identities and exact exported bytes",
     "Fresh-profile import and identical duplicate skipping",
     "Source mismatch diagnostics, no cross-source attachment",
-    "Concurrent tab conflict retains draft; refresh and retry succeeds",
+    "Concurrent tab conflict retains draft; refresh cannot bypass base revision; explicit separate note succeeds",
     "500 notes reachable across 25 pages; 20 mounted rows/highlights; capacity rejection",
     "Confirmed keyboard deletion persists"
   ],
   "network": {
     "pageBlocked": 2,
-    "proxyBlocked": 1127
+    "proxyBlocked": 1211
   },
   "dom": {
     "maxMountedRows": 20,
-    "maxPanelElements": 209,
+    "maxPanelElements": 228,
     "maxHighlights": 20,
     "reachableNotes": 500,
     "fixtureElements": 20,
-    "fullNotebookUpdateMs": 160.8984969999874
+    "fullNotebookUpdateMs": 170.35395199997583
+  },
+  "drafts_summary": {
+    "modelCases": 320,
+    "seed": 3568267528,
+    "counts": {
+      "edit": 2038,
+      "ack": 2233,
+      "delayedAck": 320,
+      "failure": 842,
+      "navigation": 320,
+      "reload": 320,
+      "recovery": 320,
+      "conflict": 160,
+      "discard": 160,
+      "save": 160,
+      "staleWriter": 320
+    },
+    "browser": {
+      "checks": [
+        "Native storage → reload → fresh browser-process restart → source-locked keyboard recovery → save → portable export",
+        "Delayed native draft acknowledgment coalesces newer input; explicit discard waits for the writer",
+        "Discard during an in-flight native write waits for its acknowledgment and cannot resurrect on reload",
+        "Navigation during native persistence retains original identity and requires explicit recovery after reload",
+        "Concurrent recovery uses draft versions; losing edits export, stale discard cannot delete winning text",
+        "Refresh and restart cannot rebase stale edits; separate-note recovery preserves newer notes; deleted notes stay deleted",
+        "Real local-storage quota exhaustion preserves saved notes and last acknowledged draft; pending text exports and retries",
+        "Failed recovery read leaves the composer closed and stored draft intact",
+        "Failed post-save cleanup retains a recovery copy and identifies already-saved content without duplication",
+        "32-draft bound rejects extra persistence without eviction; old drafts remain listed and usable at 320px",
+        "Recovered saved notes retain the existing portable notebook format in a fresh profile"
+      ],
+      "latency_ms": [
+        379.10810299997684,
+        819.3118900000118,
+        814.9278160000104,
+        382.77445600001374,
+        873.267807999975,
+        884.8465629999992,
+        811.4239349999698,
+        838.7057900000364,
+        385.9116829999839
+      ],
+      "writer_samples": [
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 306.30000019073486,
+          "lastWriteMs": 5.400000095367432,
+          "maxWriteMs": 5.400000095367432,
+          "totalWriteMs": 5.400000095367432,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 306.2999997138977,
+          "lastWriteMs": 5.5,
+          "maxWriteMs": 5.5,
+          "totalWriteMs": 5.5,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 306.2000002861023,
+          "lastWriteMs": 5.700000286102295,
+          "maxWriteMs": 5.700000286102295,
+          "totalWriteMs": 5.700000286102295,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 305.80000019073486,
+          "lastWriteMs": 5,
+          "maxWriteMs": 5,
+          "totalWriteMs": 5,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 2,
+          "failures": 0,
+          "lastInputToAckMs": 305.5,
+          "lastWriteMs": 5.199999809265137,
+          "maxWriteMs": 5.199999809265137,
+          "totalWriteMs": 10.199999809265137,
+          "writes": 2
+        },
+        {
+          "acknowledgments": 2,
+          "failures": 0,
+          "lastInputToAckMs": 304.69999980926514,
+          "lastWriteMs": 4.300000190734863,
+          "maxWriteMs": 23.90000009536743,
+          "totalWriteMs": 28.200000286102295,
+          "writes": 2
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 308.90000009536743,
+          "lastWriteMs": 8.100000381469727,
+          "maxWriteMs": 8.100000381469727,
+          "totalWriteMs": 8.100000381469727,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 3,
+          "failures": 1,
+          "lastInputToAckMs": 307,
+          "lastWriteMs": 6.5,
+          "maxWriteMs": 8.100000381469727,
+          "totalWriteMs": 22.600000381469727,
+          "writes": 4
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 305.59999990463257,
+          "lastWriteMs": 4.900000095367432,
+          "maxWriteMs": 4.900000095367432,
+          "totalWriteMs": 4.900000095367432,
+          "writes": 1
+        }
+      ],
+      "metrics": {
+        "beforeRestartStorageBytes": 702,
+        "browser": "156.0.8078.4",
+        "capacityStorageBytes": 14709,
+        "finalStorageBytes": 15716
+      },
+      "limitations": [
+        "Synthetic bundled pages; no live provider or human screen-reader testing.",
+        "Latency includes debounce, IPC, native storage and Playwright scheduling.",
+        "Fresh-process restart is graceful; hardware crash durability is not tested."
+      ]
+    }
   },
   "navigation_summary": {
     "cases": 256,
@@ -85,14 +222,23 @@
         "staleWrites": 0
       },
       "batches": 935,
-      "commits": 840,
+      "commits": 838,
       "discarded": 0,
-      "epoch": 3420,
+      "drafts": {
+        "acknowledgments": 3,
+        "failures": 0,
+        "lastInputToAckMs": 305.30000019073486,
+        "lastWriteMs": 4.900000095367432,
+        "maxWriteMs": 16.09999990463257,
+        "totalWriteMs": 28.299999713897705,
+        "writes": 3
+      },
+      "epoch": 3448,
       "failures": 131,
-      "indexAttempts": 971,
+      "indexAttempts": 969,
       "inspectedRecords": 935,
-      "lastQuietToReadyMs": 154.90000009536743,
-      "lastUpdateMs": 155.80000019073486,
+      "lastQuietToReadyMs": 0.6000003814697266,
+      "lastUpdateMs": 35.10000038146973,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -102,37 +248,46 @@
       },
       "maxBatchRecords": 1,
       "maxDiscoveryNodes": 49,
-      "maxIndexMs": 60.30000019073486,
+      "maxIndexMs": 70.5,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 223.19999980926514,
+      "maxUpdateMs": 260.5,
       "maxVisitedNodes": 11,
       "navigationAvailable": true,
       "navigationEvents": 2164,
       "needsConfirmation": true,
-      "notifications": 1941,
+      "notifications": 1937,
       "paused": false,
       "records": 935,
       "session": 2197,
-      "source": "http://127.0.0.1:43389/navigation.html?conversation=A",
+      "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
       "status": "ready",
-      "totalIndexMs": 1117.400016784668
+      "totalIndexMs": 1450.9000053405762
     },
     "finalMetrics": {
       "async": {
         "cancelledImports": 1,
         "recoveries": 4,
         "staleReads": 32,
-        "staleWrites": 4
+        "staleWrites": 3
       },
       "batches": 1046,
-      "commits": 921,
+      "commits": 917,
       "discarded": 1,
-      "epoch": 4164,
-      "failures": 153,
-      "indexAttempts": 1075,
+      "drafts": {
+        "acknowledgments": 9,
+        "failures": 0,
+        "lastInputToAckMs": 187.59999990463257,
+        "lastWriteMs": 102,
+        "maxWriteMs": 102,
+        "totalWriteMs": 237.19999980926514,
+        "writes": 9
+      },
+      "epoch": 4192,
+      "failures": 150,
+      "indexAttempts": 1068,
       "inspectedRecords": 1046,
-      "lastQuietToReadyMs": 0.7000002861022949,
-      "lastUpdateMs": 0.7000002861022949,
+      "lastQuietToReadyMs": 0.7999997138977051,
+      "lastUpdateMs": 0.7999997138977051,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -142,24 +297,24 @@
       },
       "maxBatchRecords": 1,
       "maxDiscoveryNodes": 49,
-      "maxIndexMs": 253.69999980926514,
+      "maxIndexMs": 251.40000009536743,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 403.40000009536743,
+      "maxUpdateMs": 401.2000002861023,
       "maxVisitedNodes": 11,
       "navigationAvailable": true,
       "navigationEvents": 2734,
       "needsConfirmation": true,
-      "notifications": 2148,
+      "notifications": 2134,
       "paused": false,
       "records": 1046,
       "session": 2768,
-      "source": "http://127.0.0.1:43389/navigation.html?conversation=A",
+      "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
       "status": "ready",
-      "totalIndexMs": 1956.600016117096
+      "totalIndexMs": 2318.700008869171
     },
     "dom": {
       "mainElements": 3,
-      "panelElements": 54,
+      "panelElements": 65,
       "mountedRows": 1
     }
   },
@@ -187,12 +342,21 @@
       "batches": 993,
       "commits": 866,
       "discarded": 0,
+      "drafts": {
+        "acknowledgments": 2,
+        "failures": 0,
+        "lastInputToAckMs": 307.5,
+        "lastWriteMs": 6.800000190734863,
+        "maxWriteMs": 31.600000381469727,
+        "totalWriteMs": 38.40000057220459,
+        "writes": 2
+      },
       "epoch": 1250,
       "failures": 0,
       "indexAttempts": 866,
       "inspectedRecords": 993,
-      "lastQuietToReadyMs": 156,
-      "lastUpdateMs": 156,
+      "lastQuietToReadyMs": 155.19999980926514,
+      "lastUpdateMs": 155.19999980926514,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -202,9 +366,9 @@
       },
       "maxBatchRecords": 2,
       "maxDiscoveryNodes": 81,
-      "maxIndexMs": 41.200000286102295,
+      "maxIndexMs": 22.09999990463257,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 274.69999980926514,
+      "maxUpdateMs": 257.19999980926514,
       "maxVisitedNodes": 72,
       "navigationAvailable": true,
       "navigationEvents": 0,
@@ -213,9 +377,9 @@
       "paused": false,
       "records": 1025,
       "session": 0,
-      "source": "http://127.0.0.1:43389/blank.html?dynamic",
+      "source": "http://127.0.0.1:40583/blank.html?dynamic",
       "status": "ready",
-      "totalIndexMs": 849.099995136261
+      "totalIndexMs": 893.6000084877014
     },
     "limits": {
       "measurements": [
@@ -223,9 +387,9 @@
           "name": "continuous streaming",
           "pendingChecks": 35,
           "nominalDurationMs": 1050,
-          "elapsedMs": 1073.8000001907349,
+          "elapsedMs": 1068.7999997138977,
           "indexAttempts": 1,
-          "quietToReadyMs": 150.69999980926514
+          "quietToReadyMs": 150.7000002861023
         },
         {
           "name": "1001-record overflow",
@@ -307,21 +471,21 @@
           "name": "1000-paragraph workload",
           "mutations": 5,
           "latenciesMs": [
-            198.43595299997833,
-            192.0651899999939,
-            197.17065799998818,
-            185.4829000000027,
-            184.34183400002075
+            192.00115300004836,
+            180.3645200000028,
+            187.25381199998083,
+            177.3940189999994,
+            180.21310599998105
           ],
           "indexAttempts": 5,
           "commits": 5,
           "maxVisitedNodes": 2007,
           "maxDiscoveryNodes": 2016,
-          "meanIndexMs": 30.60000009536743,
-          "lifetimeMaxIndexMsIncludingFaultDelay": 293.7000002861023,
+          "meanIndexMs": 27.760000133514403,
+          "lifetimeMaxIndexMsIncludingFaultDelay": 252.39999961853027,
           "domElements": 1003,
           "mountedRows": 1,
-          "panelElements": 54
+          "panelElements": 65
         }
       ],
       "finalMetrics": {
@@ -334,12 +498,21 @@
         "batches": 1209,
         "commits": 907,
         "discarded": 1,
+        "drafts": {
+          "acknowledgments": 2,
+          "failures": 1,
+          "lastInputToAckMs": 307.5,
+          "lastWriteMs": 6.800000190734863,
+          "maxWriteMs": 31.600000381469727,
+          "totalWriteMs": 38.40000057220459,
+          "writes": 3
+        },
         "epoch": 1498,
         "failures": 14,
         "indexAttempts": 922,
         "inspectedRecords": 1202,
-        "lastQuietToReadyMs": 185.90000009536743,
-        "lastUpdateMs": 185.90000009536743,
+        "lastQuietToReadyMs": 176.40000009536743,
+        "lastUpdateMs": 176.40000009536743,
         "limits": {
           "attempts": 8,
           "batches": 120,
@@ -349,9 +522,9 @@
         },
         "maxBatchRecords": 1001,
         "maxDiscoveryNodes": 2017,
-        "maxIndexMs": 293.7000002861023,
+        "maxIndexMs": 252.39999961853027,
         "maxInspectedRecords": 2,
-        "maxUpdateMs": 1193.8999996185303,
+        "maxUpdateMs": 1188.9000000953674,
         "maxVisitedNodes": 2008,
         "navigationAvailable": true,
         "navigationEvents": 4,
@@ -360,9 +533,9 @@
         "paused": false,
         "records": 2400,
         "session": 4,
-        "source": "http://127.0.0.1:43389/blank.html?dynamic",
+        "source": "http://127.0.0.1:40583/blank.html?dynamic",
         "status": "ready",
-        "totalIndexMs": 2051.4999947547913
+        "totalIndexMs": 2002.3000102043152
       }
     }
   },
@@ -398,7 +571,7 @@
     ]
   },
   "artifacts": {
-    "extensionBytes": 44809,
+    "extensionBytes": 61683,
     "extensionFiles": [
       {
         "path": "extension/core.js",
@@ -409,12 +582,20 @@
         "bytes": 5370
       },
       {
+        "path": "extension/draft-writer.js",
+        "bytes": 2192
+      },
+      {
+        "path": "extension/drafts.js",
+        "bytes": 3776
+      },
+      {
         "path": "extension/manifest.json",
         "bytes": 477
       },
       {
         "path": "extension/panel.js",
-        "bytes": 20415
+        "bytes": 29541
       },
       {
         "path": "extension/tracker.js",
@@ -422,33 +603,38 @@
       },
       {
         "path": "extension/worker.js",
-        "bytes": 3671
+        "bytes": 5451
       }
     ],
-    "treeFiles": 44,
-    "treeBytes": 1128402,
+    "treeFiles": 60,
+    "treeBytes": 1852884,
     "note": "Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded."
   },
   "sha256": {
     "extension/core.js": "79047db79973f2e31baa4ebf2840488beec1593da84ab70b015df4a27efeebdf",
     "extension/dom.js": "611fc8bc0a10f2343ce63024e56d04a485b2d5996aa5fc226b2f8bd8c4cd1a99",
+    "extension/draft-writer.js": "ce4d982da7c7f06a6fb66f9993b26b22b5a33cd21c15c3884d6ffd19abc73053",
+    "extension/drafts.js": "9d589e6810d8d45f1c527349c11ac744ec602134ec9d5dd0d468135d3b998e59",
     "extension/manifest.json": "4b53d1b63f959c09342d4057ca6644c242b9858fa39f44feda1625e9b9562342",
-    "extension/panel.js": "aa53d39aa411deb58aa16caf881b9d44ddb87b17d332118bd0e06f1bc905a570",
+    "extension/panel.js": "f3272035498e1e315e1b23330456a494e2e0aaaed6055ecef8399f56e236a614",
     "extension/tracker.js": "c816a91dc2b1c08a5cce0bc5b9e2767f4eba7d6adc65c434c0bee4cc828cf543",
-    "extension/worker.js": "1a1c3d672184150fc494564ae68bd35262996bdabb594b00a5babd5aa241cf25",
+    "extension/worker.js": "18c52c37624cfc65e7a4b580df754241a69e249f7127a49c7029185d608f195d",
     "fixtures/conversation.html": "a6d9c9d266526d534d9e5e561b7084f610e0d61bfff3d384145029b69723a3d8",
     "fixtures/dynamic.html": "846f926be8d7e4f5924f7c6118c43de06eaf73dd9e43ce7c6eb7a37a1830240d",
     "fixtures/dynamic.js": "f43a5436f9f37495bc1ff7c81eaf4badd93d19a9543c9def758c6745e28cd508",
     "fixtures/navigation.html": "72542fdfa284cda4e89fe859e620d67b4d0e8ac84528b38df9ec95658534b1ff",
     "fixtures/navigation.js": "f8488b96870511e7d027d162694e8ae86c08f4a8727ab023232a38da3d4e1a15",
     "fixtures/second.html": "5a1a11848019de6b207738026daee106ea009afef856d701b6ab16f55925cf43",
-    "tests/browser.mjs": "e45c5e8e60209314a62253a5190de8fa01dd409bbd983bce244e8b1d4b6e1e7e",
+    "tests/browser.mjs": "d456dab08a1eb38ae3ec48c37154f2fe64e258c6c0d6a865991c5e456a8757c5",
     "tests/core.test.mjs": "78e34c70eb33ec37a9c8249a4364e3eb6b226a24eb94bd80c6ebb75ca1d74ab0",
+    "tests/drafts-browser.mjs": "c1c1e52ef936dc6c3894399086c32e979fe5a6b1817612475e45c48a11fa29b9",
+    "tests/drafts-model.mjs": "5f21e5e2a5251ba8532a12feb809fcfa1345627262b7f57e1266aa3603ff0850",
+    "tests/drafts.test.mjs": "2f2a88e696360b65a1313c9b8fc65e06d69e745b49a8a5cc499e4d28b5b0a243",
     "tests/dynamic-limits.mjs": "e812733edbb2650f4c7bd932ee98b96ccc7481750d28c51aaadd8c57b768657e",
     "tests/dynamic.mjs": "f1dc52d761159be3080f30f5c9111c6456d578de9fb89d9d85ea32b8fefcfb3b",
     "tests/mutations.mjs": "c4f1d31a319a299bb6a41b04264513badf98ccbf53fd48ade6ab03fa4e9b1817",
-    "tests/navigation-edges.mjs": "0f2f45b04b3b214b27d5702cfe9a06bcc4ad9c0c71ba692f687c703241bf15ce",
-    "tests/navigation.mjs": "407835863167f32b437ffc91c811d953ba456da3a61da6e730ff8b8b24e6d858",
-    "tests/verify.mjs": "34387e09415e3ca6bb900e55dc1c5b24ce69e762f978d42965b0286c7f16e981"
+    "tests/navigation-edges.mjs": "026b651f40a4a31e3721623584245fa91af9e3dc257bf747ace10e3438333716",
+    "tests/navigation.mjs": "6da30965364db48bf09743c97c048365250c52a0bcf12ff0cd637fed1b51587e",
+    "tests/verify.mjs": "b8af673b734e0df98b546e65f225cc5e12af0da3938357560dce6829024f6ea1"
   }
 }
