@@ -177,6 +177,25 @@ Queued writes and delayed file reads are tested across page changes. A burst of
 notifications. Fresh-profile Chromium instances run serially to bound test-process
 resource use.
 
+A recorded verification failed to activate a second `dynamic.html`
+tab, reporting missing host access. A full baseline rerun passed, so this was not
+a consistently reproducible application failure. Inspection found that the action
+harness chose the first tab with a matching URL, which is ambiguous for duplicate
+pages. The harness now captures each new tab's DevTools target ID during serial
+page creation and waits for that tab's active selection before invoking the real
+toolbar action. It does not retry failed actions or grant host permissions.
+A regression opens two identical URLs, activates each independently, and verifies
+that the unactivated tab remains uninjected. This removes the known ambiguity;
+it does not establish the cause of every previous activation timeout or a zero
+flakiness rate. The pinned Chromium's experimental `embedderData.tabActive` field
+is required by this harness.
+
+The [Chromium action implementation](https://raw.githubusercontent.com/chromium/chromium/main/chrome/browser/devtools/protocol/extensions_handler.cc)
+requires a tab target and invokes its window's toolbar action. The harness thus
+checks both target identity and active selection. This follows Chrome's
+[activeTab model](https://developer.chrome.com/docs/extensions/develop/concepts/activeTab),
+where invoking the action grants temporary access to the selected tab.
+
 ## Persistent draft verification
 
 The same `npm run verify` command also runs four draft unit groups, 320 seeded

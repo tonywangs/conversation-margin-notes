@@ -1,12 +1,13 @@
 {
-  "verified_at": "2026-10-18T22:11:05.128Z",
-  "runtime_ms": 372204,
+  "verified_at": "2026-10-18T22:37:28.629Z",
+  "runtime_ms": 365711,
   "node": "v24.20.0",
   "unit_tests": 10,
   "browser": "156.0.8078.4",
   "checks": [
     "No page injection or storage before explicit activation; minimal permissions",
     "External page and worker HTTP(S) blocked",
+    "Same-URL tabs activate independently using captured tab identities and confirmed tab selection",
     "Real extension action → selection → persisted note with selector",
     "Edit, reload, explicit reactivation, persistence",
     "Keyboard passage navigation and CSS highlight",
@@ -32,15 +33,15 @@
   ],
   "network": {
     "pageBlocked": 2,
-    "proxyBlocked": 1211
+    "proxyBlocked": 1220
   },
   "dom": {
     "maxMountedRows": 20,
-    "maxPanelElements": 228,
+    "maxPanelElements": 229,
     "maxHighlights": 20,
     "reachableNotes": 500,
     "fixtureElements": 20,
-    "fullNotebookUpdateMs": 170.35395199997583
+    "fullNotebookUpdateMs": 208.5254839999834
   },
   "drafts_summary": {
     "modelCases": 320,
@@ -73,96 +74,96 @@
         "Recovered saved notes retain the existing portable notebook format in a fresh profile"
       ],
       "latency_ms": [
-        379.10810299997684,
-        819.3118900000118,
-        814.9278160000104,
-        382.77445600001374,
-        873.267807999975,
-        884.8465629999992,
-        811.4239349999698,
-        838.7057900000364,
-        385.9116829999839
+        406.53817099996377,
+        395.67333000001963,
+        350.6098629999906,
+        347.41372599999886,
+        350.4253650000319,
+        836.0506189999869,
+        820.0027479999699,
+        808.7990430000355,
+        815.1879930000287
       ],
       "writer_samples": [
         {
           "acknowledgments": 1,
           "failures": 0,
-          "lastInputToAckMs": 306.30000019073486,
-          "lastWriteMs": 5.400000095367432,
-          "maxWriteMs": 5.400000095367432,
-          "totalWriteMs": 5.400000095367432,
+          "lastInputToAckMs": 323.1000003814697,
+          "lastWriteMs": 22.200000286102295,
+          "maxWriteMs": 22.200000286102295,
+          "totalWriteMs": 22.200000286102295,
           "writes": 1
         },
         {
           "acknowledgments": 1,
           "failures": 0,
-          "lastInputToAckMs": 306.2999997138977,
-          "lastWriteMs": 5.5,
-          "maxWriteMs": 5.5,
-          "totalWriteMs": 5.5,
+          "lastInputToAckMs": 309.5,
+          "lastWriteMs": 8.800000190734863,
+          "maxWriteMs": 8.800000190734863,
+          "totalWriteMs": 8.800000190734863,
           "writes": 1
         },
         {
           "acknowledgments": 1,
-          "failures": 0,
-          "lastInputToAckMs": 306.2000002861023,
-          "lastWriteMs": 5.700000286102295,
-          "maxWriteMs": 5.700000286102295,
-          "totalWriteMs": 5.700000286102295,
-          "writes": 1
-        },
-        {
-          "acknowledgments": 1,
-          "failures": 0,
-          "lastInputToAckMs": 305.80000019073486,
-          "lastWriteMs": 5,
-          "maxWriteMs": 5,
-          "totalWriteMs": 5,
-          "writes": 1
-        },
-        {
-          "acknowledgments": 2,
           "failures": 0,
           "lastInputToAckMs": 305.5,
-          "lastWriteMs": 5.199999809265137,
-          "maxWriteMs": 5.199999809265137,
-          "totalWriteMs": 10.199999809265137,
+          "lastWriteMs": 4.900000095367432,
+          "maxWriteMs": 4.900000095367432,
+          "totalWriteMs": 4.900000095367432,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 1,
+          "failures": 0,
+          "lastInputToAckMs": 307.59999990463257,
+          "lastWriteMs": 7,
+          "maxWriteMs": 7,
+          "totalWriteMs": 7,
+          "writes": 1
+        },
+        {
+          "acknowledgments": 2,
+          "failures": 0,
+          "lastInputToAckMs": 306.09999990463257,
+          "lastWriteMs": 5.400000095367432,
+          "maxWriteMs": 7,
+          "totalWriteMs": 12.400000095367432,
           "writes": 2
         },
         {
           "acknowledgments": 2,
           "failures": 0,
-          "lastInputToAckMs": 304.69999980926514,
-          "lastWriteMs": 4.300000190734863,
-          "maxWriteMs": 23.90000009536743,
-          "totalWriteMs": 28.200000286102295,
+          "lastInputToAckMs": 315.09999990463257,
+          "lastWriteMs": 14.5,
+          "maxWriteMs": 14.5,
+          "totalWriteMs": 23.59999990463257,
           "writes": 2
         },
         {
           "acknowledgments": 1,
           "failures": 0,
-          "lastInputToAckMs": 308.90000009536743,
-          "lastWriteMs": 8.100000381469727,
-          "maxWriteMs": 8.100000381469727,
-          "totalWriteMs": 8.100000381469727,
+          "lastInputToAckMs": 306.30000019073486,
+          "lastWriteMs": 5.900000095367432,
+          "maxWriteMs": 5.900000095367432,
+          "totalWriteMs": 5.900000095367432,
           "writes": 1
         },
         {
           "acknowledgments": 3,
           "failures": 1,
-          "lastInputToAckMs": 307,
-          "lastWriteMs": 6.5,
-          "maxWriteMs": 8.100000381469727,
-          "totalWriteMs": 22.600000381469727,
+          "lastInputToAckMs": 305.19999980926514,
+          "lastWriteMs": 4.699999809265137,
+          "maxWriteMs": 9.799999713897705,
+          "totalWriteMs": 20.399999618530273,
           "writes": 4
         },
         {
           "acknowledgments": 1,
           "failures": 0,
-          "lastInputToAckMs": 305.59999990463257,
-          "lastWriteMs": 4.900000095367432,
-          "maxWriteMs": 4.900000095367432,
-          "totalWriteMs": 4.900000095367432,
+          "lastInputToAckMs": 308.5,
+          "lastWriteMs": 8,
+          "maxWriteMs": 8,
+          "totalWriteMs": 8,
           "writes": 1
         }
       ],
@@ -222,23 +223,23 @@
         "staleWrites": 0
       },
       "batches": 935,
-      "commits": 838,
+      "commits": 839,
       "discarded": 0,
       "drafts": {
         "acknowledgments": 3,
         "failures": 0,
-        "lastInputToAckMs": 305.30000019073486,
-        "lastWriteMs": 4.900000095367432,
-        "maxWriteMs": 16.09999990463257,
-        "totalWriteMs": 28.299999713897705,
+        "lastInputToAckMs": 327.5,
+        "lastWriteMs": 27.09999990463257,
+        "maxWriteMs": 38.59999990463257,
+        "totalWriteMs": 73.99999952316284,
         "writes": 3
       },
-      "epoch": 3448,
+      "epoch": 3451,
       "failures": 131,
-      "indexAttempts": 969,
+      "indexAttempts": 970,
       "inspectedRecords": 935,
-      "lastQuietToReadyMs": 0.6000003814697266,
-      "lastUpdateMs": 35.10000038146973,
+      "lastQuietToReadyMs": 1.0999999046325684,
+      "lastUpdateMs": 51.299999713897705,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -248,20 +249,20 @@
       },
       "maxBatchRecords": 1,
       "maxDiscoveryNodes": 49,
-      "maxIndexMs": 70.5,
+      "maxIndexMs": 59.90000009536743,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 260.5,
+      "maxUpdateMs": 207.09999990463257,
       "maxVisitedNodes": 11,
       "navigationAvailable": true,
       "navigationEvents": 2164,
       "needsConfirmation": true,
-      "notifications": 1937,
+      "notifications": 1939,
       "paused": false,
       "records": 935,
       "session": 2197,
-      "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
+      "source": "http://127.0.0.1:44745/navigation.html?conversation=A",
       "status": "ready",
-      "totalIndexMs": 1450.9000053405762
+      "totalIndexMs": 1305.999994277954
     },
     "finalMetrics": {
       "async": {
@@ -271,23 +272,23 @@
         "staleWrites": 3
       },
       "batches": 1046,
-      "commits": 917,
+      "commits": 921,
       "discarded": 1,
       "drafts": {
         "acknowledgments": 9,
         "failures": 0,
-        "lastInputToAckMs": 187.59999990463257,
-        "lastWriteMs": 102,
-        "maxWriteMs": 102,
-        "totalWriteMs": 237.19999980926514,
+        "lastInputToAckMs": 222.80000019073486,
+        "lastWriteMs": 161.40000009536743,
+        "maxWriteMs": 161.40000009536743,
+        "totalWriteMs": 331.5,
         "writes": 9
       },
-      "epoch": 4192,
-      "failures": 150,
-      "indexAttempts": 1068,
+      "epoch": 4195,
+      "failures": 154,
+      "indexAttempts": 1076,
       "inspectedRecords": 1046,
-      "lastQuietToReadyMs": 0.7999997138977051,
-      "lastUpdateMs": 0.7999997138977051,
+      "lastQuietToReadyMs": 0.6999998092651367,
+      "lastUpdateMs": 0.6999998092651367,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -297,20 +298,20 @@
       },
       "maxBatchRecords": 1,
       "maxDiscoveryNodes": 49,
-      "maxIndexMs": 251.40000009536743,
+      "maxIndexMs": 251.60000038146973,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 401.2000002861023,
+      "maxUpdateMs": 401.5,
       "maxVisitedNodes": 11,
       "navigationAvailable": true,
       "navigationEvents": 2734,
       "needsConfirmation": true,
-      "notifications": 2134,
+      "notifications": 2150,
       "paused": false,
       "records": 1046,
       "session": 2768,
-      "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
+      "source": "http://127.0.0.1:44745/navigation.html?conversation=A",
       "status": "ready",
-      "totalIndexMs": 2318.700008869171
+      "totalIndexMs": 2166.899992465973
     },
     "dom": {
       "mainElements": 3,
@@ -345,18 +346,18 @@
       "drafts": {
         "acknowledgments": 2,
         "failures": 0,
-        "lastInputToAckMs": 307.5,
-        "lastWriteMs": 6.800000190734863,
-        "maxWriteMs": 31.600000381469727,
-        "totalWriteMs": 38.40000057220459,
+        "lastInputToAckMs": 306.09999990463257,
+        "lastWriteMs": 5.800000190734863,
+        "maxWriteMs": 7.799999713897705,
+        "totalWriteMs": 13.599999904632568,
         "writes": 2
       },
       "epoch": 1250,
       "failures": 0,
       "indexAttempts": 866,
       "inspectedRecords": 993,
-      "lastQuietToReadyMs": 155.19999980926514,
-      "lastUpdateMs": 155.19999980926514,
+      "lastQuietToReadyMs": 156,
+      "lastUpdateMs": 156,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -366,9 +367,9 @@
       },
       "maxBatchRecords": 2,
       "maxDiscoveryNodes": 81,
-      "maxIndexMs": 22.09999990463257,
+      "maxIndexMs": 53.89999961853027,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 257.19999980926514,
+      "maxUpdateMs": 265.2000002861023,
       "maxVisitedNodes": 72,
       "navigationAvailable": true,
       "navigationEvents": 0,
@@ -377,9 +378,9 @@
       "paused": false,
       "records": 1025,
       "session": 0,
-      "source": "http://127.0.0.1:40583/blank.html?dynamic",
+      "source": "http://127.0.0.1:44745/blank.html?dynamic",
       "status": "ready",
-      "totalIndexMs": 893.6000084877014
+      "totalIndexMs": 1053.499993801117
     },
     "limits": {
       "measurements": [
@@ -387,9 +388,9 @@
           "name": "continuous streaming",
           "pendingChecks": 35,
           "nominalDurationMs": 1050,
-          "elapsedMs": 1068.7999997138977,
+          "elapsedMs": 1073.0999999046326,
           "indexAttempts": 1,
-          "quietToReadyMs": 150.7000002861023
+          "quietToReadyMs": 150.80000019073486
         },
         {
           "name": "1001-record overflow",
@@ -471,18 +472,18 @@
           "name": "1000-paragraph workload",
           "mutations": 5,
           "latenciesMs": [
-            192.00115300004836,
-            180.3645200000028,
-            187.25381199998083,
-            177.3940189999994,
-            180.21310599998105
+            185.42940000002272,
+            209.79459399997722,
+            212.90442900004564,
+            205.78433799999766,
+            181.32055900001433
           ],
           "indexAttempts": 5,
           "commits": 5,
           "maxVisitedNodes": 2007,
           "maxDiscoveryNodes": 2016,
-          "meanIndexMs": 27.760000133514403,
-          "lifetimeMaxIndexMsIncludingFaultDelay": 252.39999961853027,
+          "meanIndexMs": 33.519999980926514,
+          "lifetimeMaxIndexMsIncludingFaultDelay": 252,
           "domElements": 1003,
           "mountedRows": 1,
           "panelElements": 65
@@ -501,18 +502,18 @@
         "drafts": {
           "acknowledgments": 2,
           "failures": 1,
-          "lastInputToAckMs": 307.5,
-          "lastWriteMs": 6.800000190734863,
-          "maxWriteMs": 31.600000381469727,
-          "totalWriteMs": 38.40000057220459,
+          "lastInputToAckMs": 306.09999990463257,
+          "lastWriteMs": 5.800000190734863,
+          "maxWriteMs": 7.799999713897705,
+          "totalWriteMs": 13.599999904632568,
           "writes": 3
         },
         "epoch": 1498,
         "failures": 14,
         "indexAttempts": 922,
         "inspectedRecords": 1202,
-        "lastQuietToReadyMs": 176.40000009536743,
-        "lastUpdateMs": 176.40000009536743,
+        "lastQuietToReadyMs": 190.40000009536743,
+        "lastUpdateMs": 190.40000009536743,
         "limits": {
           "attempts": 8,
           "batches": 120,
@@ -522,9 +523,9 @@
         },
         "maxBatchRecords": 1001,
         "maxDiscoveryNodes": 2017,
-        "maxIndexMs": 252.39999961853027,
+        "maxIndexMs": 252,
         "maxInspectedRecords": 2,
-        "maxUpdateMs": 1188.9000000953674,
+        "maxUpdateMs": 1193.5,
         "maxVisitedNodes": 2008,
         "navigationAvailable": true,
         "navigationEvents": 4,
@@ -533,9 +534,9 @@
         "paused": false,
         "records": 2400,
         "session": 4,
-        "source": "http://127.0.0.1:40583/blank.html?dynamic",
+        "source": "http://127.0.0.1:44745/blank.html?dynamic",
         "status": "ready",
-        "totalIndexMs": 2002.3000102043152
+        "totalIndexMs": 2263.299994468689
       }
     }
   },
@@ -607,7 +608,7 @@
       }
     ],
     "treeFiles": 60,
-    "treeBytes": 1852884,
+    "treeBytes": 1853632,
     "note": "Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded."
   },
   "sha256": {
@@ -625,7 +626,7 @@
     "fixtures/navigation.html": "72542fdfa284cda4e89fe859e620d67b4d0e8ac84528b38df9ec95658534b1ff",
     "fixtures/navigation.js": "f8488b96870511e7d027d162694e8ae86c08f4a8727ab023232a38da3d4e1a15",
     "fixtures/second.html": "5a1a11848019de6b207738026daee106ea009afef856d701b6ab16f55925cf43",
-    "tests/browser.mjs": "d456dab08a1eb38ae3ec48c37154f2fe64e258c6c0d6a865991c5e456a8757c5",
+    "tests/browser.mjs": "a565b09eaab8c07469dbe4448d36acea1552512f54f7288ac6797fa19915264d",
     "tests/core.test.mjs": "78e34c70eb33ec37a9c8249a4364e3eb6b226a24eb94bd80c6ebb75ca1d74ab0",
     "tests/drafts-browser.mjs": "c1c1e52ef936dc6c3894399086c32e979fe5a6b1817612475e45c48a11fa29b9",
     "tests/drafts-model.mjs": "5f21e5e2a5251ba8532a12feb809fcfa1345627262b7f57e1266aa3603ff0850",

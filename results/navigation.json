@@ -26,8 +26,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 387.90000009536743,
-        "totalMs": 548.5
+        "destinationMs": 393.7000002861023,
+        "totalMs": 552.8000001907349
       },
       {
         "trial": 0,
@@ -41,8 +41,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 367.09999990463257,
-        "totalMs": 531.2999997138977
+        "destinationMs": 365.30000019073486,
+        "totalMs": 525.4000000953674
       },
       {
         "trial": 0,
@@ -56,8 +56,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 166,
-        "totalMs": 325.69999980926514
+        "destinationMs": 165.40000009536743,
+        "totalMs": 328.19999980926514
       },
       {
         "trial": 0,
@@ -73,8 +73,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 502.1000003814697,
-        "totalMs": 663.5
+        "destinationMs": 489.59999990463257,
+        "totalMs": 650.5999999046326
       },
       {
         "trial": 0,
@@ -88,8 +88,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 321.40000009536743,
-        "totalMs": 482.69999980926514
+        "destinationMs": 319.2000002861023,
+        "totalMs": 478.2000002861023
       },
       {
         "trial": 0,
@@ -103,8 +103,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.2000002861023,
-        "totalMs": 322.40000009536743
+        "destinationMs": 160.09999990463257,
+        "totalMs": 318.59999990463257
       },
       {
         "trial": 0,
@@ -118,8 +118,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 161.09999990463257,
-        "totalMs": 328
+        "destinationMs": 161.60000038146973,
+        "totalMs": 318.7000002861023
       },
       {
         "trial": 0,
@@ -133,8 +133,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 169.39999961853027,
-        "totalMs": 212.69999980926514
+        "destinationMs": 170.30000019073486,
+        "totalMs": 205.80000019073486
       },
       {
         "trial": 1,
@@ -148,8 +148,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 347.90000009536743,
-        "totalMs": 507.59999990463257
+        "destinationMs": 345.2999997138977,
+        "totalMs": 514.0999999046326
       },
       {
         "trial": 1,
@@ -163,8 +163,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 366.8999996185303,
-        "totalMs": 558.5
+        "destinationMs": 362,
+        "totalMs": 521.4000000953674
       },
       {
         "trial": 1,
@@ -178,8 +178,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 188.59999990463257,
-        "totalMs": 351.09999990463257
+        "destinationMs": 173.69999980926514,
+        "totalMs": 359.69999980926514
       },
       {
         "trial": 1,
@@ -195,8 +195,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 504.09999990463257,
-        "totalMs": 662
+        "destinationMs": 497.59999990463257,
+        "totalMs": 661.2999997138977
       },
       {
         "trial": 1,
@@ -210,8 +210,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 322.19999980926514,
-        "totalMs": 482.59999990463257
+        "destinationMs": 321.2000002861023,
+        "totalMs": 479.7000002861023
       },
       {
         "trial": 1,
@@ -225,8 +225,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.69999980926514,
-        "totalMs": 329.69999980926514
+        "destinationMs": 161,
+        "totalMs": 320.2999997138977
       },
       {
         "trial": 1,
@@ -240,8 +240,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 160.7999997138977,
-        "totalMs": 325.19999980926514
+        "destinationMs": 160.5,
+        "totalMs": 349.5
       },
       {
         "trial": 1,
@@ -255,8 +255,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 165.30000019073486,
-        "totalMs": 257.90000009536743
+        "destinationMs": 169.09999990463257,
+        "totalMs": 207.69999980926514
       },
       {
         "trial": 2,
@@ -270,8 +270,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 380.2999997138977,
-        "totalMs": 540.5999999046326
+        "destinationMs": 380.5,
+        "totalMs": 539.6999998092651
       },
       {
         "trial": 2,
@@ -285,8 +285,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 394.80000019073486,
-        "totalMs": 555.8000001907349
+        "destinationMs": 358.3999996185303,
+        "totalMs": 520.5999999046326
       },
       {
         "trial": 2,
@@ -300,8 +300,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 189.7000002861023,
-        "totalMs": 389.30000019073486
+        "destinationMs": 207.80000019073486,
+        "totalMs": 368.80000019073486
       },
       {
         "trial": 2,
@@ -317,8 +317,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 489.59999990463257,
-        "totalMs": 647.8999996185303
+        "destinationMs": 509.59999990463257,
+        "totalMs": 669.5
       },
       {
         "trial": 2,
@@ -332,8 +332,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 321.2000002861023,
-        "totalMs": 479.40000009536743
+        "destinationMs": 323,
+        "totalMs": 486.2999997138977
       },
       {
         "trial": 2,
@@ -347,8 +347,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 158.40000009536743,
-        "totalMs": 324.19999980926514
+        "destinationMs": 160.09999990463257,
+        "totalMs": 351.7000002861023
       },
       {
         "trial": 2,
@@ -362,8 +362,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.89999961853027,
-        "totalMs": 322.19999980926514
+        "destinationMs": 159.90000009536743,
+        "totalMs": 321.19999980926514
       },
       {
         "trial": 2,
@@ -377,8 +377,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 178.40000009536743,
-        "totalMs": 269.80000019073486
+        "destinationMs": 167.90000009536743,
+        "totalMs": 206.5
       },
       {
         "trial": 3,
@@ -392,8 +392,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 367.19999980926514,
-        "totalMs": 531
+        "destinationMs": 345.09999990463257,
+        "totalMs": 508.69999980926514
       },
       {
         "trial": 3,
@@ -407,8 +407,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 357.69999980926514,
-        "totalMs": 529.5
+        "destinationMs": 360.90000009536743,
+        "totalMs": 524.2999997138977
       },
       {
         "trial": 3,
@@ -422,8 +422,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 185.80000019073486,
-        "totalMs": 380.19999980926514
+        "destinationMs": 166.30000019073486,
+        "totalMs": 325.40000009536743
       },
       {
         "trial": 3,
@@ -439,8 +439,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 520.1999998092651,
-        "totalMs": 683.1999998092651
+        "destinationMs": 489.09999990463257,
+        "totalMs": 651.5
       },
       {
         "trial": 3,
@@ -454,8 +454,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 323.90000009536743,
-        "totalMs": 481.90000009536743
+        "destinationMs": 336.80000019073486,
+        "totalMs": 494.59999990463257
       },
       {
         "trial": 3,
@@ -469,8 +469,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 163.40000009536743,
-        "totalMs": 327.90000009536743
+        "destinationMs": 158,
+        "totalMs": 319.80000019073486
       },
       {
         "trial": 3,
@@ -484,8 +484,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 162.80000019073486,
-        "totalMs": 323.7000002861023
+        "destinationMs": 162.39999961853027,
+        "totalMs": 324
       },
       {
         "trial": 3,
@@ -499,8 +499,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 182.7000002861023,
-        "totalMs": 284.2000002861023
+        "destinationMs": 169,
+        "totalMs": 273.6000003814697
       },
       {
         "trial": 4,
@@ -514,8 +514,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 380.30000019073486,
-        "totalMs": 541.8000001907349
+        "destinationMs": 381,
+        "totalMs": 543.1999998092651
       },
       {
         "trial": 4,
@@ -529,8 +529,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 357.90000009536743,
-        "totalMs": 520.8000001907349
+        "destinationMs": 360.6000003814697,
+        "totalMs": 522.9000000953674
       },
       {
         "trial": 4,
@@ -544,8 +544,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.39999961853027,
-        "totalMs": 321.3999996185303
+        "destinationMs": 164,
+        "totalMs": 332.1000003814697
       },
       {
         "trial": 4,
@@ -561,8 +561,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 505,
-        "totalMs": 667.1999998092651
+        "destinationMs": 517.7000002861023,
+        "totalMs": 675.7000002861023
       },
       {
         "trial": 4,
@@ -576,8 +576,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 325.30000019073486,
-        "totalMs": 485.90000009536743
+        "destinationMs": 317.30000019073486,
+        "totalMs": 476
       },
       {
         "trial": 4,
@@ -591,8 +591,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.40000009536743,
-        "totalMs": 323
+        "destinationMs": 164.90000009536743,
+        "totalMs": 330.5
       },
       {
         "trial": 4,
@@ -606,8 +606,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 162.80000019073486,
-        "totalMs": 323.90000009536743
+        "destinationMs": 194.30000019073486,
+        "totalMs": 381.90000009536743
       },
       {
         "trial": 4,
@@ -621,8 +621,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 172.5,
-        "totalMs": 267.09999990463257
+        "destinationMs": 180.5,
+        "totalMs": 226.7000002861023
       },
       {
         "trial": 5,
@@ -636,8 +636,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 373.59999990463257,
-        "totalMs": 533.7000002861023
+        "destinationMs": 370.30000019073486,
+        "totalMs": 531.4000000953674
       },
       {
         "trial": 5,
@@ -651,8 +651,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 359.80000019073486,
-        "totalMs": 526.0999999046326
+        "destinationMs": 367.69999980926514,
+        "totalMs": 527.3000001907349
       },
       {
         "trial": 5,
@@ -666,8 +666,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 192.30000019073486,
-        "totalMs": 355.6000003814697
+        "destinationMs": 197.2000002861023,
+        "totalMs": 400.7000002861023
       },
       {
         "trial": 5,
@@ -683,8 +683,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 499.19999980926514,
-        "totalMs": 659.7999997138977
+        "destinationMs": 503,
+        "totalMs": 663.0999999046326
       },
       {
         "trial": 5,
@@ -698,8 +698,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 320,
-        "totalMs": 481.40000009536743
+        "destinationMs": 315.90000009536743,
+        "totalMs": 477.2000002861023
       },
       {
         "trial": 5,
@@ -713,8 +713,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.2000002861023,
-        "totalMs": 322.30000019073486
+        "destinationMs": 161.5,
+        "totalMs": 322.40000009536743
       },
       {
         "trial": 5,
@@ -728,8 +728,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 164,
-        "totalMs": 327.90000009536743
+        "destinationMs": 158.30000019073486,
+        "totalMs": 321
       },
       {
         "trial": 5,
@@ -743,8 +743,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 176.40000009536743,
-        "totalMs": 246.80000019073486
+        "destinationMs": 171.59999990463257,
+        "totalMs": 220.90000009536743
       },
       {
         "trial": 6,
@@ -758,8 +758,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 342.5,
-        "totalMs": 500.5
+        "destinationMs": 343.80000019073486,
+        "totalMs": 518.1999998092651
       },
       {
         "trial": 6,
@@ -773,8 +773,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 358.40000009536743,
-        "totalMs": 518.2000002861023
+        "destinationMs": 359.5,
+        "totalMs": 519.6999998092651
       },
       {
         "trial": 6,
@@ -788,8 +788,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 204.40000009536743,
-        "totalMs": 367.59999990463257
+        "destinationMs": 206.2000002861023,
+        "totalMs": 365.59999990463257
       },
       {
         "trial": 6,
@@ -805,8 +805,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 508.40000009536743,
-        "totalMs": 666
+        "destinationMs": 495.5,
+        "totalMs": 672.7999997138977
       },
       {
         "trial": 6,
@@ -820,8 +820,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 323.30000019073486,
-        "totalMs": 486.90000009536743
+        "destinationMs": 326.7000002861023,
+        "totalMs": 487.7000002861023
       },
       {
         "trial": 6,
@@ -835,7 +835,7 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 161.7000002861023,
+        "destinationMs": 158.80000019073486,
         "totalMs": 321.1000003814697
       },
       {
@@ -850,8 +850,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.60000038146973,
-        "totalMs": 331.7000002861023
+        "destinationMs": 158.5,
+        "totalMs": 316.59999990463257
       },
       {
         "trial": 6,
@@ -865,8 +865,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 169.60000038146973,
-        "totalMs": 213.80000019073486
+        "destinationMs": 175.80000019073486,
+        "totalMs": 333.7000002861023
       },
       {
         "trial": 7,
@@ -880,8 +880,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 383.5,
-        "totalMs": 544.6999998092651
+        "destinationMs": 384.69999980926514,
+        "totalMs": 552.5
       },
       {
         "trial": 7,
@@ -895,8 +895,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 358.7000002861023,
-        "totalMs": 516.9000000953674
+        "destinationMs": 360.5,
+        "totalMs": 522.8000001907349
       },
       {
         "trial": 7,
@@ -910,8 +910,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 158.59999990463257,
-        "totalMs": 317.90000009536743
+        "destinationMs": 178.80000019073486,
+        "totalMs": 340.40000009536743
       },
       {
         "trial": 7,
@@ -927,8 +927,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 494.90000009536743,
-        "totalMs": 657.3000001907349
+        "destinationMs": 487.30000019073486,
+        "totalMs": 647.3000001907349
       },
       {
         "trial": 7,
@@ -942,8 +942,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 322.80000019073486,
-        "totalMs": 483.6000003814697
+        "destinationMs": 324.90000009536743,
+        "totalMs": 484.30000019073486
       },
       {
         "trial": 7,
@@ -957,8 +957,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 159.19999980926514,
-        "totalMs": 320.2999997138977
+        "destinationMs": 160,
+        "totalMs": 319.90000009536743
       },
       {
         "trial": 7,
@@ -972,8 +972,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 164.59999990463257,
-        "totalMs": 331.7999997138977
+        "destinationMs": 157.30000019073486,
+        "totalMs": 319.2000002861023
       },
       {
         "trial": 7,
@@ -987,8 +987,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 182.40000009536743,
-        "totalMs": 237.2000002861023
+        "destinationMs": 172.59999990463257,
+        "totalMs": 216.59999990463257
       },
       {
         "trial": 8,
@@ -1002,8 +1002,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 407.69999980926514,
-        "totalMs": 569.7999997138977
+        "destinationMs": 356,
+        "totalMs": 522.2999997138977
       },
       {
         "trial": 8,
@@ -1017,8 +1017,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 359.6000003814697,
-        "totalMs": 520.7000002861023
+        "destinationMs": 364.5,
+        "totalMs": 524
       },
       {
         "trial": 8,
@@ -1032,8 +1032,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 179.40000009536743,
-        "totalMs": 379.30000019073486
+        "destinationMs": 164,
+        "totalMs": 352.69999980926514
       },
       {
         "trial": 8,
@@ -1049,8 +1049,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 544,
-        "totalMs": 702.6000003814697
+        "destinationMs": 492.90000009536743,
+        "totalMs": 655.7000002861023
       },
       {
         "trial": 8,
@@ -1064,8 +1064,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 350.2000002861023,
-        "totalMs": 514.4000000953674
+        "destinationMs": 319.90000009536743,
+        "totalMs": 478.7999997138977
       },
       {
         "trial": 8,
@@ -1079,8 +1079,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.40000009536743,
-        "totalMs": 319.69999980926514
+        "destinationMs": 160.89999961853027,
+        "totalMs": 330
       },
       {
         "trial": 8,
@@ -1094,8 +1094,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 158.80000019073486,
-        "totalMs": 321.80000019073486
+        "destinationMs": 167.5,
+        "totalMs": 330.30000019073486
       },
       {
         "trial": 8,
@@ -1109,8 +1109,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 166.10000038146973,
-        "totalMs": 252.7000002861023
+        "destinationMs": 175.40000009536743,
+        "totalMs": 293.5
       },
       {
         "trial": 9,
@@ -1124,8 +1124,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 402.5,
-        "totalMs": 564.0999999046326
+        "destinationMs": 400.40000009536743,
+        "totalMs": 558.9000000953674
       },
       {
         "trial": 9,
@@ -1139,8 +1139,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 360.59999990463257,
-        "totalMs": 524.9000000953674
+        "destinationMs": 359.30000019073486,
+        "totalMs": 518.9000000953674
       },
       {
         "trial": 9,
@@ -1154,8 +1154,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 163,
-        "totalMs": 325
+        "destinationMs": 158.19999980926514,
+        "totalMs": 318.69999980926514
       },
       {
         "trial": 9,
@@ -1171,8 +1171,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 495.19999980926514,
-        "totalMs": 654.5999999046326
+        "destinationMs": 491.90000009536743,
+        "totalMs": 653.1000003814697
       },
       {
         "trial": 9,
@@ -1186,8 +1186,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 315.59999990463257,
-        "totalMs": 476.7000002861023
+        "destinationMs": 320.7000002861023,
+        "totalMs": 478
       },
       {
         "trial": 9,
@@ -1201,8 +1201,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 162.2000002861023,
-        "totalMs": 327.5
+        "destinationMs": 160,
+        "totalMs": 318.5
       },
       {
         "trial": 9,
@@ -1216,8 +1216,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 160.40000009536743,
-        "totalMs": 322.2000002861023
+        "destinationMs": 158.80000019073486,
+        "totalMs": 316.6000003814697
       },
       {
         "trial": 9,
@@ -1231,8 +1231,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 201.59999990463257,
-        "totalMs": 257.59999990463257
+        "destinationMs": 168.7000002861023,
+        "totalMs": 244
       },
       {
         "trial": 10,
@@ -1246,8 +1246,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 355.7000002861023,
-        "totalMs": 517
+        "destinationMs": 356,
+        "totalMs": 515.5
       },
       {
         "trial": 10,
@@ -1261,8 +1261,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 358.90000009536743,
-        "totalMs": 520.5999999046326
+        "destinationMs": 360,
+        "totalMs": 523.5999999046326
       },
       {
         "trial": 10,
@@ -1276,8 +1276,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 158.30000019073486,
-        "totalMs": 316.80000019073486
+        "destinationMs": 191.30000019073486,
+        "totalMs": 349.80000019073486
       },
       {
         "trial": 10,
@@ -1293,8 +1293,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 504.69999980926514,
-        "totalMs": 663.2999997138977
+        "destinationMs": 512.1999998092651,
+        "totalMs": 671.4000000953674
       },
       {
         "trial": 10,
@@ -1308,8 +1308,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 323.69999980926514,
-        "totalMs": 486.69999980926514
+        "destinationMs": 316.1000003814697,
+        "totalMs": 474.1000003814697
       },
       {
         "trial": 10,
@@ -1323,8 +1323,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 162.59999990463257,
-        "totalMs": 324.09999990463257
+        "destinationMs": 157.5,
+        "totalMs": 315.09999990463257
       },
       {
         "trial": 10,
@@ -1338,8 +1338,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 158.40000009536743,
-        "totalMs": 317
+        "destinationMs": 158.80000019073486,
+        "totalMs": 318.5
       },
       {
         "trial": 10,
@@ -1353,8 +1353,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 166.09999990463257,
-        "totalMs": 248.09999990463257
+        "destinationMs": 167.80000019073486,
+        "totalMs": 212.5
       },
       {
         "trial": 11,
@@ -1368,8 +1368,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 389.59999990463257,
-        "totalMs": 551.1999998092651
+        "destinationMs": 389.8999996185303,
+        "totalMs": 552.2999997138977
       },
       {
         "trial": 11,
@@ -1383,8 +1383,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 368.19999980926514,
-        "totalMs": 528
+        "destinationMs": 359.80000019073486,
+        "totalMs": 521.0999999046326
       },
       {
         "trial": 11,
@@ -1398,8 +1398,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 184.59999990463257,
-        "totalMs": 392.80000019073486
+        "destinationMs": 172.19999980926514,
+        "totalMs": 331.7999997138977
       },
       {
         "trial": 11,
@@ -1415,8 +1415,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 516.2000002861023,
-        "totalMs": 681.4000000953674
+        "destinationMs": 497.90000009536743,
+        "totalMs": 661.8000001907349
       },
       {
         "trial": 11,
@@ -1430,8 +1430,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 339.1000003814697,
-        "totalMs": 502.7000002861023
+        "destinationMs": 320.59999990463257,
+        "totalMs": 481.90000009536743
       },
       {
         "trial": 11,
@@ -1445,8 +1445,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.09999990463257,
-        "totalMs": 321.5
+        "destinationMs": 161.2000002861023,
+        "totalMs": 331.59999990463257
       },
       {
         "trial": 11,
@@ -1460,8 +1460,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159,
-        "totalMs": 319.40000009536743
+        "destinationMs": 157.40000009536743,
+        "totalMs": 316.7999997138977
       },
       {
         "trial": 11,
@@ -1475,8 +1475,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 173.09999990463257,
-        "totalMs": 233.2000002861023
+        "destinationMs": 170.5,
+        "totalMs": 295.19999980926514
       },
       {
         "trial": 12,
@@ -1490,8 +1490,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 454.19999980926514,
-        "totalMs": 612.1999998092651
+        "destinationMs": 382.2000002861023,
+        "totalMs": 545.3000001907349
       },
       {
         "trial": 12,
@@ -1505,8 +1505,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 361,
-        "totalMs": 519
+        "destinationMs": 360.09999990463257,
+        "totalMs": 526.7999997138977
       },
       {
         "trial": 12,
@@ -1520,8 +1520,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 186.19999980926514,
-        "totalMs": 343.40000009536743
+        "destinationMs": 163.7999997138977,
+        "totalMs": 359.19999980926514
       },
       {
         "trial": 12,
@@ -1537,8 +1537,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 490.19999980926514,
-        "totalMs": 653.8000001907349
+        "destinationMs": 488.09999990463257,
+        "totalMs": 647.0999999046326
       },
       {
         "trial": 12,
@@ -1552,8 +1552,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 322.7000002861023,
-        "totalMs": 482.30000019073486
+        "destinationMs": 321.7999997138977,
+        "totalMs": 481.5
       },
       {
         "trial": 12,
@@ -1567,8 +1567,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 162.19999980926514,
-        "totalMs": 322.40000009536743
+        "destinationMs": 159,
+        "totalMs": 316.40000009536743
       },
       {
         "trial": 12,
@@ -1582,8 +1582,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 159.40000009536743,
-        "totalMs": 321.59999990463257
+        "destinationMs": 158.69999980926514,
+        "totalMs": 315.7999997138977
       },
       {
         "trial": 12,
@@ -1597,8 +1597,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 169.90000009536743,
-        "totalMs": 243.30000019073486
+        "destinationMs": 166,
+        "totalMs": 210.89999961853027
       },
       {
         "trial": 13,
@@ -1612,8 +1612,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 319.6000003814697,
-        "totalMs": 481.80000019073486
+        "destinationMs": 353.2999997138977,
+        "totalMs": 511.69999980926514
       },
       {
         "trial": 13,
@@ -1627,8 +1627,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 360,
-        "totalMs": 519.2999997138977
+        "destinationMs": 364.30000019073486,
+        "totalMs": 526.4000000953674
       },
       {
         "trial": 13,
@@ -1642,8 +1642,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.59999990463257,
-        "totalMs": 348.30000019073486
+        "destinationMs": 226.40000009536743,
+        "totalMs": 386.59999990463257
       },
       {
         "trial": 13,
@@ -1659,8 +1659,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 499.90000009536743,
-        "totalMs": 662.3000001907349
+        "destinationMs": 489.90000009536743,
+        "totalMs": 651.6000003814697
       },
       {
         "trial": 13,
@@ -1674,8 +1674,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 318,
-        "totalMs": 476.7999997138977
+        "destinationMs": 325.30000019073486,
+        "totalMs": 484.7000002861023
       },
       {
         "trial": 13,
@@ -1689,8 +1689,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 168.2000002861023,
-        "totalMs": 325.80000019073486
+        "destinationMs": 160.69999980926514,
+        "totalMs": 324.5
       },
       {
         "trial": 13,
@@ -1704,8 +1704,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 164.40000009536743,
-        "totalMs": 327.5
+        "destinationMs": 160,
+        "totalMs": 323.2000002861023
       },
       {
         "trial": 13,
@@ -1719,8 +1719,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 170,
-        "totalMs": 290.80000019073486
+        "destinationMs": 169.80000019073486,
+        "totalMs": 255
       },
       {
         "trial": 14,
@@ -1734,8 +1734,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 330.7999997138977,
-        "totalMs": 490.90000009536743
+        "destinationMs": 329.59999990463257,
+        "totalMs": 490.40000009536743
       },
       {
         "trial": 14,
@@ -1749,8 +1749,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 362.30000019073486,
-        "totalMs": 578.8000001907349
+        "destinationMs": 361.59999990463257,
+        "totalMs": 524.5999999046326
       },
       {
         "trial": 14,
@@ -1764,8 +1764,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 198.7000002861023,
-        "totalMs": 356.59999990463257
+        "destinationMs": 191.09999990463257,
+        "totalMs": 349.59999990463257
       },
       {
         "trial": 14,
@@ -1781,8 +1781,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 519.3999996185303,
-        "totalMs": 680.1999998092651
+        "destinationMs": 494.19999980926514,
+        "totalMs": 654.5999999046326
       },
       {
         "trial": 14,
@@ -1796,8 +1796,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 320.59999990463257,
-        "totalMs": 478.40000009536743
+        "destinationMs": 318.09999990463257,
+        "totalMs": 485
       },
       {
         "trial": 14,
@@ -1811,8 +1811,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 157.2999997138977,
-        "totalMs": 314.19999980926514
+        "destinationMs": 161.5,
+        "totalMs": 323.90000009536743
       },
       {
         "trial": 14,
@@ -1826,8 +1826,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 157.5,
-        "totalMs": 320.30000019073486
+        "destinationMs": 157.40000009536743,
+        "totalMs": 318.59999990463257
       },
       {
         "trial": 14,
@@ -1841,8 +1841,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 173.60000038146973,
-        "totalMs": 284.5
+        "destinationMs": 168.30000019073486,
+        "totalMs": 217.19999980926514
       },
       {
         "trial": 15,
@@ -1856,8 +1856,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 392,
-        "totalMs": 554.7999997138977
+        "destinationMs": 394.09999990463257,
+        "totalMs": 565.3000001907349
       },
       {
         "trial": 15,
@@ -1871,8 +1871,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 359.09999990463257,
-        "totalMs": 526
+        "destinationMs": 360,
+        "totalMs": 518.1000003814697
       },
       {
         "trial": 15,
@@ -1886,8 +1886,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 168.7999997138977,
-        "totalMs": 334.09999990463257
+        "destinationMs": 167.40000009536743,
+        "totalMs": 326.59999990463257
       },
       {
         "trial": 15,
@@ -1903,8 +1903,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 500.09999990463257,
-        "totalMs": 660.2000002861023
+        "destinationMs": 490.40000009536743,
+        "totalMs": 652.5
       },
       {
         "trial": 15,
@@ -1918,8 +1918,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 316.19999980926514,
-        "totalMs": 483.19999980926514
+        "destinationMs": 323.7000002861023,
+        "totalMs": 486.5
       },
       {
         "trial": 15,
@@ -1933,8 +1933,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 193.69999980926514,
-        "totalMs": 353.30000019073486
+        "destinationMs": 161.80000019073486,
+        "totalMs": 320.59999990463257
       },
       {
         "trial": 15,
@@ -1948,8 +1948,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.2000002861023,
-        "totalMs": 319.5
+        "destinationMs": 160.40000009536743,
+        "totalMs": 320
       },
       {
         "trial": 15,
@@ -1963,8 +1963,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 175.2999997138977,
-        "totalMs": 228.2999997138977
+        "destinationMs": 172,
+        "totalMs": 245.2000002861023
       },
       {
         "trial": 16,
@@ -1978,8 +1978,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 365.90000009536743,
-        "totalMs": 523.7999997138977
+        "destinationMs": 366.09999990463257,
+        "totalMs": 527.0999999046326
       },
       {
         "trial": 16,
@@ -1993,8 +1993,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 371.59999990463257,
-        "totalMs": 533.6999998092651
+        "destinationMs": 360.69999980926514,
+        "totalMs": 519.5
       },
       {
         "trial": 16,
@@ -2008,8 +2008,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 166.2000002861023,
-        "totalMs": 434.1000003814697
+        "destinationMs": 189.5,
+        "totalMs": 351.69999980926514
       },
       {
         "trial": 16,
@@ -2025,8 +2025,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 492.90000009536743,
-        "totalMs": 651.0999999046326
+        "destinationMs": 487.69999980926514,
+        "totalMs": 646.0999999046326
       },
       {
         "trial": 16,
@@ -2040,8 +2040,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 320.69999980926514,
-        "totalMs": 477.69999980926514
+        "destinationMs": 321.2999997138977,
+        "totalMs": 482.19999980926514
       },
       {
         "trial": 16,
@@ -2055,8 +2055,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.69999980926514,
-        "totalMs": 320.5
+        "destinationMs": 159.40000009536743,
+        "totalMs": 320.19999980926514
       },
       {
         "trial": 16,
@@ -2070,8 +2070,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.5,
-        "totalMs": 319.69999980926514
+        "destinationMs": 160.7000002861023,
+        "totalMs": 321.2000002861023
       },
       {
         "trial": 16,
@@ -2085,8 +2085,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 177.10000038146973,
-        "totalMs": 334.2000002861023
+        "destinationMs": 179.90000009536743,
+        "totalMs": 279.19999980926514
       },
       {
         "trial": 17,
@@ -2100,8 +2100,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 378.80000019073486,
-        "totalMs": 537.7000002861023
+        "destinationMs": 384.19999980926514,
+        "totalMs": 546.1999998092651
       },
       {
         "trial": 17,
@@ -2115,8 +2115,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 359.7999997138977,
-        "totalMs": 516.6999998092651
+        "destinationMs": 361.59999990463257,
+        "totalMs": 524.5
       },
       {
         "trial": 17,
@@ -2130,8 +2130,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.7000002861023,
-        "totalMs": 357.1000003814697
+        "destinationMs": 194.2000002861023,
+        "totalMs": 354
       },
       {
         "trial": 17,
@@ -2147,8 +2147,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 486.7000002861023,
-        "totalMs": 646.3000001907349
+        "destinationMs": 493.69999980926514,
+        "totalMs": 664.0999999046326
       },
       {
         "trial": 17,
@@ -2162,8 +2162,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 321.30000019073486,
-        "totalMs": 480.40000009536743
+        "destinationMs": 317.40000009536743,
+        "totalMs": 479.30000019073486
       },
       {
         "trial": 17,
@@ -2177,8 +2177,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 158,
-        "totalMs": 321.59999990463257
+        "destinationMs": 167.19999980926514,
+        "totalMs": 326.59999990463257
       },
       {
         "trial": 17,
@@ -2192,8 +2192,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.09999990463257,
-        "totalMs": 325.7000002861023
+        "destinationMs": 159.10000038146973,
+        "totalMs": 317.80000019073486
       },
       {
         "trial": 17,
@@ -2207,8 +2207,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 177.60000038146973,
-        "totalMs": 331.1000003814697
+        "destinationMs": 166.7000002861023,
+        "totalMs": 207.7000002861023
       },
       {
         "trial": 18,
@@ -2222,8 +2222,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 330.59999990463257,
-        "totalMs": 493
+        "destinationMs": 332.2999997138977,
+        "totalMs": 490.2999997138977
       },
       {
         "trial": 18,
@@ -2237,8 +2237,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 364.7000002861023,
-        "totalMs": 525.6000003814697
+        "destinationMs": 361.69999980926514,
+        "totalMs": 523.6999998092651
       },
       {
         "trial": 18,
@@ -2252,8 +2252,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 197.19999980926514,
-        "totalMs": 355.09999990463257
+        "destinationMs": 174.5,
+        "totalMs": 379.2999997138977
       },
       {
         "trial": 18,
@@ -2269,8 +2269,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 495.3999996185303,
-        "totalMs": 655.7999997138977
+        "destinationMs": 492.40000009536743,
+        "totalMs": 650.8000001907349
       },
       {
         "trial": 18,
@@ -2284,8 +2284,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 318,
-        "totalMs": 480.2000002861023
+        "destinationMs": 316.59999990463257,
+        "totalMs": 475.5
       },
       {
         "trial": 18,
@@ -2299,8 +2299,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.59999990463257,
-        "totalMs": 322.59999990463257
+        "destinationMs": 157.40000009536743,
+        "totalMs": 314.90000009536743
       },
       {
         "trial": 18,
@@ -2314,8 +2314,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 159.90000009536743,
-        "totalMs": 321.2000002861023
+        "destinationMs": 159.89999961853027,
+        "totalMs": 320.2999997138977
       },
       {
         "trial": 18,
@@ -2329,8 +2329,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 231.7999997138977,
-        "totalMs": 390
+        "destinationMs": 174.30000019073486,
+        "totalMs": 252.69999980926514
       },
       {
         "trial": 19,
@@ -2344,8 +2344,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 334.5,
-        "totalMs": 495.2999997138977
+        "destinationMs": 335.90000009536743,
+        "totalMs": 498.69999980926514
       },
       {
         "trial": 19,
@@ -2359,8 +2359,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 362.90000009536743,
-        "totalMs": 523.4000000953674
+        "destinationMs": 362,
+        "totalMs": 527.5999999046326
       },
       {
         "trial": 19,
@@ -2374,8 +2374,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159,
-        "totalMs": 318.90000009536743
+        "destinationMs": 158.2999997138977,
+        "totalMs": 317.5
       },
       {
         "trial": 19,
@@ -2391,8 +2391,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 485.7000002861023,
-        "totalMs": 643.7000002861023
+        "destinationMs": 504.59999990463257,
+        "totalMs": 666.1999998092651
       },
       {
         "trial": 19,
@@ -2406,8 +2406,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 320.59999990463257,
-        "totalMs": 482.69999980926514
+        "destinationMs": 319.69999980926514,
+        "totalMs": 480.5
       },
       {
         "trial": 19,
@@ -2421,8 +2421,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 157.09999990463257,
-        "totalMs": 316.7999997138977
+        "destinationMs": 173.30000019073486,
+        "totalMs": 332.80000019073486
       },
       {
         "trial": 19,
@@ -2436,8 +2436,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 161.90000009536743,
-        "totalMs": 321.09999990463257
+        "destinationMs": 161.40000009536743,
+        "totalMs": 321.90000009536743
       },
       {
         "trial": 19,
@@ -2451,8 +2451,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 183.40000009536743,
-        "totalMs": 235.40000009536743
+        "destinationMs": 167,
+        "totalMs": 253.30000019073486
       },
       {
         "trial": 20,
@@ -2466,8 +2466,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 439.30000019073486,
-        "totalMs": 598.5999999046326
+        "destinationMs": 400.2000002861023,
+        "totalMs": 563.9000000953674
       },
       {
         "trial": 20,
@@ -2481,8 +2481,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 360.30000019073486,
-        "totalMs": 524.6000003814697
+        "destinationMs": 369.59999990463257,
+        "totalMs": 576.5999999046326
       },
       {
         "trial": 20,
@@ -2496,8 +2496,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 163.59999990463257,
-        "totalMs": 346.69999980926514
+        "destinationMs": 186.90000009536743,
+        "totalMs": 378.2000002861023
       },
       {
         "trial": 20,
@@ -2513,8 +2513,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 504,
-        "totalMs": 662.2999997138977
+        "destinationMs": 574.5999999046326,
+        "totalMs": 734.1999998092651
       },
       {
         "trial": 20,
@@ -2528,8 +2528,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 320.5,
-        "totalMs": 482.6000003814697
+        "destinationMs": 340.59999990463257,
+        "totalMs": 508
       },
       {
         "trial": 20,
@@ -2543,8 +2543,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 161.90000009536743,
-        "totalMs": 322.80000019073486
+        "destinationMs": 174,
+        "totalMs": 368.3999996185303
       },
       {
         "trial": 20,
@@ -2558,8 +2558,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.7000002861023,
-        "totalMs": 329.2000002861023
+        "destinationMs": 162.40000009536743,
+        "totalMs": 324.59999990463257
       },
       {
         "trial": 20,
@@ -2573,8 +2573,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 167.90000009536743,
-        "totalMs": 238.2000002861023
+        "destinationMs": 166.80000019073486,
+        "totalMs": 287.6000003814697
       },
       {
         "trial": 21,
@@ -2588,8 +2588,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 329.19999980926514,
-        "totalMs": 488.59999990463257
+        "destinationMs": 324.40000009536743,
+        "totalMs": 488.69999980926514
       },
       {
         "trial": 21,
@@ -2603,8 +2603,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 363,
-        "totalMs": 524.7999997138977
+        "destinationMs": 358.5,
+        "totalMs": 517.0999999046326
       },
       {
         "trial": 21,
@@ -2618,8 +2618,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 167,
-        "totalMs": 326.7000002861023
+        "destinationMs": 192.40000009536743,
+        "totalMs": 391.7000002861023
       },
       {
         "trial": 21,
@@ -2635,8 +2635,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 503.69999980926514,
-        "totalMs": 662.8999996185303
+        "destinationMs": 510.09999990463257,
+        "totalMs": 668.7999997138977
       },
       {
         "trial": 21,
@@ -2650,8 +2650,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 316.90000009536743,
-        "totalMs": 474.80000019073486
+        "destinationMs": 319,
+        "totalMs": 480.09999990463257
       },
       {
         "trial": 21,
@@ -2665,8 +2665,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.30000019073486,
-        "totalMs": 321.30000019073486
+        "destinationMs": 159.09999990463257,
+        "totalMs": 320
       },
       {
         "trial": 21,
@@ -2680,8 +2680,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 164.40000009536743,
-        "totalMs": 325.80000019073486
+        "destinationMs": 161.19999980926514,
+        "totalMs": 324
       },
       {
         "trial": 21,
@@ -2695,8 +2695,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 169.89999961853027,
-        "totalMs": 208.69999980926514
+        "destinationMs": 172.7000002861023,
+        "totalMs": 230.2000002861023
       },
       {
         "trial": 22,
@@ -2710,8 +2710,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 389.59999990463257,
-        "totalMs": 548.1999998092651
+        "destinationMs": 390.90000009536743,
+        "totalMs": 551.5
       },
       {
         "trial": 22,
@@ -2725,8 +2725,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 359.40000009536743,
-        "totalMs": 517
+        "destinationMs": 370.5,
+        "totalMs": 536.2999997138977
       },
       {
         "trial": 22,
@@ -2740,8 +2740,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.90000009536743,
-        "totalMs": 322.80000019073486
+        "destinationMs": 187.60000038146973,
+        "totalMs": 384.80000019073486
       },
       {
         "trial": 22,
@@ -2757,8 +2757,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 494.30000019073486,
-        "totalMs": 651.5
+        "destinationMs": 499,
+        "totalMs": 658.6999998092651
       },
       {
         "trial": 22,
@@ -2772,8 +2772,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 322.2000002861023,
-        "totalMs": 485.59999990463257
+        "destinationMs": 318.3999996185303,
+        "totalMs": 478.2999997138977
       },
       {
         "trial": 22,
@@ -2787,8 +2787,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 161.40000009536743,
-        "totalMs": 325.09999990463257
+        "destinationMs": 159.30000019073486,
+        "totalMs": 320
       },
       {
         "trial": 22,
@@ -2802,8 +2802,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 162.09999990463257,
-        "totalMs": 320.2999997138977
+        "destinationMs": 170.7000002861023,
+        "totalMs": 330
       },
       {
         "trial": 22,
@@ -2818,7 +2818,7 @@
           "uniquely reanchored"
         ],
         "destinationMs": 173.59999990463257,
-        "totalMs": 333.5
+        "totalMs": 304.80000019073486
       },
       {
         "trial": 23,
@@ -2832,8 +2832,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 364.40000009536743,
-        "totalMs": 523.9000000953674
+        "destinationMs": 351.59999990463257,
+        "totalMs": 511.30000019073486
       },
       {
         "trial": 23,
@@ -2847,8 +2847,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 360.90000009536743,
-        "totalMs": 524
+        "destinationMs": 363.7999997138977,
+        "totalMs": 528.5999999046326
       },
       {
         "trial": 23,
@@ -2862,8 +2862,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 163.5,
-        "totalMs": 346.7000002861023
+        "destinationMs": 199.59999990463257,
+        "totalMs": 367
       },
       {
         "trial": 23,
@@ -2879,8 +2879,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 492.09999990463257,
-        "totalMs": 649.2999997138977
+        "destinationMs": 519.5,
+        "totalMs": 676.5
       },
       {
         "trial": 23,
@@ -2894,8 +2894,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 317.5,
-        "totalMs": 475.5
+        "destinationMs": 325.59999990463257,
+        "totalMs": 494.09999990463257
       },
       {
         "trial": 23,
@@ -2909,8 +2909,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 160,
-        "totalMs": 320.40000009536743
+        "destinationMs": 157.5,
+        "totalMs": 321.69999980926514
       },
       {
         "trial": 23,
@@ -2924,8 +2924,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 161.60000038146973,
-        "totalMs": 323.6000003814697
+        "destinationMs": 161.69999980926514,
+        "totalMs": 319.09999990463257
       },
       {
         "trial": 23,
@@ -2939,8 +2939,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 173.2999997138977,
-        "totalMs": 220.7999997138977
+        "destinationMs": 189.10000038146973,
+        "totalMs": 322.1000003814697
       },
       {
         "trial": 24,
@@ -2954,8 +2954,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 366.2000002861023,
-        "totalMs": 527.6000003814697
+        "destinationMs": 368.80000019073486,
+        "totalMs": 531
       },
       {
         "trial": 24,
@@ -2969,8 +2969,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 361.5,
-        "totalMs": 525.1999998092651
+        "destinationMs": 359.1000003814697,
+        "totalMs": 543.1000003814697
       },
       {
         "trial": 24,
@@ -2984,8 +2984,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 203.40000009536743,
-        "totalMs": 363.30000019073486
+        "destinationMs": 200.19999980926514,
+        "totalMs": 398.40000009536743
       },
       {
         "trial": 24,
@@ -3001,8 +3001,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 488.19999980926514,
-        "totalMs": 649.4000000953674
+        "destinationMs": 493,
+        "totalMs": 655
       },
       {
         "trial": 24,
@@ -3016,8 +3016,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 318.30000019073486,
-        "totalMs": 476.59999990463257
+        "destinationMs": 322.2999997138977,
+        "totalMs": 482.09999990463257
       },
       {
         "trial": 24,
@@ -3031,8 +3031,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 157.69999980926514,
-        "totalMs": 318.7999997138977
+        "destinationMs": 157.19999980926514,
+        "totalMs": 317.19999980926514
       },
       {
         "trial": 24,
@@ -3046,8 +3046,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.19999980926514,
-        "totalMs": 318.59999990463257
+        "destinationMs": 163.10000038146973,
+        "totalMs": 325.6000003814697
       },
       {
         "trial": 24,
@@ -3061,8 +3061,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 173.2999997138977,
-        "totalMs": 334.40000009536743
+        "destinationMs": 175.2000002861023,
+        "totalMs": 217.10000038146973
       },
       {
         "trial": 25,
@@ -3076,8 +3076,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 397.8999996185303,
-        "totalMs": 557.5
+        "destinationMs": 398.19999980926514,
+        "totalMs": 559.4000000953674
       },
       {
         "trial": 25,
@@ -3091,8 +3091,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 362,
-        "totalMs": 522.9000000953674
+        "destinationMs": 365,
+        "totalMs": 523.3000001907349
       },
       {
         "trial": 25,
@@ -3106,8 +3106,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 163.10000038146973,
-        "totalMs": 320.6000003814697
+        "destinationMs": 162.80000019073486,
+        "totalMs": 325.69999980926514
       },
       {
         "trial": 25,
@@ -3123,8 +3123,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 491.2999997138977,
-        "totalMs": 650.0999999046326
+        "destinationMs": 513.5999999046326,
+        "totalMs": 674
       },
       {
         "trial": 25,
@@ -3138,8 +3138,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 319.7000002861023,
-        "totalMs": 478.80000019073486
+        "destinationMs": 318.80000019073486,
+        "totalMs": 481.7000002861023
       },
       {
         "trial": 25,
@@ -3153,8 +3153,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 158.59999990463257,
-        "totalMs": 320.30000019073486
+        "destinationMs": 212.59999990463257,
+        "totalMs": 370.7000002861023
       },
       {
         "trial": 25,
@@ -3168,8 +3168,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 160.30000019073486,
-        "totalMs": 320.30000019073486
+        "destinationMs": 159.30000019073486,
+        "totalMs": 316.30000019073486
       },
       {
         "trial": 25,
@@ -3183,8 +3183,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 180.40000009536743,
-        "totalMs": 265.80000019073486
+        "destinationMs": 188.40000009536743,
+        "totalMs": 289.2999997138977
       },
       {
         "trial": 26,
@@ -3199,7 +3199,7 @@
           "uniquely reanchored"
         ],
         "destinationMs": 338.40000009536743,
-        "totalMs": 497.2000002861023
+        "totalMs": 538.7000002861023
       },
       {
         "trial": 26,
@@ -3213,8 +3213,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 362.1000003814697,
-        "totalMs": 522.9000000953674
+        "destinationMs": 362,
+        "totalMs": 521.6000003814697
       },
       {
         "trial": 26,
@@ -3228,8 +3228,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 186.2999997138977,
-        "totalMs": 349.2999997138977
+        "destinationMs": 163,
+        "totalMs": 324.2000002861023
       },
       {
         "trial": 26,
@@ -3245,8 +3245,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 497.1000003814697,
-        "totalMs": 658.9000000953674
+        "destinationMs": 487.90000009536743,
+        "totalMs": 646.8000001907349
       },
       {
         "trial": 26,
@@ -3260,8 +3260,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 324.90000009536743,
-        "totalMs": 489.80000019073486
+        "destinationMs": 320.40000009536743,
+        "totalMs": 480.7000002861023
       },
       {
         "trial": 26,
@@ -3275,8 +3275,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 186.40000009536743,
-        "totalMs": 348.69999980926514
+        "destinationMs": 161,
+        "totalMs": 321.5
       },
       {
         "trial": 26,
@@ -3290,8 +3290,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 157.09999990463257,
-        "totalMs": 319.19999980926514
+        "destinationMs": 158.19999980926514,
+        "totalMs": 316.3999996185303
       },
       {
         "trial": 26,
@@ -3305,8 +3305,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 174.59999990463257,
-        "totalMs": 303
+        "destinationMs": 178.90000009536743,
+        "totalMs": 303.80000019073486
       },
       {
         "trial": 27,
@@ -3320,8 +3320,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 382.8999996185303,
-        "totalMs": 540.3999996185303
+        "destinationMs": 386.2999997138977,
+        "totalMs": 546.3999996185303
       },
       {
         "trial": 27,
@@ -3335,8 +3335,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 360.90000009536743,
-        "totalMs": 518.7000002861023
+        "destinationMs": 362.5,
+        "totalMs": 524.6000003814697
       },
       {
         "trial": 27,
@@ -3350,8 +3350,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 200,
-        "totalMs": 399.40000009536743
+        "destinationMs": 169.2999997138977,
+        "totalMs": 372.5
       },
       {
         "trial": 27,
@@ -3367,8 +3367,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 497.2000002861023,
-        "totalMs": 657.0999999046326
+        "destinationMs": 498.5,
+        "totalMs": 656
       },
       {
         "trial": 27,
@@ -3382,8 +3382,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 390.09999990463257,
-        "totalMs": 551.6999998092651
+        "destinationMs": 318.19999980926514,
+        "totalMs": 482.69999980926514
       },
       {
         "trial": 27,
@@ -3397,8 +3397,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 162.39999961853027,
-        "totalMs": 320.8999996185303
+        "destinationMs": 160.80000019073486,
+        "totalMs": 326.30000019073486
       },
       {
         "trial": 27,
@@ -3412,8 +3412,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 160.30000019073486,
-        "totalMs": 320.80000019073486
+        "destinationMs": 164.5,
+        "totalMs": 321.40000009536743
       },
       {
         "trial": 27,
@@ -3427,8 +3427,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 170.40000009536743,
-        "totalMs": 256.5
+        "destinationMs": 168.19999980926514,
+        "totalMs": 215.80000019073486
       },
       {
         "trial": 28,
@@ -3442,8 +3442,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 344.09999990463257,
-        "totalMs": 503.8999996185303
+        "destinationMs": 340.69999980926514,
+        "totalMs": 498.19999980926514
       },
       {
         "trial": 28,
@@ -3457,8 +3457,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 369.40000009536743,
-        "totalMs": 531.7000002861023
+        "destinationMs": 364.90000009536743,
+        "totalMs": 525.2000002861023
       },
       {
         "trial": 28,
@@ -3472,8 +3472,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 196.7999997138977,
-        "totalMs": 356.5
+        "destinationMs": 196.7000002861023,
+        "totalMs": 395.40000009536743
       },
       {
         "trial": 28,
@@ -3489,8 +3489,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 493.7000002861023,
-        "totalMs": 654.8000001907349
+        "destinationMs": 492.5,
+        "totalMs": 652.2999997138977
       },
       {
         "trial": 28,
@@ -3504,8 +3504,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 318.2000002861023,
-        "totalMs": 479.40000009536743
+        "destinationMs": 316.69999980926514,
+        "totalMs": 480.3999996185303
       },
       {
         "trial": 28,
@@ -3519,8 +3519,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 161.59999990463257,
-        "totalMs": 323.09999990463257
+        "destinationMs": 158.09999990463257,
+        "totalMs": 319.09999990463257
       },
       {
         "trial": 28,
@@ -3534,8 +3534,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 162.30000019073486,
-        "totalMs": 321.1000003814697
+        "destinationMs": 162,
+        "totalMs": 321.7999997138977
       },
       {
         "trial": 28,
@@ -3549,8 +3549,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 168.2000002861023,
-        "totalMs": 218.10000038146973
+        "destinationMs": 169.80000019073486,
+        "totalMs": 266.7000002861023
       },
       {
         "trial": 29,
@@ -3564,8 +3564,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 375.90000009536743,
-        "totalMs": 538
+        "destinationMs": 378.69999980926514,
+        "totalMs": 541.5
       },
       {
         "trial": 29,
@@ -3579,8 +3579,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 358.7000002861023,
-        "totalMs": 525.6000003814697
+        "destinationMs": 363.30000019073486,
+        "totalMs": 523.0999999046326
       },
       {
         "trial": 29,
@@ -3594,8 +3594,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 162.80000019073486,
-        "totalMs": 324.30000019073486
+        "destinationMs": 210,
+        "totalMs": 370.5
       },
       {
         "trial": 29,
@@ -3611,8 +3611,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 482.80000019073486,
-        "totalMs": 641.5999999046326
+        "destinationMs": 500.80000019073486,
+        "totalMs": 663.0999999046326
       },
       {
         "trial": 29,
@@ -3626,8 +3626,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 321.19999980926514,
-        "totalMs": 521.2999997138977
+        "destinationMs": 319.7000002861023,
+        "totalMs": 476.90000009536743
       },
       {
         "trial": 29,
@@ -3641,8 +3641,8 @@
           "ambiguous",
           "uniquely reanchored"
         ],
-        "destinationMs": 158.5,
-        "totalMs": 316.7999997138977
+        "destinationMs": 162.90000009536743,
+        "totalMs": 323.80000019073486
       },
       {
         "trial": 29,
@@ -3656,8 +3656,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 156.80000019073486,
-        "totalMs": 314.30000019073486
+        "destinationMs": 163.40000009536743,
+        "totalMs": 325.09999990463257
       },
       {
         "trial": 29,
@@ -3671,8 +3671,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 164,
-        "totalMs": 261.80000019073486
+        "destinationMs": 175,
+        "totalMs": 245.7000002861023
       },
       {
         "trial": 30,
@@ -3686,8 +3686,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 353.59999990463257,
-        "totalMs": 510.90000009536743
+        "destinationMs": 354,
+        "totalMs": 516.3000001907349
       },
       {
         "trial": 30,
@@ -3701,8 +3701,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 359.3999996185303,
-        "totalMs": 520.5999999046326
+        "destinationMs": 362.80000019073486,
+        "totalMs": 521.5999999046326
       },
       {
         "trial": 30,
@@ -3716,7 +3716,7 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.69999980926514,
+        "destinationMs": 159.90000009536743,
         "totalMs": 322.2999997138977
       },
       {
@@ -3733,8 +3733,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 489.69999980926514,
-        "totalMs": 652.0999999046326
+        "destinationMs": 496.09999990463257,
+        "totalMs": 657.5
       },
       {
         "trial": 30,
@@ -3748,8 +3748,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 337.69999980926514,
-        "totalMs": 498.69999980926514
+        "destinationMs": 324.3999996185303,
+        "totalMs": 485.09999990463257
       },
       {
         "trial": 30,
@@ -3763,8 +3763,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 162,
-        "totalMs": 324.09999990463257
+        "destinationMs": 168.59999990463257,
+        "totalMs": 330.09999990463257
       },
       {
         "trial": 30,
@@ -3778,8 +3778,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 161.89999961853027,
-        "totalMs": 325.7999997138977
+        "destinationMs": 162.09999990463257,
+        "totalMs": 324.09999990463257
       },
       {
         "trial": 30,
@@ -3793,8 +3793,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 172,
-        "totalMs": 211.59999990463257
+        "destinationMs": 166,
+        "totalMs": 202.5
       },
       {
         "trial": 31,
@@ -3808,8 +3808,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 357.8999996185303,
-        "totalMs": 519.7999997138977
+        "destinationMs": 355,
+        "totalMs": 515.9000000953674
       },
       {
         "trial": 31,
@@ -3823,8 +3823,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 358.19999980926514,
-        "totalMs": 515.5999999046326
+        "destinationMs": 357.19999980926514,
+        "totalMs": 514.4000000953674
       },
       {
         "trial": 31,
@@ -3838,8 +3838,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.5,
-        "totalMs": 318.5
+        "destinationMs": 205.90000009536743,
+        "totalMs": 403
       },
       {
         "trial": 31,
@@ -3855,8 +3855,8 @@
           "uniquely reanchored",
           "exact"
         ],
-        "destinationMs": 506.30000019073486,
-        "totalMs": 666.9000000953674
+        "destinationMs": 505.8999996185303,
+        "totalMs": 670.7999997138977
       },
       {
         "trial": 31,
@@ -3870,8 +3870,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 318,
-        "totalMs": 476.80000019073486
+        "destinationMs": 323.7000002861023,
+        "totalMs": 485.80000019073486
       },
       {
         "trial": 31,
@@ -3885,8 +3885,8 @@
           "ambiguous",
           "exact"
         ],
-        "destinationMs": 160.19999980926514,
-        "totalMs": 321.59999990463257
+        "destinationMs": 158.2999997138977,
+        "totalMs": 325.7999997138977
       },
       {
         "trial": 31,
@@ -3900,8 +3900,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 159.10000038146973,
-        "totalMs": 317.7000002861023
+        "destinationMs": 158.7000002861023,
+        "totalMs": 318.1000003814697
       },
       {
         "trial": 31,
@@ -3915,8 +3915,8 @@
           "uniquely reanchored",
           "uniquely reanchored"
         ],
-        "destinationMs": 168.7999997138977,
-        "totalMs": 260.69999980926514
+        "destinationMs": 172.30000019073486,
+        "totalMs": 298.5
       }
     ]
   },
@@ -3949,23 +3949,23 @@
       "staleWrites": 0
     },
     "batches": 935,
-    "commits": 838,
+    "commits": 839,
     "discarded": 0,
     "drafts": {
       "acknowledgments": 3,
       "failures": 0,
-      "lastInputToAckMs": 305.30000019073486,
-      "lastWriteMs": 4.900000095367432,
-      "maxWriteMs": 16.09999990463257,
-      "totalWriteMs": 28.299999713897705,
+      "lastInputToAckMs": 327.5,
+      "lastWriteMs": 27.09999990463257,
+      "maxWriteMs": 38.59999990463257,
+      "totalWriteMs": 73.99999952316284,
       "writes": 3
     },
-    "epoch": 3448,
+    "epoch": 3451,
     "failures": 131,
-    "indexAttempts": 969,
+    "indexAttempts": 970,
     "inspectedRecords": 935,
-    "lastQuietToReadyMs": 0.6000003814697266,
-    "lastUpdateMs": 35.10000038146973,
+    "lastQuietToReadyMs": 1.0999999046325684,
+    "lastUpdateMs": 51.299999713897705,
     "limits": {
       "attempts": 8,
       "batches": 120,
@@ -3975,20 +3975,20 @@
     },
     "maxBatchRecords": 1,
     "maxDiscoveryNodes": 49,
-    "maxIndexMs": 70.5,
+    "maxIndexMs": 59.90000009536743,
     "maxInspectedRecords": 1,
-    "maxUpdateMs": 260.5,
+    "maxUpdateMs": 207.09999990463257,
     "maxVisitedNodes": 11,
     "navigationAvailable": true,
     "navigationEvents": 2164,
     "needsConfirmation": true,
-    "notifications": 1937,
+    "notifications": 1939,
     "paused": false,
     "records": 935,
     "session": 2197,
-    "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
+    "source": "http://127.0.0.1:44745/navigation.html?conversation=A",
     "status": "ready",
-    "totalIndexMs": 1450.9000053405762
+    "totalIndexMs": 1305.999994277954
   },
   "finalMetrics": {
     "async": {
@@ -3998,23 +3998,23 @@
       "staleWrites": 3
     },
     "batches": 1046,
-    "commits": 917,
+    "commits": 921,
     "discarded": 1,
     "drafts": {
       "acknowledgments": 9,
       "failures": 0,
-      "lastInputToAckMs": 187.59999990463257,
-      "lastWriteMs": 102,
-      "maxWriteMs": 102,
-      "totalWriteMs": 237.19999980926514,
+      "lastInputToAckMs": 222.80000019073486,
+      "lastWriteMs": 161.40000009536743,
+      "maxWriteMs": 161.40000009536743,
+      "totalWriteMs": 331.5,
       "writes": 9
     },
-    "epoch": 4192,
-    "failures": 150,
-    "indexAttempts": 1068,
+    "epoch": 4195,
+    "failures": 154,
+    "indexAttempts": 1076,
     "inspectedRecords": 1046,
-    "lastQuietToReadyMs": 0.7999997138977051,
-    "lastUpdateMs": 0.7999997138977051,
+    "lastQuietToReadyMs": 0.6999998092651367,
+    "lastUpdateMs": 0.6999998092651367,
     "limits": {
       "attempts": 8,
       "batches": 120,
@@ -4024,20 +4024,20 @@
     },
     "maxBatchRecords": 1,
     "maxDiscoveryNodes": 49,
-    "maxIndexMs": 251.40000009536743,
+    "maxIndexMs": 251.60000038146973,
     "maxInspectedRecords": 1,
-    "maxUpdateMs": 401.2000002861023,
+    "maxUpdateMs": 401.5,
     "maxVisitedNodes": 11,
     "navigationAvailable": true,
     "navigationEvents": 2734,
     "needsConfirmation": true,
-    "notifications": 2134,
+    "notifications": 2150,
     "paused": false,
     "records": 1046,
     "session": 2768,
-    "source": "http://127.0.0.1:40583/navigation.html?conversation=A",
+    "source": "http://127.0.0.1:44745/navigation.html?conversation=A",
     "status": "ready",
-    "totalIndexMs": 2318.700008869171
+    "totalIndexMs": 2166.899992465973
   },
   "dom": {
     "mainElements": 3,

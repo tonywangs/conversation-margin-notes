@@ -34,11 +34,22 @@ export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
     contexts.push(context);
     await context.route('**/*',route=>{const url=new URL(route.request().url());if(url.origin===origin || ['chrome-extension:','data:','blob:'].includes(url.protocol))return route.continue();network.pageBlocked++;return route.abort('blockedbyclient');});
     context.setDefaultTimeout(10000);
-    const nativeNewPage=context.newPage.bind(context);context.newPage=(...args)=>deadline(nativeNewPage(...args),'New browser page');
+    const nativeNewPage=context.newPage.bind(context),tabTargets=new WeakMap();
     context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
     const worker=context.serviceWorkers()[0]||await context.waitForEvent('serviceworker');
     const nativeEvaluate=worker.evaluate.bind(worker);worker.evaluate=(...args)=>deadline(nativeEvaluate(...args),'Worker evaluation');
     const browserCDP=await deadline(context.browser().newBrowserCDPSession(),'Browser CDP session');
+    const tabs=async()=> (await browserCDP.send('Target.getTargets',{filter:[{type:'tab'}]})).targetInfos;
+    // Page creation is serial in this harness. Capture the new tab's identity
+    // before navigation: URLs and titles are not unique across concurrent tabs.
+    context.newPage=(...args)=>deadline((async()=>{
+      const before=new Set((await tabs()).map(t=>t.targetId));
+      const page=await nativeNewPage(...args);
+      const added=(await tabs()).filter(t=>!before.has(t.targetId));
+      assert.equal(added.length,1,'page creation must identify exactly one new tab');
+      tabTargets.set(page,added[0].targetId);
+      return page;
+    })(),'New browser page');
     async function activate(page) {
       // A serviceworker event announces creation, not completion of its script.
       // Wait for the real action listener before issuing the experimental CDP action.
@@ -50,9 +61,14 @@ export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
         }
       });
       await page.bringToFront();
-      const {targetInfos}=await browserCDP.send('Target.getTargets',{filter:[{type:'tab'}]});
-      const target=targetInfos.find(t=>t.url===page.url());assert(target,'tab target found');
-      await browserCDP.send('Extensions.triggerAction',{id:worker.url().split('/')[2],targetId:target.targetId});
+      const targetId=tabTargets.get(page);assert(targetId,'page has a captured tab target');
+      // triggerAction invokes the window's toolbar action. Wait for tab selection
+      // as well as targeting the right window; do not retry the action itself.
+      await deadline((async()=>{
+        while(!(await tabs()).find(t=>t.targetId===targetId)?.embedderData?.tabActive)
+          await new Promise(resolve=>setTimeout(resolve,10));
+      })(),'Intended extension tab activation');
+      await browserCDP.send('Extensions.triggerAction',{id:worker.url().split('/')[2],targetId});
       try {await page.locator('#conversation-margin-notes-panel').waitFor();} catch(error) {
         const diagnostic=await worker.evaluate(async()=>{const tabs=await chrome.tabs.query({});return Promise.all(tabs.map(async tab=>({url:tab.url,title:await chrome.action.getTitle({tabId:tab.id})})));});
         throw new Error(`${error.message} Action diagnostics: ${JSON.stringify(diagnostic)}`);
@@ -83,7 +99,13 @@ export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
     const external=await p.evaluate(async()=>{try{await fetch('https://example.com/');return true;}catch{return false;}});assert.equal(external,false);
     const workerExternal=await worker.evaluate(async()=>{try{await fetch('https://example.com/');return true;}catch{return false;}});assert.equal(workerExternal,false);check('External page and worker HTTP(S) blocked');
     if(navigationOnly) {await p.close();const page=await context.newPage(),browser=context.browser().version();const navigation=await navigationSuite({page,worker,activate,create,refresh,stored,origin,download,upload});await context.close();await navigationImport({launch,origin,upload,download,exported:navigation.exported});delete navigation.exported;return {browser,navigation};}
+    const twin=await context.newPage();await twin.goto(p.url());
+    assert.equal(await panel(twin).count(),0);
     await activate(p);await message(p,/Ready/);
+    assert.equal(await panel(twin).count(),0,'same-URL background tab must remain uninjected');
+    await activate(twin);await message(twin,/Ready/);
+    assert.equal(await panel(p).count(),1);await twin.close();
+    check('Same-URL tabs activate independently using captured tab identities and confirmed tab selection');
     await create(p,'unique','Check this on a cloudy night.');assert.equal(await item(p).count(),1);assert.equal(await item(p).locator('.tag').textContent(),'exact');
     let original=await stored(worker);assert.equal(original.data.notes[0].selector.quote,'Start with a notebook, a clear sky, and one careful observation.');check('Real extension action → selection → persisted note with selector');
     await item(p).getByRole('button',{name:'Edit',exact:true}).click();await panel(p).getByLabel('Your note',{exact:true}).fill('Edited: keep the uncertain results.');await panel(p).getByRole('button',{name:'Save note',exact:true}).click();await message(p,/Note updated/);assert.equal((await stored(worker)).data.notes[0].body,'Edited: keep the uncertain results.');
