@@ -31,3 +31,26 @@ Dynamic-page milestone review (2026-10-16):
 Mutation observation, debouncing and annotation recovery are established patterns.
 The contribution here is a small bounded implementation with explicit incomplete
 states and a reproducible installed-extension mutation oracle, not novelty.
+
+## Same-tab navigation review (2026-10-18)
+
+- [Chrome Navigation API overview](https://developer.chrome.com/docs/web-platform/navigation-api)
+  describes native navigation notifications, History API integration, and the gap
+  between a committed URL and asynchronously updated content. A URL event alone
+  does not establish that the rendered transcript belongs to the destination.
+- [WHATWG Navigation API](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigation-api)
+  defines navigation and current-entry events. The extension observes these events
+  without intercepting/cancelling the page's navigation or replacing History methods.
+- [Chrome isolated content-script worlds](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts#work_in_isolated_worlds)
+  explains why patching `history.pushState` in an isolated extension world does not
+  patch the site's JavaScript environment. Native events avoid a page-script bridge,
+  injected MAIN-world hooks and new host permissions.
+- [Hypothesis Guest implementation](https://github.com/hypothesis/client/blob/main/src/annotator/guest.ts)
+  accepts a content-ready promise and listens to its integration's `uriChanged`
+  notification. This reinforces the distinction between location and content
+  readiness. This project does not reproduce its adapters or claim a new technique.
+
+The chosen scope is fragment-free same-document HTTP(S) transitions in Chromium,
+with explicit identity markers for automatic recovery and a manual confirmation
+path for unmarked destinations. Hash routes are detected but deliberately remain
+unresolved because the existing portable schema identifies fragment-free sources.

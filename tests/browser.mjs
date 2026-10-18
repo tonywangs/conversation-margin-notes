@@ -6,16 +6,17 @@ import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {mutationSuite} from './mutations.mjs';
 import {dynamicSuite} from './dynamic.mjs';
+import {navigationSuite,navigationImport} from './navigation.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 if(!process.env.PLAYWRIGHT_BROWSERS_PATH && existsSync('/tmp/margin-browsers'))process.env.PLAYWRIGHT_BROWSERS_PATH='/tmp/margin-browsers';
 const {chromium}=await import('playwright');
-export async function browserSuite() {
+export async function browserSuite({navigationOnly=false}={}) {
   const start=performance.now(),scratch=await mkdtemp(path.join(tmpdir(),'margin-verify-'));
   const checks=[],contexts=[],errors=[],network={pageBlocked:0,proxyBlocked:0};
   const check=description=>{checks.push(description);console.log('PASS '+description);};
   const server=createServer(async(req,res)=>{
     const file=new URL(req.url,'http://localhost').pathname;
-    if(!['/conversation.html','/second.html','/blank.html','/dynamic.html','/dynamic.js'].includes(file)){res.writeHead(404);res.end();return;}
+    if(!['/conversation.html','/second.html','/blank.html','/dynamic.html','/dynamic.js','/navigation.html','/navigation.js'].includes(file)){res.writeHead(404);res.end();return;}
     res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript; charset=utf-8':'text/html; charset=utf-8');
     res.end(file==='/blank.html'?'<!doctype html><html><body><main>blank</main></body></html>':await readFile(path.join(root,'fixtures',file.slice(1))));
   });
@@ -76,6 +77,7 @@ export async function browserSuite() {
     const manifest=await worker.evaluate(()=>chrome.runtime.getManifest());assert.deepEqual(manifest.permissions,['activeTab','scripting','storage']);assert(!manifest.host_permissions && !manifest.content_scripts);check('No page injection or storage before explicit activation; minimal permissions');
     const external=await p.evaluate(async()=>{try{await fetch('https://example.com/');return true;}catch{return false;}});assert.equal(external,false);
     const workerExternal=await worker.evaluate(async()=>{try{await fetch('https://example.com/');return true;}catch{return false;}});assert.equal(workerExternal,false);check('External page and worker HTTP(S) blocked');
+    if(navigationOnly) {await p.close();const page=await context.newPage(),browser=context.browser().version();const navigation=await navigationSuite({page,worker,activate,create,refresh,stored,origin,download,upload});await context.close();await navigationImport({launch,origin,upload,download,exported:navigation.exported});delete navigation.exported;return {browser,navigation};}
     await activate(p);await message(p,/Ready/);
     await create(p,'unique','Check this on a cloudy night.');assert.equal(await item(p).count(),1);assert.equal(await item(p).locator('.tag').textContent(),'exact');
     let original=await stored(worker);assert.equal(original.data.notes[0].selector.quote,'Start with a notebook, a clear sky, and one careful observation.');check('Real extension action → selection → persisted note with selector');
@@ -125,6 +127,9 @@ export async function browserSuite() {
     const experiment=await context.newPage();await experiment.goto(origin+'/blank.html');await experiment.addScriptTag({path:path.join(root,'extension/core.js')});await experiment.addScriptTag({path:path.join(root,'extension/dom.js')});const mutations=await mutationSuite(experiment);check('280 seeded DOM mutations and ten negative DOM cases');
     await p.setViewportSize({width:1280,height:900});await p.reload();await activate(p);await p.screenshot({path:path.join(root,'results','desktop.png')});
     const browserVersion=context.browser().version(),fixtureElements=await p.locator('main *').count();
+    const navigationPage=await context.newPage();
+    const navigation=await navigationSuite({page:navigationPage,worker,activate,create,refresh,stored,origin,download,upload,launch});check('Navigation identity, 256 seeded sequences, delayed storage, draft recovery, reload and export');
+    await navigationPage.close();
     const dynamicPage=await context.newPage();
     const dynamic=await dynamicSuite({page:dynamicPage,worker,activate,create,refresh,stored,origin});check('256 installed-extension mutation sequences; independent intermediate and final anchor oracle; draft, focus, caret and selection preservation');
     const demo=await context.newPage();await demo.setViewportSize({width:1800,height:1000});await demo.goto(origin+'/dynamic.html');await activate(demo);await create(demo,'target','Synthetic demo note.');
@@ -137,6 +142,9 @@ export async function browserSuite() {
     await demo.getByRole('button',{name:'Toggle incomplete',exact:true}).click();
     await panel(demo).locator('.tag').filter({hasText:'exact'}).waitFor();check('Bundled dynamic example controls recover ambiguous, exact and incomplete states');
     await context.close();
+    await navigationImport({launch,origin,upload,download,exported:navigation.exported});delete navigation.exported;
+    navigation.checks.push('Fresh-profile import and same-tab navigation preserve identity and exported bytes');
+    check('Fresh-profile navigation import preserves both conversation identities and exact exported bytes');
     // Fresh profile restores actual downloaded bytes, without copying browser storage.
     const second=await launch('fresh');const p2=await second.context.newPage();await p2.goto(origin+'/conversation.html');await second.activate(p2);assert.equal(await item(p2).count(),0);await upload(p2,exported);await message(p2,/Imported 5/);assert.equal(await item(p2).count(),5);assert.equal(await download(p2),exported);
     await upload(p2,exported);await message(p2,/skipped 5/);assert.equal(await item(p2).count(),5);check('Fresh-profile import and identical duplicate skipping');
@@ -162,8 +170,9 @@ export async function browserSuite() {
     assert.equal(reached.size,500);assert.equal(maxRows,20);assert(maxHighlights<=20);const fullState=await stored(second.worker);
     await select(p2,'ending');await panel(p2).getByLabel('Your note',{exact:true}).fill('One too many');await panel(p2).getByRole('button',{name:'Save note',exact:true}).click();await message(p2,/500 notes/);assert.deepEqual(await stored(second.worker),fullState);await panel(p2).getByRole('button',{name:'Cancel draft',exact:true}).click();check('500 notes reachable across 25 pages; 20 mounted rows/highlights; capacity rejection');
     // Delete persists, with explicit confirmation and keyboard activation.
+    await panel(p2).getByLabel('Show notes',{exact:true}).selectOption('current');
     const deleteTarget=item(p2).first();const deletedID=await deleteTarget.getAttribute('data-note-id');await deleteTarget.getByRole('button',{name:'Delete',exact:true}).click();await deleteTarget.getByRole('button',{name:'Confirm delete',exact:true}).focus();await p2.keyboard.press('Enter');await message(p2,/Note deleted/);assert(!(await stored(second.worker)).data.notes.some(n=>n.id===deletedID));check('Confirmed keyboard deletion persists');
     assert.deepEqual(errors,[],'no uncaught page errors');
-    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements,fullNotebookUpdateMs},mutations,dynamic};
+    return {browser:browserVersion,runtime_ms:Math.round(performance.now()-start),checks,network,dom:{maxMountedRows:maxRows,maxPanelElements:maxDOM,maxHighlights,reachableNotes:reached.size,fixtureElements,fullNotebookUpdateMs},mutations,dynamic,navigation};
   } finally {for(const c of contexts)await c.close();await new Promise(resolve=>server.close(resolve));await new Promise(resolve=>proxy.close(resolve));await rm(scratch,{recursive:true,force:true});}
 }

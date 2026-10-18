@@ -1,0 +1,305 @@
+{
+  "verified_at": "2026-10-16T01:25:37.765Z",
+  "runtime_ms": 160842,
+  "node": "v24.20.0",
+  "unit_tests": 6,
+  "browser": "156.0.8078.4",
+  "checks": [
+    "No page injection or storage before explicit activation; minimal permissions",
+    "External page and worker HTTP(S) blocked",
+    "Real extension action → selection → persisted note with selector",
+    "Edit, reload, explicit reactivation, persistence",
+    "Keyboard passage navigation and CSS highlight",
+    "Hostile quote and note rendered as text",
+    "Unicode, code blocks and repeated quotations",
+    "Deterministic downloaded JSON export",
+    "Actual chrome.storage.local quota failure preserves notes and draft",
+    "Injected delete/import storage failures preserve existing notebook",
+    "Malformed, oversized and conflicting imports fail atomically",
+    "DOM invalidation, unique recovery, repeated ambiguity and missing passages",
+    "Root removal, document limit, body limit and CSS-only stale selection; export remains available",
+    "320px viewport, keyboard Escape, reopen, no panel horizontal overflow",
+    "280 seeded DOM mutations and ten negative DOM cases",
+    "256 installed-extension mutation sequences; independent intermediate and final anchor oracle; draft, focus, caret and selection preservation",
+    "Bundled dynamic example controls recover ambiguous, exact and incomplete states",
+    "Fresh-profile import and identical duplicate skipping",
+    "Source mismatch diagnostics, no cross-source attachment",
+    "Concurrent tab conflict retains draft; refresh and retry succeeds",
+    "500 notes reachable across 25 pages; 20 mounted rows/highlights; capacity rejection",
+    "Confirmed keyboard deletion persists"
+  ],
+  "network": {
+    "pageBlocked": 2,
+    "proxyBlocked": 97
+  },
+  "dom": {
+    "maxMountedRows": 20,
+    "maxPanelElements": 204,
+    "maxHighlights": 20,
+    "reachableNotes": 500,
+    "fixtureElements": 20,
+    "fullNotebookUpdateMs": 164.4422290000075
+  },
+  "dynamic_summary": {
+    "seed": "0x72ac19ef",
+    "cases": 256,
+    "counts": {
+      "streaming": 32,
+      "duplicate": 32,
+      "unicode": 32,
+      "moved": 32,
+      "replaced": 32,
+      "removed": 32,
+      "edited": 32,
+      "markup": 32
+    },
+    "intermediateChecks": 608,
+    "sequenceMetrics": {
+      "batches": 993,
+      "commits": 866,
+      "discarded": 0,
+      "epoch": 1250,
+      "failures": 0,
+      "indexAttempts": 866,
+      "inspectedRecords": 993,
+      "lastQuietToReadyMs": 157.09999990463257,
+      "lastUpdateMs": 157.09999990463257,
+      "limits": {
+        "attempts": 8,
+        "batches": 120,
+        "quietMs": 150,
+        "records": 1000,
+        "windowMs": 10000
+      },
+      "maxBatchRecords": 2,
+      "maxDiscoveryNodes": 81,
+      "maxIndexMs": 14.400000095367432,
+      "maxInspectedRecords": 1,
+      "maxUpdateMs": 262.30000019073486,
+      "maxVisitedNodes": 72,
+      "notifications": 1731,
+      "paused": false,
+      "records": 1025,
+      "status": "ready",
+      "totalIndexMs": 845.099995136261
+    },
+    "limits": {
+      "measurements": [
+        {
+          "name": "continuous streaming",
+          "pendingChecks": 35,
+          "nominalDurationMs": 1050,
+          "elapsedMs": 1081.5999999046326,
+          "indexAttempts": 1,
+          "quietToReadyMs": 150.69999980926514
+        },
+        {
+          "name": "1001-record overflow",
+          "maxBatchRecords": 1001,
+          "inspectedDelta": 0,
+          "paused": true
+        },
+        {
+          "name": "125 small mutation batches",
+          "paused": true
+        },
+        {
+          "name": "index rate budget",
+          "automaticAttempts": 7,
+          "paused": true
+        },
+        {
+          "name": "busy marker",
+          "status": "incomplete"
+        },
+        {
+          "name": "editable root",
+          "status": "incomplete"
+        },
+        {
+          "name": "hidden root",
+          "status": "incomplete"
+        },
+        {
+          "name": "missing root",
+          "status": "incomplete"
+        },
+        {
+          "name": "multiple roots",
+          "status": "incomplete"
+        },
+        {
+          "name": "normalized text bound",
+          "status": "incomplete"
+        },
+        {
+          "name": "raw text bound",
+          "status": "incomplete"
+        },
+        {
+          "name": "visited node bound",
+          "status": "incomplete"
+        },
+        {
+          "name": "depth bound",
+          "status": "incomplete"
+        },
+        {
+          "name": "discovery bound",
+          "status": "incomplete"
+        },
+        {
+          "name": "automatic incomplete and removed-root recovery",
+          "status": "exact"
+        },
+        {
+          "name": "unsupported URL identity",
+          "status": "incomplete"
+        },
+        {
+          "name": "normalization and identical replacement",
+          "status": "exact"
+        },
+        {
+          "name": "failed edit during automatic updates and cancellation",
+          "storedNotesUnchanged": true
+        },
+        {
+          "name": "mutation during fingerprint",
+          "discarded": 1,
+          "status": "missing"
+        },
+        {
+          "name": "1000-paragraph workload",
+          "mutations": 5,
+          "latenciesMs": [
+            198.17148099999758,
+            220.9498200000089,
+            247.437528999988,
+            211.63896199999726,
+            197.66055999998935
+          ],
+          "indexAttempts": 5,
+          "commits": 5,
+          "maxVisitedNodes": 2007,
+          "maxDiscoveryNodes": 2016,
+          "meanIndexMs": 40.759999942779544,
+          "lifetimeMaxIndexMsIncludingFaultDelay": 394.59999990463257,
+          "domElements": 1003,
+          "mountedRows": 1,
+          "panelElements": 49
+        }
+      ],
+      "finalMetrics": {
+        "batches": 1209,
+        "commits": 907,
+        "discarded": 1,
+        "epoch": 1492,
+        "failures": 13,
+        "indexAttempts": 921,
+        "inspectedRecords": 1202,
+        "lastQuietToReadyMs": 185.69999980926514,
+        "lastUpdateMs": 185.69999980926514,
+        "limits": {
+          "attempts": 8,
+          "batches": 120,
+          "quietMs": 150,
+          "records": 1000,
+          "windowMs": 10000
+        },
+        "maxBatchRecords": 1001,
+        "maxDiscoveryNodes": 2017,
+        "maxIndexMs": 394.59999990463257,
+        "maxInspectedRecords": 2,
+        "maxUpdateMs": 1192.5999999046326,
+        "maxVisitedNodes": 2008,
+        "notifications": 1844,
+        "paused": false,
+        "records": 2400,
+        "status": "ready",
+        "totalIndexMs": 2293.099994659424
+      }
+    }
+  },
+  "mutation_summary": {
+    "seed": "0x5eedc0de",
+    "cases": 280,
+    "counts": {
+      "inserted": 40,
+      "moved": 40,
+      "duplicate": 40,
+      "whitespace": 40,
+      "unicode": 40,
+      "removed": 40,
+      "markup": 40
+    },
+    "statuses": {
+      "exact": 80,
+      "uniquely reanchored": 120,
+      "ambiguous": 40,
+      "missing": 40
+    },
+    "negative": [
+      "split surrogate rejected",
+      "hidden crossing rejected",
+      "unpaired surrogate rejected",
+      "normalized document limit",
+      "raw document limit",
+      "DOM node limit",
+      "selection limit",
+      "unsupported content excluded",
+      "multiple roots",
+      "missing root"
+    ]
+  },
+  "artifacts": {
+    "extensionBytes": 35861,
+    "extensionFiles": [
+      {
+        "path": "extension/core.js",
+        "bytes": 5801
+      },
+      {
+        "path": "extension/dom.js",
+        "bytes": 5370
+      },
+      {
+        "path": "extension/manifest.json",
+        "bytes": 477
+      },
+      {
+        "path": "extension/panel.js",
+        "bytes": 16125
+      },
+      {
+        "path": "extension/tracker.js",
+        "bytes": 5275
+      },
+      {
+        "path": "extension/worker.js",
+        "bytes": 2813
+      }
+    ],
+    "treeFiles": 34,
+    "treeBytes": 667427,
+    "note": "Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded."
+  },
+  "sha256": {
+    "extension/core.js": "79047db79973f2e31baa4ebf2840488beec1593da84ab70b015df4a27efeebdf",
+    "extension/dom.js": "611fc8bc0a10f2343ce63024e56d04a485b2d5996aa5fc226b2f8bd8c4cd1a99",
+    "extension/manifest.json": "4b53d1b63f959c09342d4057ca6644c242b9858fa39f44feda1625e9b9562342",
+    "extension/panel.js": "9250cee9d4345f0b08f6ad1a523128f1999ee390b1a29ee3bbe2d0fc11417c06",
+    "extension/tracker.js": "be4bba155a6f4debaf0dc298d18e6ad9a4b367652cfa02c11c61e89ec35bb318",
+    "extension/worker.js": "5898f7d9b4cf92bcb19fb7b1c27c9fb027835441e9df4344c0e320555b4f25dc",
+    "fixtures/conversation.html": "a6d9c9d266526d534d9e5e561b7084f610e0d61bfff3d384145029b69723a3d8",
+    "fixtures/dynamic.html": "846f926be8d7e4f5924f7c6118c43de06eaf73dd9e43ce7c6eb7a37a1830240d",
+    "fixtures/dynamic.js": "f43a5436f9f37495bc1ff7c81eaf4badd93d19a9543c9def758c6745e28cd508",
+    "fixtures/second.html": "5a1a11848019de6b207738026daee106ea009afef856d701b6ab16f55925cf43",
+    "tests/browser.mjs": "3824b53aa20cdc51a062ac423a09ff0f6c7f05cb0af9c32fdbdde29ae1d8b6cc",
+    "tests/core.test.mjs": "78e34c70eb33ec37a9c8249a4364e3eb6b226a24eb94bd80c6ebb75ca1d74ab0",
+    "tests/dynamic-limits.mjs": "a3164a2c43a9309f0cd6c865d0ce5235701945815f5e84b6d9d608a17b98ad91",
+    "tests/dynamic.mjs": "f1dc52d761159be3080f30f5c9111c6456d578de9fb89d9d85ea32b8fefcfb3b",
+    "tests/mutations.mjs": "c4f1d31a319a299bb6a41b04264513badf98ccbf53fd48ade6ab03fa4e9b1817",
+    "tests/verify.mjs": "c30c0b8276dbbf5d57b3ef0269e2417f1d4c6d004a45990e76c9a4507b40699f"
+  }
+}

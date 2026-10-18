@@ -1,6 +1,6 @@
 {
-  "verified_at": "2026-10-16T01:25:37.765Z",
-  "runtime_ms": 160842,
+  "verified_at": "2026-10-18T04:37:58.024Z",
+  "runtime_ms": 310649,
   "node": "v24.20.0",
   "unit_tests": 6,
   "browser": "156.0.8078.4",
@@ -20,8 +20,10 @@
     "Root removal, document limit, body limit and CSS-only stale selection; export remains available",
     "320px viewport, keyboard Escape, reopen, no panel horizontal overflow",
     "280 seeded DOM mutations and ten negative DOM cases",
+    "Navigation identity, 256 seeded sequences, delayed storage, draft recovery, reload and export",
     "256 installed-extension mutation sequences; independent intermediate and final anchor oracle; draft, focus, caret and selection preservation",
     "Bundled dynamic example controls recover ambiguous, exact and incomplete states",
+    "Fresh-profile navigation import preserves both conversation identities and exact exported bytes",
     "Fresh-profile import and identical duplicate skipping",
     "Source mismatch diagnostics, no cross-source attachment",
     "Concurrent tab conflict retains draft; refresh and retry succeeds",
@@ -30,15 +32,136 @@
   ],
   "network": {
     "pageBlocked": 2,
-    "proxyBlocked": 97
+    "proxyBlocked": 1127
   },
   "dom": {
     "maxMountedRows": 20,
-    "maxPanelElements": 204,
+    "maxPanelElements": 209,
     "maxHighlights": 20,
     "reachableNotes": 500,
     "fixtureElements": 20,
-    "fullNotebookUpdateMs": 164.4422290000075
+    "fullNotebookUpdateMs": 160.8984969999874
+  },
+  "navigation_summary": {
+    "cases": 256,
+    "seed": "0xc019a71e",
+    "counts": {
+      "push-delayed": 32,
+      "replace-content-first": 32,
+      "rapid": 32,
+      "back-forward": 32,
+      "hash": 32,
+      "duplicate": 32,
+      "unicode": 32,
+      "unmarked": 32
+    },
+    "anchorChecks": 576,
+    "checks": [
+      "Removing an initially accepted marker cannot silently downgrade to unmarked identity",
+      "256 seeded sequences; original draft explicitly recovered and saved only to A",
+      "32 delayed storage snapshots discarded across A→B→A sessions",
+      "Accepted delayed write remains bound to A; stale success retains suspended draft in B",
+      "Navigation during asynchronous fingerprint discards old anchor result",
+      "Unsaved create survives departure; delayed create recovers by stable UUID without duplication",
+      "Delayed rejected write and explicit cancellation retain stored notebook bytes",
+      "Storage-read failure prevents draft recovery; explicit retry succeeds without writes",
+      "Capture fingerprint crossing navigation cannot open a draft on the destination",
+      "Worker rejects a queued edit after its sending tab URL changes",
+      "File read crossing page sessions is cancelled before import dispatch",
+      "Hostile/mismatched source marker stays unresolved and cannot be manually overridden",
+      "Matching identity with incomplete content cannot attach; completion recovers",
+      "Same-URL replaceState changes the page session and suspends a draft",
+      "200 immediate same-URL replacements coalesce to one index and at most three notifications",
+      "Refresh does not confirm unmarked identity; explicit confirmation cannot override busy content",
+      "Reload preserves source identity and saved note",
+      "Fresh-profile import and same-tab navigation preserve identity and exported bytes"
+    ],
+    "delayedReadSequences": 32,
+    "metrics": {
+      "async": {
+        "cancelledImports": 0,
+        "recoveries": 0,
+        "staleReads": 0,
+        "staleWrites": 0
+      },
+      "batches": 935,
+      "commits": 840,
+      "discarded": 0,
+      "epoch": 3420,
+      "failures": 131,
+      "indexAttempts": 971,
+      "inspectedRecords": 935,
+      "lastQuietToReadyMs": 154.90000009536743,
+      "lastUpdateMs": 155.80000019073486,
+      "limits": {
+        "attempts": 8,
+        "batches": 120,
+        "quietMs": 150,
+        "records": 1000,
+        "windowMs": 10000
+      },
+      "maxBatchRecords": 1,
+      "maxDiscoveryNodes": 49,
+      "maxIndexMs": 60.30000019073486,
+      "maxInspectedRecords": 1,
+      "maxUpdateMs": 223.19999980926514,
+      "maxVisitedNodes": 11,
+      "navigationAvailable": true,
+      "navigationEvents": 2164,
+      "needsConfirmation": true,
+      "notifications": 1941,
+      "paused": false,
+      "records": 935,
+      "session": 2197,
+      "source": "http://127.0.0.1:43389/navigation.html?conversation=A",
+      "status": "ready",
+      "totalIndexMs": 1117.400016784668
+    },
+    "finalMetrics": {
+      "async": {
+        "cancelledImports": 1,
+        "recoveries": 4,
+        "staleReads": 32,
+        "staleWrites": 4
+      },
+      "batches": 1046,
+      "commits": 921,
+      "discarded": 1,
+      "epoch": 4164,
+      "failures": 153,
+      "indexAttempts": 1075,
+      "inspectedRecords": 1046,
+      "lastQuietToReadyMs": 0.7000002861022949,
+      "lastUpdateMs": 0.7000002861022949,
+      "limits": {
+        "attempts": 8,
+        "batches": 120,
+        "quietMs": 150,
+        "records": 1000,
+        "windowMs": 10000
+      },
+      "maxBatchRecords": 1,
+      "maxDiscoveryNodes": 49,
+      "maxIndexMs": 253.69999980926514,
+      "maxInspectedRecords": 1,
+      "maxUpdateMs": 403.40000009536743,
+      "maxVisitedNodes": 11,
+      "navigationAvailable": true,
+      "navigationEvents": 2734,
+      "needsConfirmation": true,
+      "notifications": 2148,
+      "paused": false,
+      "records": 1046,
+      "session": 2768,
+      "source": "http://127.0.0.1:43389/navigation.html?conversation=A",
+      "status": "ready",
+      "totalIndexMs": 1956.600016117096
+    },
+    "dom": {
+      "mainElements": 3,
+      "panelElements": 54,
+      "mountedRows": 1
+    }
   },
   "dynamic_summary": {
     "seed": "0x72ac19ef",
@@ -55,6 +178,12 @@
     },
     "intermediateChecks": 608,
     "sequenceMetrics": {
+      "async": {
+        "cancelledImports": 0,
+        "recoveries": 0,
+        "staleReads": 0,
+        "staleWrites": 0
+      },
       "batches": 993,
       "commits": 866,
       "discarded": 0,
@@ -62,8 +191,8 @@
       "failures": 0,
       "indexAttempts": 866,
       "inspectedRecords": 993,
-      "lastQuietToReadyMs": 157.09999990463257,
-      "lastUpdateMs": 157.09999990463257,
+      "lastQuietToReadyMs": 156,
+      "lastUpdateMs": 156,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -73,15 +202,20 @@
       },
       "maxBatchRecords": 2,
       "maxDiscoveryNodes": 81,
-      "maxIndexMs": 14.400000095367432,
+      "maxIndexMs": 41.200000286102295,
       "maxInspectedRecords": 1,
-      "maxUpdateMs": 262.30000019073486,
+      "maxUpdateMs": 274.69999980926514,
       "maxVisitedNodes": 72,
+      "navigationAvailable": true,
+      "navigationEvents": 0,
+      "needsConfirmation": false,
       "notifications": 1731,
       "paused": false,
       "records": 1025,
+      "session": 0,
+      "source": "http://127.0.0.1:43389/blank.html?dynamic",
       "status": "ready",
-      "totalIndexMs": 845.099995136261
+      "totalIndexMs": 849.099995136261
     },
     "limits": {
       "measurements": [
@@ -89,7 +223,7 @@
           "name": "continuous streaming",
           "pendingChecks": 35,
           "nominalDurationMs": 1050,
-          "elapsedMs": 1081.5999999046326,
+          "elapsedMs": 1073.8000001907349,
           "indexAttempts": 1,
           "quietToReadyMs": 150.69999980926514
         },
@@ -173,33 +307,39 @@
           "name": "1000-paragraph workload",
           "mutations": 5,
           "latenciesMs": [
-            198.17148099999758,
-            220.9498200000089,
-            247.437528999988,
-            211.63896199999726,
-            197.66055999998935
+            198.43595299997833,
+            192.0651899999939,
+            197.17065799998818,
+            185.4829000000027,
+            184.34183400002075
           ],
           "indexAttempts": 5,
           "commits": 5,
           "maxVisitedNodes": 2007,
           "maxDiscoveryNodes": 2016,
-          "meanIndexMs": 40.759999942779544,
-          "lifetimeMaxIndexMsIncludingFaultDelay": 394.59999990463257,
+          "meanIndexMs": 30.60000009536743,
+          "lifetimeMaxIndexMsIncludingFaultDelay": 293.7000002861023,
           "domElements": 1003,
           "mountedRows": 1,
-          "panelElements": 49
+          "panelElements": 54
         }
       ],
       "finalMetrics": {
+        "async": {
+          "cancelledImports": 0,
+          "recoveries": 0,
+          "staleReads": 0,
+          "staleWrites": 0
+        },
         "batches": 1209,
         "commits": 907,
         "discarded": 1,
-        "epoch": 1492,
-        "failures": 13,
-        "indexAttempts": 921,
+        "epoch": 1498,
+        "failures": 14,
+        "indexAttempts": 922,
         "inspectedRecords": 1202,
-        "lastQuietToReadyMs": 185.69999980926514,
-        "lastUpdateMs": 185.69999980926514,
+        "lastQuietToReadyMs": 185.90000009536743,
+        "lastUpdateMs": 185.90000009536743,
         "limits": {
           "attempts": 8,
           "batches": 120,
@@ -209,15 +349,20 @@
         },
         "maxBatchRecords": 1001,
         "maxDiscoveryNodes": 2017,
-        "maxIndexMs": 394.59999990463257,
+        "maxIndexMs": 293.7000002861023,
         "maxInspectedRecords": 2,
-        "maxUpdateMs": 1192.5999999046326,
+        "maxUpdateMs": 1193.8999996185303,
         "maxVisitedNodes": 2008,
-        "notifications": 1844,
+        "navigationAvailable": true,
+        "navigationEvents": 4,
+        "needsConfirmation": false,
+        "notifications": 1846,
         "paused": false,
         "records": 2400,
+        "session": 4,
+        "source": "http://127.0.0.1:43389/blank.html?dynamic",
         "status": "ready",
-        "totalIndexMs": 2293.099994659424
+        "totalIndexMs": 2051.4999947547913
       }
     }
   },
@@ -253,7 +398,7 @@
     ]
   },
   "artifacts": {
-    "extensionBytes": 35861,
+    "extensionBytes": 44809,
     "extensionFiles": [
       {
         "path": "extension/core.js",
@@ -269,37 +414,41 @@
       },
       {
         "path": "extension/panel.js",
-        "bytes": 16125
+        "bytes": 20415
       },
       {
         "path": "extension/tracker.js",
-        "bytes": 5275
+        "bytes": 9075
       },
       {
         "path": "extension/worker.js",
-        "bytes": 2813
+        "bytes": 3671
       }
     ],
-    "treeFiles": 34,
-    "treeBytes": 667427,
+    "treeFiles": 44,
+    "treeBytes": 1128402,
     "note": "Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded."
   },
   "sha256": {
     "extension/core.js": "79047db79973f2e31baa4ebf2840488beec1593da84ab70b015df4a27efeebdf",
     "extension/dom.js": "611fc8bc0a10f2343ce63024e56d04a485b2d5996aa5fc226b2f8bd8c4cd1a99",
     "extension/manifest.json": "4b53d1b63f959c09342d4057ca6644c242b9858fa39f44feda1625e9b9562342",
-    "extension/panel.js": "9250cee9d4345f0b08f6ad1a523128f1999ee390b1a29ee3bbe2d0fc11417c06",
-    "extension/tracker.js": "be4bba155a6f4debaf0dc298d18e6ad9a4b367652cfa02c11c61e89ec35bb318",
-    "extension/worker.js": "5898f7d9b4cf92bcb19fb7b1c27c9fb027835441e9df4344c0e320555b4f25dc",
+    "extension/panel.js": "aa53d39aa411deb58aa16caf881b9d44ddb87b17d332118bd0e06f1bc905a570",
+    "extension/tracker.js": "c816a91dc2b1c08a5cce0bc5b9e2767f4eba7d6adc65c434c0bee4cc828cf543",
+    "extension/worker.js": "1a1c3d672184150fc494564ae68bd35262996bdabb594b00a5babd5aa241cf25",
     "fixtures/conversation.html": "a6d9c9d266526d534d9e5e561b7084f610e0d61bfff3d384145029b69723a3d8",
     "fixtures/dynamic.html": "846f926be8d7e4f5924f7c6118c43de06eaf73dd9e43ce7c6eb7a37a1830240d",
     "fixtures/dynamic.js": "f43a5436f9f37495bc1ff7c81eaf4badd93d19a9543c9def758c6745e28cd508",
+    "fixtures/navigation.html": "72542fdfa284cda4e89fe859e620d67b4d0e8ac84528b38df9ec95658534b1ff",
+    "fixtures/navigation.js": "f8488b96870511e7d027d162694e8ae86c08f4a8727ab023232a38da3d4e1a15",
     "fixtures/second.html": "5a1a11848019de6b207738026daee106ea009afef856d701b6ab16f55925cf43",
-    "tests/browser.mjs": "3824b53aa20cdc51a062ac423a09ff0f6c7f05cb0af9c32fdbdde29ae1d8b6cc",
+    "tests/browser.mjs": "e45c5e8e60209314a62253a5190de8fa01dd409bbd983bce244e8b1d4b6e1e7e",
     "tests/core.test.mjs": "78e34c70eb33ec37a9c8249a4364e3eb6b226a24eb94bd80c6ebb75ca1d74ab0",
-    "tests/dynamic-limits.mjs": "a3164a2c43a9309f0cd6c865d0ce5235701945815f5e84b6d9d608a17b98ad91",
+    "tests/dynamic-limits.mjs": "e812733edbb2650f4c7bd932ee98b96ccc7481750d28c51aaadd8c57b768657e",
     "tests/dynamic.mjs": "f1dc52d761159be3080f30f5c9111c6456d578de9fb89d9d85ea32b8fefcfb3b",
     "tests/mutations.mjs": "c4f1d31a319a299bb6a41b04264513badf98ccbf53fd48ade6ab03fa4e9b1817",
-    "tests/verify.mjs": "c30c0b8276dbbf5d57b3ef0269e2417f1d4c6d004a45990e76c9a4507b40699f"
+    "tests/navigation-edges.mjs": "0f2f45b04b3b214b27d5702cfe9a06bcc4ad9c0c71ba692f687c703241bf15ce",
+    "tests/navigation.mjs": "407835863167f32b437ffc91c811d953ba456da3a61da6e730ff8b8b24e6d858",
+    "tests/verify.mjs": "34387e09415e3ca6bb900e55dc1c5b24ce69e762f978d42965b0286c7f16e981"
   }
 }

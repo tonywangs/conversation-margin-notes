@@ -8,22 +8,31 @@ async function read() {
   if (!Number.isSafeInteger(notebook.revision) || notebook.revision<0) throw new Error('Stored revision is invalid.');
   return {revision:notebook.revision,data:C.validate(notebook.data)};
 }
-async function dispatch(message) {
+async function dispatch(message,sender) {
   const state=await read();
   if (message.type==='read') return state;
   if (message.revision!==state.revision) throw new Error('Notes changed in another tab. Refresh notes before retrying; your draft is retained.');
+  // The operation carries its immutable source. Never infer a destination source
+  // from a late tab lookup. The lookup only rejects a request that has moved on.
+  if(C.sourceURL(message.contextSource)!==message.contextSource || C.sourceURL(message.contextURL)!==message.contextSource || new URL(message.contextURL).hash)throw new Error('Unresolved operation source.');
+  const tab=await chrome.tabs.get(sender.tab.id);
+  if(tab.url!==message.contextURL)throw new Error('Page navigated before the operation was accepted. Draft retained.');
   let data, details={};
   if (message.type==='create') {
     const note=C.validateNote(message.note);
+    if(note.source!==message.contextSource)throw new Error('Note belongs to another source.');
     if (state.data.notes.some(n=>n.id===note.id)) throw new Error('Note ID already exists.');
     data=C.validate({version:1,notes:[...state.data.notes,note]});
   } else if (message.type==='edit') {
     const old=state.data.notes.find(n=>n.id===message.id);
     if (!old) throw new Error('Note no longer exists.');
+    if(old.source!==message.contextSource)throw new Error('Note belongs to another source.');
     const updated=C.validateNote({...old,body:message.body,updated:new Date().toISOString()});
     data=C.validate({version:1,notes:state.data.notes.map(n=>n.id===old.id?updated:n)});
   } else if (message.type==='delete') {
-    if (!state.data.notes.some(n=>n.id===message.id)) throw new Error('Note no longer exists.');
+    const old=state.data.notes.find(n=>n.id===message.id);
+    if (!old) throw new Error('Note no longer exists.');
+    if(old.source!==message.contextSource)throw new Error('Note belongs to another source.');
     data={version:1,notes:state.data.notes.filter(n=>n.id!==message.id)};
   } else if (message.type==='import') {
     const merged=C.merge(state.data,C.parse(message.text)); data=merged.data;
@@ -36,7 +45,7 @@ async function dispatch(message) {
 }
 chrome.runtime.onMessage.addListener((message,sender,respond)=>{
   if (sender.id!==chrome.runtime.id || !sender.tab || sender.frameId!==0) return false;
-  const work=queue.then(()=>dispatch(message));
+  const work=queue.then(()=>dispatch(message,sender));
   queue=work.catch(()=>{});
   work.then(value=>respond({ok:true,value}),error=>respond({ok:false,error:String(error.message||error)}));
   return true;

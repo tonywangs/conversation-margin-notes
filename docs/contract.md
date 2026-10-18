@@ -86,23 +86,97 @@ per update; other pages are resolved on demand. Automatic updates change tags an
 jump availability in place, leaving note controls, draft text, caret and page
 selection intact. The host browser may itself move a selection when its selected
 DOM is edited or removed; the extension does not reconstruct such selections.
-No automatic update reads or writes the saved notebook. A source URL change detected
-during indexing updates the source filter; notes retain their original identities.
+Ordinary DOM updates do not read or write the saved notebook. Navigation clears
+the source filter immediately and requires destination identity resolution as
+described below; notes retain their original identities.
 
 Missing/multiple/hidden roots, marked incomplete content and exhausted document
 limits produce **incomplete**, not a guessed missing anchor. `aria-busy="true"` or
 `data-margin-notes-incomplete="true"` on the root, an ancestor, or a visited element
 rejects the snapshot. Ordinary document failures retry after the next mutation;
 processing-budget failures require manual refresh. Refresh also rereads storage,
-without discarding an open draft. Export and editing saved notes remain available.
+without discarding an open draft. Export remains available; writes require a ready,
+resolved current source.
 
 This is a text-DOM contract, not a guarantee of a complete provider transcript.
 Virtualized/unloaded history that is not marked incomplete cannot be inferred.
 A quiet pause in unmarked streaming text can yield a provisional complete snapshot;
 later chunks invalidate it again. CSSOM `insertRule`, media-query/viewport changes,
-font loading, animation, generated content and URL-only History API navigation may
-change presentation/identity without emitting a mutation. Use manual refresh for
+font loading, animation and generated content may change presentation without
+emitting a mutation. History API navigation is handled separately below. Use manual refresh for
 these cases; capture/navigation revalidate text and source, but idle highlights
 cannot be guaranteed current for unobserved changes. Shadow/iframe content remains
 excluded. Live provider behavior and human assistive-technology behavior have not
 been validated.
+
+## Same-tab navigation and draft recovery
+
+The Navigation API is required. Native `navigate` and `currententrychange` events
+invalidate the session for pushState, replaceState (including same-URL entries),
+and same-document back/forward. `popstate`/`hashchange` and checks before actions
+provide additional URL checks. No history methods are patched and no MAIN-world
+bridge, polling timer, webNavigation permission or host permission is added.
+Synthetic events cannot establish identity. A browser without the Navigation API
+fails closed. Only the explicitly activated top-level document is supported.
+
+At native event delivery, previous highlights and the current-source list are
+cleared synchronously. Writes are suspended. The page session increases even for
+A→B→A, so a late A response cannot be mistaken for the new A session. DOM epochs
+separately invalidate asynchronous fingerprints. Ordinary mutations still preserve
+mounted rows and focus; navigation intentionally changes the source list.
+
+Automatic destination recovery requires exactly one supported root with
+`data-margin-notes-source` equal to the full canonical, fragment-free current URL.
+The attribute must be an absolute URL, with query retained, not a canonical-link
+hint. An adapter must mark content `aria-busy="true"` or
+`data-margin-notes-incomplete="true"` **before** changing identity/content, and
+publish the destination marker only with its complete rendered content. Once a
+marker has been observed, removing it requires explicit confirmation; it does not
+restore initial unmarked compatibility. It must
+also cancel obsolete rendering jobs. URL-first transitions keep the old marker;
+content-first transitions mismatch the old URL; neither attaches notes. Container
+replacement follows the same rules. A marker is the trusted page's assertion,
+not proof of semantic identity or a security boundary against hostile pages.
+
+Initial explicit activation accepts an unmarked document as before. After any
+navigation, an unmarked destination remains **unresolved** even if quiet or if its
+quotation matches. **Refresh notes & anchors** retries discovery and reads storage;
+it does not assert identity. **Confirm displayed conversation** is offered only
+for an unmarked, fragment-free destination. The user must verify the displayed
+conversation and URL before confirming. It cannot override a mismatched marker,
+unsupported URL, busy root or ambiguous root. Unmarked content-first changes
+before a URL event cannot be distinguished from ordinary transcript edits; adapters
+must mark incomplete before such changes. No live-provider adapter is validated.
+
+All nonempty fragments are treated conservatively as unresolved, including ordinary
+in-page anchors: a generic extension cannot tell an anchor from an application
+router key. Return to a fragment-free URL to recover. Version 1 stored sources and
+exports remain fragment-free; historical notes are never migrated or silently
+merged. Same-URL History API navigation is invalidated, but two distinct conversations
+that share a canonical URL cannot be represented by this schema. Such applications
+need an adapter and an explicit future data-format design.
+
+One in-memory draft is retained across same-document transitions, including its
+original source, original edit ID (or stable new-note UUID), selector and text. It
+stays visible and selectable but suspended; destination navigation cannot change
+its source. A second draft cannot replace it. Return to its original source and
+choose **Recover draft on this source** to reread storage and explicitly resume.
+Recovery checks the original ID, including a create that completed after navigation;
+it will not duplicate that note. A deleted original edit remains retained with a
+copy/cancel diagnostic. **Cancel draft** is explicit discard. Closing the panel
+retains the draft. Full reload, tab close or cross-document navigation destroys
+in-memory drafts; a browser beforeunload warning is requested but is subject to
+browser policy. Draft persistence across those actions is not promised.
+
+Read replies are committed only to their originating page session. Stale replies
+trigger a fresh read. The worker serializes writes, checks revision and the exact
+sending tab URL at acceptance, and enforces the immutable note/source pairing for
+create, edit and delete. A queued operation whose URL has changed is rejected.
+An already-accepted atomic storage write cannot be cancelled by navigation: it may
+finish on its **original** note/source. Its stale UI reply cannot install data,
+clear the draft or repaint anchors in the destination session; the panel rereads
+storage and retains the draft for explicit review. The design makes no claim of
+transactional cancellation across a browser navigation and chrome.storage.
+All-sources rows label other-source notes and cannot attach or save/delete them
+from the current source. Notebook imports remain global, atomic and source-preserving.
+An import file read that crosses sessions is cancelled before dispatch.

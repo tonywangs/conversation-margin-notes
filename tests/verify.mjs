@@ -11,6 +11,9 @@ try {
   const {browserSuite}=await import('./browser.mjs');const browser=await browserSuite();
   const mutations=browser.mutations;delete browser.mutations;
   const dynamic=browser.dynamic;delete browser.dynamic;
+  const navigation=browser.navigation;delete browser.navigation;
+  if(navigation.sequences.cases!==256)throw new Error('Full verification requires 256 navigation sequences; unset MARGIN_NAV_TRIALS.');
+  await writeFile('results/navigation.json',JSON.stringify(navigation,null,2)+'\n');
   await writeFile('results/dynamic.json',JSON.stringify(dynamic,null,2)+'\n');
   await writeFile('results/mutations.json',JSON.stringify(mutations,null,2)+'\n');
   const files=[];
@@ -19,9 +22,9 @@ try {
   await walk(root);assertLimit(files.length<=1000,'More than 1,000 files');assertLimit(files.reduce((n,f)=>n+f.bytes,0)<=33554432,'Tree exceeds 32 MiB');
   const extensionFiles=files.filter(f=>f.path.startsWith('extension/'));
   const hashes={};for(const file of files.filter(f=>/^(extension|tests|fixtures)\//.test(f.path)))hashes[file.path]=createHash('sha256').update(await readFile(file.path)).digest('hex');
-  const report={verified_at:new Date().toISOString(),runtime_ms:Math.round(performance.now()-started),node:process.version,unit_tests:6,...browser,dynamic_summary:{seed:dynamic.sequences.seed,cases:dynamic.sequences.cases,counts:dynamic.sequences.counts,intermediateChecks:dynamic.sequences.intermediateChecks,sequenceMetrics:dynamic.sequenceMetrics,limits:dynamic.limits},mutation_summary:{seed:mutations.seed,cases:mutations.cases,counts:mutations.counts,statuses:mutations.statuses,negative:mutations.negative},artifacts:{extensionBytes:extensionFiles.reduce((n,f)=>n+f.bytes,0),extensionFiles,treeFiles:files.length,treeBytes:files.reduce((n,f)=>n+f.bytes,0),note:'Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded.'},sha256:hashes};
+  const report={verified_at:new Date().toISOString(),runtime_ms:Math.round(performance.now()-started),node:process.version,unit_tests:6,...browser,navigation_summary:{cases:navigation.sequences.cases,seed:navigation.sequences.seed,counts:navigation.sequences.counts,anchorChecks:navigation.sequences.anchorChecks,checks:navigation.checks,delayedReadSequences:navigation.delayedReadSequences,metrics:navigation.metrics,finalMetrics:navigation.finalMetrics,dom:navigation.dom},dynamic_summary:{seed:dynamic.sequences.seed,cases:dynamic.sequences.cases,counts:dynamic.sequences.counts,intermediateChecks:dynamic.sequences.intermediateChecks,sequenceMetrics:dynamic.sequenceMetrics,limits:dynamic.limits},mutation_summary:{seed:mutations.seed,cases:mutations.cases,counts:mutations.counts,statuses:mutations.statuses,negative:mutations.negative},artifacts:{extensionBytes:extensionFiles.reduce((n,f)=>n+f.bytes,0),extensionFiles,treeFiles:files.length,treeBytes:files.reduce((n,f)=>n+f.bytes,0),note:'Final artifact sizes including this report and test log; node_modules, git, agent metadata and .tmp excluded.'},sha256:hashes};
   await writeFile('results/verification.json',JSON.stringify(report,null,2)+'\n');
-  log+=`\nBrowser checks: ${browser.checks.length} passed\nChromium: ${browser.browser}\nMutation cases: ${mutations.cases}\nInstalled dynamic sequences: ${dynamic.sequences.cases}\nIntermediate anchor checks: ${dynamic.sequences.intermediateChecks}\nDOM negatives: ${mutations.negative.length}\nRuntime: ${report.runtime_ms} ms\n`;
+  log+=`\nBrowser checks: ${browser.checks.length} passed\nChromium: ${browser.browser}\nMutation cases: ${mutations.cases}\nInstalled navigation sequences: ${navigation.sequences.cases}\nInstalled dynamic sequences: ${dynamic.sequences.cases}\nIntermediate anchor checks: ${dynamic.sequences.intermediateChecks}\nDOM negatives: ${mutations.negative.length}\nRuntime: ${report.runtime_ms} ms\n`;
   process.stdout.write(log.slice(test.stdout.length+test.stderr.length));await writeFile('results/tests.log',log);
   // Reach a fixed point for this report's own decimal byte count, then enforce
   // limits on the final artifact tree rather than the previous report's size.

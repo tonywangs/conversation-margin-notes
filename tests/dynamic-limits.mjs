@@ -8,7 +8,7 @@ export async function dynamicLimits({page,worker,refresh,stored,diagnostics,quot
   }
   async function reset() {
     await page.evaluate(quote=>{document.querySelector('#outside-limit')?.remove();document.querySelector('#second-root')?.remove();let main=document.querySelector('main');if(!main){main=document.createElement('main');document.body.append(main);}main.removeAttribute('aria-busy');main.removeAttribute('hidden');main.removeAttribute('contenteditable');main.innerHTML='<p>Ada prompt.</p><p id="target"></p><p>Bea ending.</p>';main.querySelector('#target').textContent=quote;},quote);
-    await refresh(page);await state('ready');
+    await refresh(page);if(await panel.locator('#confirm-source').isVisible()){await panel.locator('#confirm-source').click();}await state('ready');
   }
   async function noHighlights() {assert.equal(await page.evaluate(()=>CSS.highlights.has('margin-notes')||CSS.highlights.has('margin-notes-active')),false);}
   await reset();const start=await diagnostics();
