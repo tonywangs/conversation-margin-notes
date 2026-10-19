@@ -22,7 +22,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.80000019073486
+            "latencyMs": 169.60000038146973
           },
           {
             "status": "uniquely reanchored",
@@ -38,16 +38,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 161.59999990463257
           },
           {
             "status": "ambiguous",
-            "latencyMs": 168.7999997138977
+            "latencyMs": 169.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -59,12 +59,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.5
+            "latencyMs": 168.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 168.60000038146973
+            "latencyMs": 167.7999997138977
           }
         ]
       },
@@ -76,12 +76,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.19999980926514
+            "latencyMs": 165.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 169.2000002861023
           }
         ]
       },
@@ -93,12 +93,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.90000009536743
+            "latencyMs": 159.5
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 160
+            "latencyMs": 160.90000009536743
           }
         ]
       },
@@ -110,16 +110,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 164.40000009536743
+            "latencyMs": 160.7000002861023
           },
           {
             "status": "missing",
-            "latencyMs": 168.59999990463257
+            "latencyMs": 159.2999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 168.5
           }
         ]
       },
@@ -131,16 +131,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.7999997138977
+            "latencyMs": 159.09999990463257
           },
           {
             "status": "missing",
-            "latencyMs": 163.2000002861023
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 170.09999990463257
+            "latencyMs": 161.2000002861023
           }
         ]
       },
@@ -152,12 +152,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168
+            "latencyMs": 163.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.7999997138977
+            "latencyMs": 167
           }
         ]
       },
@@ -169,7 +169,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 160.5
           },
           {
             "status": "uniquely reanchored",
@@ -185,16 +185,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 167.60000038146973
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.30000019073486
+            "latencyMs": 158.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.89999961853027
+            "latencyMs": 169
           }
         ]
       },
@@ -206,12 +206,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 167.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 167.39999961853027
+            "latencyMs": 167.69999980926514
           }
         ]
       },
@@ -223,12 +223,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 169.5
+            "latencyMs": 167
           }
         ]
       },
@@ -240,12 +240,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 166.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 168.7000002861023
           }
         ]
       },
@@ -257,16 +257,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167
+            "latencyMs": 161.19999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 166.90000009536743
+            "latencyMs": 170.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 168.30000019073486
           }
         ]
       },
@@ -278,16 +278,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 161.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 167.40000009536743
+            "latencyMs": 159.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.5
+            "latencyMs": 168.5
           }
         ]
       },
@@ -299,12 +299,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.59999990463257
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -316,7 +316,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 168.80000019073486
           },
           {
             "status": "uniquely reanchored",
@@ -332,16 +332,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "ambiguous",
-            "latencyMs": 167.59999990463257
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 168
           }
         ]
       },
@@ -353,12 +353,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 166
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 168.19999980926514
           }
         ]
       },
@@ -370,12 +370,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 158.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 167.90000009536743
           }
         ]
       },
@@ -387,12 +387,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 170.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.39999961853027
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -404,16 +404,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.5
+            "latencyMs": 159.2999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 158.80000019073486
+            "latencyMs": 159.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 170.5
           }
         ]
       },
@@ -425,16 +425,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.09999990463257
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 159.09999990463257
+            "latencyMs": 169
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.09999990463257
+            "latencyMs": 168.7000002861023
           }
         ]
       },
@@ -446,12 +446,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 159
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.09999990463257
+            "latencyMs": 168.90000009536743
           }
         ]
       },
@@ -463,7 +463,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.59999990463257
+            "latencyMs": 163
           },
           {
             "status": "uniquely reanchored",
@@ -479,16 +479,16 @@
           {
             "status": "uniquely reanchored",
             "start": 29,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 168.30000019073486
           },
           {
             "status": "ambiguous",
-            "latencyMs": 159.09999990463257
+            "latencyMs": 159.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 29,
-            "latencyMs": 165.10000038146973
+            "latencyMs": 166.5
           }
         ]
       },
@@ -500,12 +500,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159
+            "latencyMs": 161.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 167.10000038146973
+            "latencyMs": 163.80000019073486
           }
         ]
       },
@@ -517,12 +517,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.2000002861023
+            "latencyMs": 167.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166
+            "latencyMs": 167.5
           }
         ]
       },
@@ -534,12 +534,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 161.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.5
+            "latencyMs": 160.5
           }
         ]
       },
@@ -551,16 +551,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.10000038146973
+            "latencyMs": 162.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 165.39999961853027
+            "latencyMs": 159.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 169.69999980926514
           }
         ]
       },
@@ -572,16 +572,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 161
           },
           {
             "status": "missing",
-            "latencyMs": 170.7999997138977
+            "latencyMs": 168.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.80000019073486
+            "latencyMs": 170.19999980926514
           }
         ]
       },
@@ -593,12 +593,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 169.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.59999990463257
+            "latencyMs": 166.2000002861023
           }
         ]
       },
@@ -610,7 +610,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.10000038146973
+            "latencyMs": 171.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -626,16 +626,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 169.5
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.80000019073486
+            "latencyMs": 160.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 170.2999997138977
           }
         ]
       },
@@ -647,12 +647,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 166
+            "latencyMs": 168.69999980926514
           }
         ]
       },
@@ -664,12 +664,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 162.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 166.80000019073486
           }
         ]
       },
@@ -681,12 +681,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 163.60000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.2999997138977
+            "latencyMs": 162.7999997138977
           }
         ]
       },
@@ -698,16 +698,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 163.5
           },
           {
             "status": "missing",
-            "latencyMs": 166.19999980926514
+            "latencyMs": 168
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 166
           }
         ]
       },
@@ -719,16 +719,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 166
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 168.69999980926514
           }
         ]
       },
@@ -740,12 +740,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 189.5
+            "latencyMs": 167.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 167
           }
         ]
       },
@@ -757,7 +757,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.5
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -773,16 +773,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 168.5
           },
           {
             "status": "ambiguous",
-            "latencyMs": 165.80000019073486
+            "latencyMs": 166.5
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 174.39999961853027
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -794,12 +794,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 161.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 168
+            "latencyMs": 169.5
           }
         ]
       },
@@ -811,12 +811,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166
+            "latencyMs": 168.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 165.7999997138977
+            "latencyMs": 161.80000019073486
           }
         ]
       },
@@ -828,12 +828,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 161.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.7999997138977
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -845,16 +845,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.90000009536743
+            "latencyMs": 171.7000002861023
           },
           {
             "status": "missing",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 165.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 167.19999980926514
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -866,16 +866,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.09999990463257
+            "latencyMs": 177.59999990463257
           },
           {
             "status": "missing",
-            "latencyMs": 165.80000019073486
+            "latencyMs": 159.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 169.7000002861023
           }
         ]
       },
@@ -887,12 +887,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 168.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 162.2999997138977
           }
         ]
       },
@@ -904,7 +904,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.5
+            "latencyMs": 167.40000009536743
           },
           {
             "status": "uniquely reanchored",
@@ -920,16 +920,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.60000038146973
+            "latencyMs": 168.2000002861023
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.39999961853027
+            "latencyMs": 166.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 167.90000009536743
           }
         ]
       },
@@ -941,12 +941,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 160.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 168.2999997138977
+            "latencyMs": 161.2999997138977
           }
         ]
       },
@@ -958,12 +958,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 170.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 163.69999980926514
+            "latencyMs": 161.19999980926514
           }
         ]
       },
@@ -975,12 +975,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 163.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.2999997138977
+            "latencyMs": 169.5
           }
         ]
       },
@@ -992,16 +992,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 172.2000002861023
           },
           {
             "status": "missing",
-            "latencyMs": 167.09999990463257
+            "latencyMs": 168.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.5
+            "latencyMs": 160.90000009536743
           }
         ]
       },
@@ -1013,16 +1013,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.80000019073486
+            "latencyMs": 163.7999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 167.89999961853027
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.30000019073486
+            "latencyMs": 170
           }
         ]
       },
@@ -1034,12 +1034,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.7999997138977
+            "latencyMs": 170.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.90000009536743
+            "latencyMs": 184.59999990463257
           }
         ]
       },
@@ -1051,7 +1051,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.5
+            "latencyMs": 165.09999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -1067,16 +1067,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 163.90000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.2999997138977
+            "latencyMs": 163.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167.2999997138977
           }
         ]
       },
@@ -1088,12 +1088,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.60000038146973
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 159.5
           }
         ]
       },
@@ -1105,12 +1105,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2000002861023
+            "latencyMs": 178.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 169.09999990463257
           }
         ]
       },
@@ -1122,12 +1122,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.7999997138977
+            "latencyMs": 162
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.90000009536743
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -1139,16 +1139,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 159.30000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 167.2000002861023
+            "latencyMs": 159.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 159.19999980926514
+            "latencyMs": 166.89999961853027
           }
         ]
       },
@@ -1160,16 +1160,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 167.09999990463257
           },
           {
             "status": "missing",
-            "latencyMs": 165.80000019073486
+            "latencyMs": 173
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.39999961853027
+            "latencyMs": 169.5
           }
         ]
       },
@@ -1181,12 +1181,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 168
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 160
           }
         ]
       },
@@ -1198,7 +1198,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "uniquely reanchored",
@@ -1214,16 +1214,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 172.30000019073486
           },
           {
             "status": "ambiguous",
-            "latencyMs": 165.69999980926514
+            "latencyMs": 159.39999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -1235,12 +1235,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 161.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 168.59999990463257
+            "latencyMs": 167.89999961853027
           }
         ]
       },
@@ -1252,12 +1252,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 175.39999961853027
+            "latencyMs": 163.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 169.7000002861023
           }
         ]
       },
@@ -1269,12 +1269,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 162.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 167.40000009536743
           }
         ]
       },
@@ -1286,16 +1286,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 160.69999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 166.30000019073486
+            "latencyMs": 168.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166
+            "latencyMs": 159.90000009536743
           }
         ]
       },
@@ -1307,16 +1307,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 163.5
           },
           {
             "status": "missing",
-            "latencyMs": 165.30000019073486
+            "latencyMs": 170.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 169
           }
         ]
       },
@@ -1328,12 +1328,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.7999997138977
+            "latencyMs": 166.5
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -1345,7 +1345,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 162.39999961853027
           },
           {
             "status": "uniquely reanchored",
@@ -1361,16 +1361,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 167.40000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 168
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.5
+            "latencyMs": 159.80000019073486
           }
         ]
       },
@@ -1382,12 +1382,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.19999980926514
+            "latencyMs": 163.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 162.69999980926514
           }
         ]
       },
@@ -1399,12 +1399,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 163.2999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166
+            "latencyMs": 169.5
           }
         ]
       },
@@ -1416,12 +1416,12 @@
           {
             "status": "uniquely reanchored",
             "start": 29,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 166.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 29,
-            "latencyMs": 168.09999990463257
+            "latencyMs": 168.5
           }
         ]
       },
@@ -1433,16 +1433,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 167.39999961853027
           },
           {
             "status": "missing",
-            "latencyMs": 165.89999961853027
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 163.2999997138977
           }
         ]
       },
@@ -1454,16 +1454,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 167.7999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 165.80000019073486
+            "latencyMs": 166.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 160.7000002861023
           }
         ]
       },
@@ -1475,12 +1475,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166
+            "latencyMs": 170.10000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.69999980926514
+            "latencyMs": 163.09999990463257
           }
         ]
       },
@@ -1492,7 +1492,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.59999990463257
+            "latencyMs": 162.80000019073486
           },
           {
             "status": "uniquely reanchored",
@@ -1508,16 +1508,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.30000019073486
+            "latencyMs": 162.39999961853027
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.5
+            "latencyMs": 159.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 170.7999997138977
           }
         ]
       },
@@ -1529,12 +1529,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.39999961853027
+            "latencyMs": 165.5
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 166
+            "latencyMs": 166.2000002861023
           }
         ]
       },
@@ -1551,7 +1551,7 @@
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 167.30000019073486
+            "latencyMs": 168.19999980926514
           }
         ]
       },
@@ -1563,12 +1563,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 176.90000009536743
+            "latencyMs": 168.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 170.90000009536743
           }
         ]
       },
@@ -1580,16 +1580,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161
+            "latencyMs": 170.5
           },
           {
             "status": "missing",
-            "latencyMs": 170.30000019073486
+            "latencyMs": 166.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 160.39999961853027
+            "latencyMs": 168.2999997138977
           }
         ]
       },
@@ -1601,16 +1601,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 170.2999997138977
+            "latencyMs": 168.30000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 162
+            "latencyMs": 166.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.5
+            "latencyMs": 167.80000019073486
           }
         ]
       },
@@ -1622,12 +1622,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159
+            "latencyMs": 165.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 171.80000019073486
           }
         ]
       },
@@ -1639,7 +1639,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.69999980926514
+            "latencyMs": 160.09999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -1655,16 +1655,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 166.09999990463257
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.10000038146973
+            "latencyMs": 167.60000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.2999997138977
+            "latencyMs": 161.09999990463257
           }
         ]
       },
@@ -1676,12 +1676,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 171.5
+            "latencyMs": 161.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 164.30000019073486
+            "latencyMs": 159.40000009536743
           }
         ]
       },
@@ -1693,12 +1693,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 164.7000002861023
+            "latencyMs": 164.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 168.90000009536743
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -1710,12 +1710,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.2999997138977
+            "latencyMs": 158.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.30000019073486
+            "latencyMs": 159.2000002861023
           }
         ]
       },
@@ -1727,16 +1727,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.40000009536743
+            "latencyMs": 159
           },
           {
             "status": "missing",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 167.2999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 159.19999980926514
+            "latencyMs": 170.30000019073486
           }
         ]
       },
@@ -1748,16 +1748,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168
+            "latencyMs": 168.60000038146973
           },
           {
             "status": "missing",
-            "latencyMs": 167.2000002861023
+            "latencyMs": 166.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -1769,12 +1769,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 164.90000009536743
+            "latencyMs": 167.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 169.2000002861023
           }
         ]
       },
@@ -1786,7 +1786,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.09999990463257
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "uniquely reanchored",
@@ -1802,16 +1802,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.7999997138977
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.80000019073486
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.59999990463257
+            "latencyMs": 161.7000002861023
           }
         ]
       },
@@ -1823,12 +1823,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166
+            "latencyMs": 163.39999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 158.7000002861023
           }
         ]
       },
@@ -1840,12 +1840,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.80000019073486
+            "latencyMs": 169
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 170.90000009536743
+            "latencyMs": 169.09999990463257
           }
         ]
       },
@@ -1857,12 +1857,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 160
+            "latencyMs": 167.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.69999980926514
+            "latencyMs": 168.19999980926514
           }
         ]
       },
@@ -1874,16 +1874,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 165.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 166.5
+            "latencyMs": 160.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 186.80000019073486
+            "latencyMs": 167.19999980926514
           }
         ]
       },
@@ -1895,16 +1895,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 165.59999990463257
           },
           {
             "status": "missing",
-            "latencyMs": 168.30000019073486
+            "latencyMs": 169.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 163.90000009536743
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -1916,12 +1916,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 166.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.89999961853027
+            "latencyMs": 170.7000002861023
           }
         ]
       },
@@ -1933,7 +1933,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.59999990463257
+            "latencyMs": 170
           },
           {
             "status": "uniquely reanchored",
@@ -1949,16 +1949,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 160.09999990463257
+            "latencyMs": 159.19999980926514
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.10000038146973
+            "latencyMs": 167.60000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.89999961853027
+            "latencyMs": 161.69999980926514
           }
         ]
       },
@@ -1970,12 +1970,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.7000002861023
+            "latencyMs": 159.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 160.09999990463257
+            "latencyMs": 159.90000009536743
           }
         ]
       },
@@ -1987,12 +1987,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 165.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 163.69999980926514
+            "latencyMs": 163
           }
         ]
       },
@@ -2004,12 +2004,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.90000009536743
+            "latencyMs": 165.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 160.69999980926514
           }
         ]
       },
@@ -2021,16 +2021,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.09999990463257
+            "latencyMs": 160.2999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 161.60000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 168.90000009536743
+            "latencyMs": 160
           }
         ]
       },
@@ -2042,16 +2042,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 163.09999990463257
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "missing",
-            "latencyMs": 167
+            "latencyMs": 169.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.10000038146973
+            "latencyMs": 166.40000009536743
           }
         ]
       },
@@ -2063,12 +2063,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.60000038146973
+            "latencyMs": 168
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 163.5
           }
         ]
       },
@@ -2080,7 +2080,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 163.7000002861023
           },
           {
             "status": "uniquely reanchored",
@@ -2096,16 +2096,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.30000019073486
+            "latencyMs": 166.89999961853027
           },
           {
             "status": "ambiguous",
-            "latencyMs": 161.59999990463257
+            "latencyMs": 160.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 172.2000002861023
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -2117,12 +2117,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.59999990463257
+            "latencyMs": 168.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 174.2000002861023
+            "latencyMs": 160.59999990463257
           }
         ]
       },
@@ -2134,12 +2134,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167
+            "latencyMs": 163.39999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 163.2999997138977
           }
         ]
       },
@@ -2151,12 +2151,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 174.19999980926514
+            "latencyMs": 168.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 169.30000019073486
+            "latencyMs": 163.90000009536743
           }
         ]
       },
@@ -2168,16 +2168,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.90000009536743
+            "latencyMs": 165.80000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 170.59999990463257
+            "latencyMs": 160.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 173
+            "latencyMs": 166.59999990463257
           }
         ]
       },
@@ -2189,16 +2189,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 167.5
           },
           {
             "status": "missing",
-            "latencyMs": 160.10000038146973
+            "latencyMs": 170.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.59999990463257
+            "latencyMs": 166.19999980926514
           }
         ]
       },
@@ -2210,12 +2210,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166
+            "latencyMs": 162.10000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.59999990463257
+            "latencyMs": 168.5
           }
         ]
       },
@@ -2227,7 +2227,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 164.80000019073486
+            "latencyMs": 159.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -2243,16 +2243,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 160.2000002861023
+            "latencyMs": 163.09999990463257
           },
           {
             "status": "ambiguous",
-            "latencyMs": 167.5
+            "latencyMs": 160
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.59999990463257
+            "latencyMs": 163.7000002861023
           }
         ]
       },
@@ -2264,12 +2264,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 165.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 162.19999980926514
+            "latencyMs": 169.30000019073486
           }
         ]
       },
@@ -2281,12 +2281,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 171.7999997138977
+            "latencyMs": 171.39999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 170.40000009536743
+            "latencyMs": 163.90000009536743
           }
         ]
       },
@@ -2298,12 +2298,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.7999997138977
+            "latencyMs": 164.5
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.2000002861023
+            "latencyMs": 170.7999997138977
           }
         ]
       },
@@ -2315,16 +2315,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.30000019073486
+            "latencyMs": 168.2999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 167.2999997138977
+            "latencyMs": 169
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 168.30000019073486
+            "latencyMs": 169.5
           }
         ]
       },
@@ -2336,16 +2336,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 163.09999990463257
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 167
+            "latencyMs": 168.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.59999990463257
+            "latencyMs": 165.69999980926514
           }
         ]
       },
@@ -2357,12 +2357,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 163.2999997138977
+            "latencyMs": 169.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.5
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -2374,7 +2374,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 169.90000009536743
+            "latencyMs": 161.5
           },
           {
             "status": "uniquely reanchored",
@@ -2390,16 +2390,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.80000019073486
+            "latencyMs": 167.30000019073486
           },
           {
             "status": "ambiguous",
-            "latencyMs": 164.39999961853027
+            "latencyMs": 160.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.5
+            "latencyMs": 165.10000038146973
           }
         ]
       },
@@ -2411,12 +2411,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.39999961853027
+            "latencyMs": 159.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 170
+            "latencyMs": 165.69999980926514
           }
         ]
       },
@@ -2428,12 +2428,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 161.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 159.90000009536743
           }
         ]
       },
@@ -2445,12 +2445,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 166
           }
         ]
       },
@@ -2462,16 +2462,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 168.59999990463257
+            "latencyMs": 167.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 169.40000009536743
+            "latencyMs": 168.30000019073486
           }
         ]
       },
@@ -2483,16 +2483,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.2999997138977
+            "latencyMs": 159
           },
           {
             "status": "missing",
-            "latencyMs": 167.2000002861023
+            "latencyMs": 168.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.40000009536743
+            "latencyMs": 168.90000009536743
           }
         ]
       },
@@ -2509,7 +2509,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.59999990463257
+            "latencyMs": 167.90000009536743
           }
         ]
       },
@@ -2521,7 +2521,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.59999990463257
+            "latencyMs": 166.30000019073486
           },
           {
             "status": "uniquely reanchored",
@@ -2537,16 +2537,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 160.7000002861023
+            "latencyMs": 163.40000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.69999980926514
+            "latencyMs": 162
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 160.80000019073486
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -2558,12 +2558,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 165.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 168.19999980926514
+            "latencyMs": 166.2999997138977
           }
         ]
       },
@@ -2575,12 +2575,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161
+            "latencyMs": 167.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 162.60000038146973
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -2592,12 +2592,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 164.7000002861023
+            "latencyMs": 160.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 162.59999990463257
+            "latencyMs": 160.5
           }
         ]
       },
@@ -2609,16 +2609,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.5
+            "latencyMs": 167.5
           },
           {
             "status": "missing",
-            "latencyMs": 166.10000038146973
+            "latencyMs": 162.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166
+            "latencyMs": 167.40000009536743
           }
         ]
       },
@@ -2630,16 +2630,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.09999990463257
+            "latencyMs": 168.2000002861023
           },
           {
             "status": "missing",
-            "latencyMs": 166.69999980926514
+            "latencyMs": 166.5
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 166.90000009536743
           }
         ]
       },
@@ -2651,12 +2651,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 171.59999990463257
+            "latencyMs": 175.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 177.80000019073486
           }
         ]
       },
@@ -2668,7 +2668,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 163.09999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -2684,16 +2684,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.7000002861023
+            "latencyMs": 160.40000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 161.09999990463257
+            "latencyMs": 165.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 169.69999980926514
           }
         ]
       },
@@ -2705,12 +2705,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.40000009536743
+            "latencyMs": 165.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 161.09999990463257
+            "latencyMs": 168.7999997138977
           }
         ]
       },
@@ -2722,12 +2722,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 162.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 167.90000009536743
+            "latencyMs": 167.10000038146973
           }
         ]
       },
@@ -2739,12 +2739,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 192.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.5
+            "latencyMs": 164.80000019073486
           }
         ]
       },
@@ -2756,16 +2756,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167
+            "latencyMs": 164
           },
           {
             "status": "missing",
-            "latencyMs": 161
+            "latencyMs": 160.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 160
+            "latencyMs": 170.7999997138977
           }
         ]
       },
@@ -2777,16 +2777,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161
+            "latencyMs": 164.69999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 162.60000038146973
+            "latencyMs": 172.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.2999997138977
+            "latencyMs": 168.2999997138977
           }
         ]
       },
@@ -2798,12 +2798,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 163.40000009536743
+            "latencyMs": 166.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 173.80000019073486
+            "latencyMs": 168.30000019073486
           }
         ]
       },
@@ -2815,7 +2815,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.90000009536743
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -2831,16 +2831,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 161.5
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.2000002861023
+            "latencyMs": 167.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.40000009536743
+            "latencyMs": 167
           }
         ]
       },
@@ -2852,12 +2852,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 160.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 166
           }
         ]
       },
@@ -2869,12 +2869,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.40000009536743
+            "latencyMs": 169
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 170.5
+            "latencyMs": 166.7000002861023
           }
         ]
       },
@@ -2886,12 +2886,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.5
+            "latencyMs": 166.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168
+            "latencyMs": 167.30000019073486
           }
         ]
       },
@@ -2903,16 +2903,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 168.5
           },
           {
             "status": "missing",
-            "latencyMs": 166.2999997138977
+            "latencyMs": 166.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 165.7999997138977
+            "latencyMs": 168.69999980926514
           }
         ]
       },
@@ -2924,16 +2924,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 160.40000009536743
+            "latencyMs": 168.7999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 169.7000002861023
+            "latencyMs": 166.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.2999997138977
+            "latencyMs": 166.7000002861023
           }
         ]
       },
@@ -2945,12 +2945,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 159.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 168.30000019073486
           }
         ]
       },
@@ -2962,7 +2962,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
@@ -2978,16 +2978,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159
+            "latencyMs": 159.89999961853027
           },
           {
             "status": "ambiguous",
-            "latencyMs": 167.69999980926514
+            "latencyMs": 161.60000038146973
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 160.5
           }
         ]
       },
@@ -2999,12 +2999,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 167.5
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 159.60000038146973
+            "latencyMs": 169.10000038146973
           }
         ]
       },
@@ -3016,12 +3016,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 158.69999980926514
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 168.60000038146973
+            "latencyMs": 169.69999980926514
           }
         ]
       },
@@ -3033,12 +3033,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 169.90000009536743
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.89999961853027
+            "latencyMs": 168
           }
         ]
       },
@@ -3050,16 +3050,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.69999980926514
+            "latencyMs": 165.30000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 169.90000009536743
+            "latencyMs": 168
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 168.80000019073486
+            "latencyMs": 163.69999980926514
           }
         ]
       },
@@ -3071,16 +3071,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.7999997138977
+            "latencyMs": 167.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 167.2000002861023
+            "latencyMs": 167.2999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 163.7999997138977
+            "latencyMs": 168.2000002861023
           }
         ]
       },
@@ -3092,12 +3092,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 160.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.7999997138977
+            "latencyMs": 169.5
           }
         ]
       },
@@ -3109,7 +3109,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 161.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -3125,16 +3125,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 160.80000019073486
           },
           {
             "status": "ambiguous",
-            "latencyMs": 175.09999990463257
+            "latencyMs": 168.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.59999990463257
+            "latencyMs": 167.90000009536743
           }
         ]
       },
@@ -3146,12 +3146,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.59999990463257
+            "latencyMs": 169.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 169.2000002861023
+            "latencyMs": 166.2000002861023
           }
         ]
       },
@@ -3163,12 +3163,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 172.40000009536743
+            "latencyMs": 161.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 170
           }
         ]
       },
@@ -3180,12 +3180,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.5
+            "latencyMs": 158.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 174.2999997138977
+            "latencyMs": 159.80000019073486
           }
         ]
       },
@@ -3197,16 +3197,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161.10000038146973
+            "latencyMs": 163.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 166.59999990463257
+            "latencyMs": 169.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 165.40000009536743
+            "latencyMs": 161.7000002861023
           }
         ]
       },
@@ -3218,16 +3218,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167
+            "latencyMs": 161.2999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 167
+            "latencyMs": 166
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.39999961853027
+            "latencyMs": 161
           }
         ]
       },
@@ -3239,12 +3239,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.40000009536743
+            "latencyMs": 164.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.7000002861023
+            "latencyMs": 163.40000009536743
           }
         ]
       },
@@ -3256,7 +3256,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 158.90000009536743
+            "latencyMs": 165.09999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -3272,16 +3272,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 172.89999961853027
+            "latencyMs": 163
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2000002861023
+            "latencyMs": 168.89999961853027
           }
         ]
       },
@@ -3293,12 +3293,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.7999997138977
+            "latencyMs": 158.5
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 166.80000019073486
+            "latencyMs": 167.5
           }
         ]
       },
@@ -3310,12 +3310,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.5
+            "latencyMs": 168.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.5
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -3327,12 +3327,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.59999990463257
+            "latencyMs": 161.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 170.40000009536743
+            "latencyMs": 170.10000038146973
           }
         ]
       },
@@ -3344,16 +3344,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.19999980926514
+            "latencyMs": 159.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 165.69999980926514
+            "latencyMs": 160.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -3365,16 +3365,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 173.10000038146973
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 166.5
+            "latencyMs": 167.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 171.69999980926514
+            "latencyMs": 167.7000002861023
           }
         ]
       },
@@ -3386,12 +3386,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 165.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 166.90000009536743
           }
         ]
       },
@@ -3403,7 +3403,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 165.5
           },
           {
             "status": "uniquely reanchored",
@@ -3419,16 +3419,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.2000002861023
+            "latencyMs": 167.60000038146973
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -3440,12 +3440,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 167.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 167.09999990463257
           }
         ]
       },
@@ -3457,12 +3457,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 166.89999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 159.5
           }
         ]
       },
@@ -3474,12 +3474,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 165.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162
+            "latencyMs": 166.40000009536743
           }
         ]
       },
@@ -3491,16 +3491,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 163.19999980926514
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 168.5
+            "latencyMs": 161.5
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 170
+            "latencyMs": 159.5
           }
         ]
       },
@@ -3512,16 +3512,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 159.59999990463257
+            "latencyMs": 159.19999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 166.59999990463257
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 162.90000009536743
           }
         ]
       },
@@ -3533,12 +3533,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.2000002861023
+            "latencyMs": 167.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.2999997138977
+            "latencyMs": 173.30000019073486
           }
         ]
       },
@@ -3550,7 +3550,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 162
+            "latencyMs": 161.90000009536743
           },
           {
             "status": "uniquely reanchored",
@@ -3566,16 +3566,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.19999980926514
+            "latencyMs": 167.69999980926514
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 160.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 170.5
+            "latencyMs": 160.2999997138977
           }
         ]
       },
@@ -3587,12 +3587,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167
+            "latencyMs": 164.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 165.7999997138977
+            "latencyMs": 166.09999990463257
           }
         ]
       },
@@ -3604,12 +3604,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.60000038146973
+            "latencyMs": 168.90000009536743
           }
         ]
       },
@@ -3621,12 +3621,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 166.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 169.09999990463257
           }
         ]
       },
@@ -3638,16 +3638,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.5
+            "latencyMs": 164.69999980926514
           },
           {
             "status": "missing",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 169.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166
+            "latencyMs": 167
           }
         ]
       },
@@ -3659,16 +3659,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 168.7999997138977
           },
           {
             "status": "missing",
-            "latencyMs": 165.90000009536743
+            "latencyMs": 168.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.5
+            "latencyMs": 167
           }
         ]
       },
@@ -3680,12 +3680,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 160.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 170.2000002861023
           }
         ]
       },
@@ -3697,7 +3697,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "uniquely reanchored",
@@ -3713,16 +3713,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.69999980926514
+            "latencyMs": 165.7000002861023
           },
           {
             "status": "ambiguous",
-            "latencyMs": 165.40000009536743
+            "latencyMs": 169.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 164.30000019073486
+            "latencyMs": 161.59999990463257
           }
         ]
       },
@@ -3734,12 +3734,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 161.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 159.2999997138977
           }
         ]
       },
@@ -3751,12 +3751,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.40000009536743
+            "latencyMs": 167.39999961853027
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 167.2000002861023
           }
         ]
       },
@@ -3768,12 +3768,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 160.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.2000002861023
+            "latencyMs": 168.80000019073486
           }
         ]
       },
@@ -3785,16 +3785,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 168.7000002861023
           },
           {
             "status": "missing",
-            "latencyMs": 166.5
+            "latencyMs": 172
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 167.40000009536743
           }
         ]
       },
@@ -3806,16 +3806,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.7000002861023
+            "latencyMs": 162.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 166
+            "latencyMs": 170.2000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.69999980926514
+            "latencyMs": 160.39999961853027
           }
         ]
       },
@@ -3827,12 +3827,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 170
+            "latencyMs": 160
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.7000002861023
+            "latencyMs": 168.7000002861023
           }
         ]
       },
@@ -3844,7 +3844,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.69999980926514
+            "latencyMs": 160.69999980926514
           },
           {
             "status": "uniquely reanchored",
@@ -3860,16 +3860,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 168.40000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.7000002861023
+            "latencyMs": 159
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -3881,12 +3881,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.40000009536743
+            "latencyMs": 166.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 160
+            "latencyMs": 165.90000009536743
           }
         ]
       },
@@ -3903,7 +3903,7 @@
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 168.80000019073486
+            "latencyMs": 166.09999990463257
           }
         ]
       },
@@ -3915,12 +3915,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 166.2999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 162.09999990463257
+            "latencyMs": 168.90000009536743
           }
         ]
       },
@@ -3932,16 +3932,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.30000019073486
+            "latencyMs": 166.5
           },
           {
             "status": "missing",
-            "latencyMs": 166.59999990463257
+            "latencyMs": 159.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 168.2000002861023
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -3953,16 +3953,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 159.09999990463257
+            "latencyMs": 161.89999961853027
           },
           {
             "status": "missing",
-            "latencyMs": 165.90000009536743
+            "latencyMs": 167.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 169.7999997138977
+            "latencyMs": 167.40000009536743
           }
         ]
       },
@@ -3974,12 +3974,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.5
+            "latencyMs": 159.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 170.09999990463257
           }
         ]
       },
@@ -3991,7 +3991,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 165.40000009536743
           },
           {
             "status": "uniquely reanchored",
@@ -4007,16 +4007,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161
+            "latencyMs": 162.7000002861023
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 166.5
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166
+            "latencyMs": 164.09999990463257
           }
         ]
       },
@@ -4028,12 +4028,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.19999980926514
+            "latencyMs": 159.7999997138977
           },
           {
             "status": "uniquely reanchored",
             "start": 38,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 170
           }
         ]
       },
@@ -4045,12 +4045,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 164.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 203.7999997138977
+            "latencyMs": 168.90000009536743
           }
         ]
       },
@@ -4062,12 +4062,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.2000002861023
+            "latencyMs": 165.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 176.09999990463257
+            "latencyMs": 163.30000019073486
           }
         ]
       },
@@ -4079,16 +4079,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 170.40000009536743
+            "latencyMs": 165.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 169.90000009536743
+            "latencyMs": 160.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 160.59999990463257
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -4100,16 +4100,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.2000002861023
+            "latencyMs": 167.90000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 166.59999990463257
+            "latencyMs": 181.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 164.7999997138977
+            "latencyMs": 168.5
           }
         ]
       },
@@ -4121,12 +4121,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 161
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.5
+            "latencyMs": 169.19999980926514
           }
         ]
       },
@@ -4138,7 +4138,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.59999990463257
+            "latencyMs": 167.7000002861023
           },
           {
             "status": "uniquely reanchored",
@@ -4154,16 +4154,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 164.7999997138977
           },
           {
             "status": "ambiguous",
-            "latencyMs": 179.2000002861023
+            "latencyMs": 168.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -4175,12 +4175,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.59999990463257
+            "latencyMs": 165.5
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 167.7000002861023
+            "latencyMs": 168.09999990463257
           }
         ]
       },
@@ -4192,12 +4192,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.59999990463257
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.90000009536743
+            "latencyMs": 165.90000009536743
           }
         ]
       },
@@ -4209,12 +4209,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.10000038146973
+            "latencyMs": 174.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 164.30000019073486
           }
         ]
       },
@@ -4226,16 +4226,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 168.5
           },
           {
             "status": "missing",
-            "latencyMs": 159.5
+            "latencyMs": 168.5
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 167.80000019073486
+            "latencyMs": 159.09999990463257
           }
         ]
       },
@@ -4247,16 +4247,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 160.09999990463257
+            "latencyMs": 163.39999961853027
           },
           {
             "status": "missing",
-            "latencyMs": 168.5
+            "latencyMs": 159
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 162.2000002861023
+            "latencyMs": 173.30000019073486
           }
         ]
       },
@@ -4268,12 +4268,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167.7999997138977
+            "latencyMs": 186.80000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 173.40000009536743
+            "latencyMs": 161.5
           }
         ]
       },
@@ -4285,7 +4285,7 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.2999997138977
+            "latencyMs": 166.90000009536743
           },
           {
             "status": "uniquely reanchored",
@@ -4301,16 +4301,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 166.89999961853027
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.2000002861023
+            "latencyMs": 159.69999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 164.09999990463257
+            "latencyMs": 168.40000009536743
           }
         ]
       },
@@ -4322,12 +4322,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.2999997138977
+            "latencyMs": 167.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 172.5
+            "latencyMs": 166
           }
         ]
       },
@@ -4339,12 +4339,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.89999961853027
+            "latencyMs": 169
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 168
+            "latencyMs": 166.90000009536743
           }
         ]
       },
@@ -4356,12 +4356,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 163.30000019073486
+            "latencyMs": 169.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 162.59999990463257
+            "latencyMs": 186.2000002861023
           }
         ]
       },
@@ -4373,16 +4373,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.09999990463257
+            "latencyMs": 162.80000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 166.40000009536743
+            "latencyMs": 163.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166
+            "latencyMs": 161.69999980926514
           }
         ]
       },
@@ -4394,16 +4394,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.90000009536743
+            "latencyMs": 164.5
           },
           {
             "status": "missing",
-            "latencyMs": 168.5
+            "latencyMs": 161
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 168.7999997138977
+            "latencyMs": 161.69999980926514
           }
         ]
       },
@@ -4415,12 +4415,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.90000009536743
+            "latencyMs": 167.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.19999980926514
+            "latencyMs": 167.2999997138977
           }
         ]
       },
@@ -4432,7 +4432,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.5
+            "latencyMs": 161.59999990463257
           },
           {
             "status": "uniquely reanchored",
@@ -4448,16 +4448,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166.59999990463257
+            "latencyMs": 168.5
           },
           {
             "status": "ambiguous",
-            "latencyMs": 160.7000002861023
+            "latencyMs": 159.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 168.39999961853027
+            "latencyMs": 165.80000019073486
           }
         ]
       },
@@ -4469,12 +4469,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 160.89999961853027
+            "latencyMs": 163.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 168.2000002861023
+            "latencyMs": 162.39999961853027
           }
         ]
       },
@@ -4486,12 +4486,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.40000009536743
+            "latencyMs": 188.90000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 166.5
+            "latencyMs": 159.09999990463257
           }
         ]
       },
@@ -4503,12 +4503,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 170.10000038146973
+            "latencyMs": 162.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.39999961853027
+            "latencyMs": 163.30000019073486
           }
         ]
       },
@@ -4520,16 +4520,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 171.80000019073486
+            "latencyMs": 162.80000019073486
           },
           {
             "status": "missing",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 169.40000009536743
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 166.30000019073486
+            "latencyMs": 161.09999990463257
           }
         ]
       },
@@ -4541,16 +4541,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.5
+            "latencyMs": 163.40000009536743
           },
           {
             "status": "missing",
-            "latencyMs": 167.2000002861023
+            "latencyMs": 166.09999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 165.59999990463257
+            "latencyMs": 161.2000002861023
           }
         ]
       },
@@ -4562,12 +4562,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.7999997138977
+            "latencyMs": 166.7000002861023
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.2999997138977
+            "latencyMs": 167.90000009536743
           }
         ]
       },
@@ -4579,7 +4579,7 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 161.19999980926514
+            "latencyMs": 166.2999997138977
           },
           {
             "status": "uniquely reanchored",
@@ -4595,16 +4595,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.90000009536743
+            "latencyMs": 163.90000009536743
           },
           {
             "status": "ambiguous",
-            "latencyMs": 166.09999990463257
+            "latencyMs": 167
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.80000019073486
+            "latencyMs": 180.80000019073486
           }
         ]
       },
@@ -4616,12 +4616,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 162.60000038146973
+            "latencyMs": 163.30000019073486
           },
           {
             "status": "uniquely reanchored",
             "start": 37,
-            "latencyMs": 166.2999997138977
+            "latencyMs": 164.40000009536743
           }
         ]
       },
@@ -4633,12 +4633,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.5
+            "latencyMs": 167.5
           },
           {
             "status": "uniquely reanchored",
             "start": 43,
-            "latencyMs": 170.5
+            "latencyMs": 160.80000019073486
           }
         ]
       },
@@ -4650,12 +4650,12 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.09999990463257
+            "latencyMs": 161
           },
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 166.69999980926514
+            "latencyMs": 165
           }
         ]
       },
@@ -4667,16 +4667,16 @@
           {
             "status": "uniquely reanchored",
             "start": 30,
-            "latencyMs": 167.5
+            "latencyMs": 161.89999961853027
           },
           {
             "status": "missing",
-            "latencyMs": 165.5
+            "latencyMs": 167.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 42,
-            "latencyMs": 165.7000002861023
+            "latencyMs": 160.7999997138977
           }
         ]
       },
@@ -4688,16 +4688,16 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.30000019073486
+            "latencyMs": 160.5
           },
           {
             "status": "missing",
-            "latencyMs": 165.59999990463257
+            "latencyMs": 164.19999980926514
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 165.59999990463257
+            "latencyMs": 167.30000019073486
           }
         ]
       },
@@ -4709,12 +4709,12 @@
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 167
+            "latencyMs": 162.59999990463257
           },
           {
             "status": "uniquely reanchored",
             "start": 31,
-            "latencyMs": 166
+            "latencyMs": 167.30000019073486
           }
         ]
       }
@@ -4733,18 +4733,18 @@
     "drafts": {
       "acknowledgments": 2,
       "failures": 0,
-      "lastInputToAckMs": 306.09999990463257,
-      "lastWriteMs": 5.800000190734863,
-      "maxWriteMs": 7.799999713897705,
-      "totalWriteMs": 13.599999904632568,
+      "lastInputToAckMs": 320.09999990463257,
+      "lastWriteMs": 19.700000286102295,
+      "maxWriteMs": 19.700000286102295,
+      "totalWriteMs": 34.200000286102295,
       "writes": 2
     },
     "epoch": 1250,
     "failures": 0,
     "indexAttempts": 866,
     "inspectedRecords": 993,
-    "lastQuietToReadyMs": 156,
-    "lastUpdateMs": 156,
+    "lastQuietToReadyMs": 153.80000019073486,
+    "lastUpdateMs": 153.80000019073486,
     "limits": {
       "attempts": 8,
       "batches": 120,
@@ -4754,9 +4754,9 @@
     },
     "maxBatchRecords": 2,
     "maxDiscoveryNodes": 81,
-    "maxIndexMs": 53.89999961853027,
+    "maxIndexMs": 13.800000190734863,
     "maxInspectedRecords": 1,
-    "maxUpdateMs": 265.2000002861023,
+    "maxUpdateMs": 275.80000019073486,
     "maxVisitedNodes": 72,
     "navigationAvailable": true,
     "navigationEvents": 0,
@@ -4765,9 +4765,9 @@
     "paused": false,
     "records": 1025,
     "session": 0,
-    "source": "http://127.0.0.1:44745/blank.html?dynamic",
+    "source": "http://127.0.0.1:37339/blank.html?dynamic",
     "status": "ready",
-    "totalIndexMs": 1053.499993801117
+    "totalIndexMs": 995.3999876976013
   },
   "selection": {
     "selection": "Selection",
@@ -4780,9 +4780,9 @@
         "name": "continuous streaming",
         "pendingChecks": 35,
         "nominalDurationMs": 1050,
-        "elapsedMs": 1073.0999999046326,
+        "elapsedMs": 1098.0999999046326,
         "indexAttempts": 1,
-        "quietToReadyMs": 150.80000019073486
+        "quietToReadyMs": 151.2000002861023
       },
       {
         "name": "1001-record overflow",
@@ -4864,18 +4864,18 @@
         "name": "1000-paragraph workload",
         "mutations": 5,
         "latenciesMs": [
-          185.42940000002272,
-          209.79459399997722,
-          212.90442900004564,
-          205.78433799999766,
-          181.32055900001433
+          240.15956000000006,
+          211.83574200002477,
+          221.06583999999566,
+          214.61149999999907,
+          188.52013699995587
         ],
         "indexAttempts": 5,
         "commits": 5,
         "maxVisitedNodes": 2007,
         "maxDiscoveryNodes": 2016,
-        "meanIndexMs": 33.519999980926514,
-        "lifetimeMaxIndexMsIncludingFaultDelay": 252,
+        "meanIndexMs": 41.02000017166138,
+        "lifetimeMaxIndexMsIncludingFaultDelay": 394.30000019073486,
         "domElements": 1003,
         "mountedRows": 1,
         "panelElements": 65
@@ -4889,23 +4889,23 @@
         "staleWrites": 0
       },
       "batches": 1209,
-      "commits": 907,
+      "commits": 909,
       "discarded": 1,
       "drafts": {
         "acknowledgments": 2,
         "failures": 1,
-        "lastInputToAckMs": 306.09999990463257,
-        "lastWriteMs": 5.800000190734863,
-        "maxWriteMs": 7.799999713897705,
-        "totalWriteMs": 13.599999904632568,
+        "lastInputToAckMs": 320.09999990463257,
+        "lastWriteMs": 19.700000286102295,
+        "maxWriteMs": 19.700000286102295,
+        "totalWriteMs": 34.200000286102295,
         "writes": 3
       },
       "epoch": 1498,
       "failures": 14,
-      "indexAttempts": 922,
+      "indexAttempts": 924,
       "inspectedRecords": 1202,
-      "lastQuietToReadyMs": 190.40000009536743,
-      "lastUpdateMs": 190.40000009536743,
+      "lastQuietToReadyMs": 176.5,
+      "lastUpdateMs": 176.5,
       "limits": {
         "attempts": 8,
         "batches": 120,
@@ -4915,20 +4915,20 @@
       },
       "maxBatchRecords": 1001,
       "maxDiscoveryNodes": 2017,
-      "maxIndexMs": 252,
+      "maxIndexMs": 394.30000019073486,
       "maxInspectedRecords": 2,
-      "maxUpdateMs": 1193.5,
+      "maxUpdateMs": 1218.8000001907349,
       "maxVisitedNodes": 2008,
       "navigationAvailable": true,
       "navigationEvents": 4,
       "needsConfirmation": false,
-      "notifications": 1846,
+      "notifications": 1850,
       "paused": false,
       "records": 2400,
       "session": 4,
-      "source": "http://127.0.0.1:44745/blank.html?dynamic",
+      "source": "http://127.0.0.1:37339/blank.html?dynamic",
       "status": "ready",
-      "totalIndexMs": 2263.299994468689
+      "totalIndexMs": 2422.6999888420105
     }
   }
 }

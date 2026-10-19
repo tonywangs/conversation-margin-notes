@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19T04:02:42.613Z",
+  "mode": "synthetic privacy boundary",
+  "cases": [
+    {
+      "provider": "isolated privacy fixture",
+      "url": "https://privacy.example.test/conversation",
+      "checks": [
+        "real transcript rendered (fixture)",
+        "private draft lives in extension origin; no page UI or page messaging bridge",
+        "create and attach",
+        "reload and reattach",
+        "edit",
+        "export has edited body, real quotation and source",
+        "local storage; no marker in source DOM or outgoing request URLs/bodies",
+        "duplicate real DOM passage becomes ambiguous without attachment",
+        "persisted recovery and concurrent stale-save rejection preserve private draft"
+      ],
+      "httpStatus": 200,
+      "title": "",
+      "reloadAnchor": "exact"
+    },
+    {
+      "provider": "loopback privacy fixture",
+      "url": "http://127.0.0.1:8771/conversation",
+      "checks": [
+        "real transcript rendered (fixture)",
+        "private draft lives in extension origin; no page UI or page messaging bridge",
+        "create and attach",
+        "reload and reattach",
+        "edit",
+        "export has edited body, real quotation and source",
+        "local storage; no marker in source DOM or outgoing request URLs/bodies",
+        "duplicate real DOM passage becomes ambiguous without attachment",
+        "persisted recovery and concurrent stale-save rejection preserve private draft"
+      ],
+      "httpStatus": 200,
+      "title": "",
+      "reloadAnchor": "exact"
+    }
+  ],
+  "complete": true,
+  "browser": "156.0.8078.4",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ]
+}

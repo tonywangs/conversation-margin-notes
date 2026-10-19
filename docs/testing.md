@@ -1,5 +1,35 @@
 # Verification design
 
+## Production editor and live inputs
+
+`node tests/secure-browser.mjs` loads the production extension unchanged and tests
+the extension-owned editor on intercepted HTTPS and loopback fixture URLs. It
+checks create/reload/edit/export, local storage, absence of private UI in the page,
+denial of content-script notebook reads, duplicate ambiguity, persisted recovery,
+and rejection of competing stale edits. The source adapter accepts commands only
+from the extension-owned editor; private text never crosses that interface.
+
+`node tests/secure-browser.mjs --live` repeats create/reload/edit/export against
+public ChatGPT and Gemini shared conversations, with real provider requests and no
+synthetic replacement. It allows 30 seconds for provider hydration before selection.
+Source selection is constructed with a browser Range. It is not a human usability
+audit. A literal marker scan of outgoing request URLs/bodies is supplemental
+observation, not proof against all encodings or future provider behavior. The
+origin boundary and denied page messaging are the privacy mechanism.
+
+Both write dated JSON with `complete`, per-case checks, and failure diagnostics.
+The public links and access blockers are documented in README. Live checks require
+network access and are intentionally separate from the offline verifier.
+
+## Historical in-page UI regression suite
+
+The remainder describes the retired in-page UI and its shared core. Its panel and
+worker adapter now live under `tests/legacy-*`, outside the installable extension.
+`tests/browser.mjs` copies the production extension into a temporary directory and
+adds this explicitly test-only adapter. It cannot validate production UI/privacy;
+the separate production suite above does that. Its previous results remain valid
+only within their original synthetic scope.
+
 `npm run verify` runs Node's built-in test runner and a persistent Playwright
 Chromium context with the actual unpacked extension. Test dependencies are pinned
 in `package-lock.json`. No web application server or network account is required;
@@ -12,7 +42,7 @@ Unicode, code, hostile text, keyboard activation and Escape, a 320px viewport,
 concurrent tabs, failed imports and writes, all 500 reachable notes, deletion and
 bounded mounted rows/highlights. Real storage quota exhaustion tests browser failure
 semantics. Deliberate monkeypatching of the native write boundary additionally tests
-delete/import failures, with the production worker and UI otherwise unchanged.
+delete/import failures, with shared storage logic and the legacy UI otherwise unchanged.
 
 The mutation experiment uses xorshift32 with seed `0x5eedc0de`. Forty trials of each
 of seven transformations produce 280 cases. Each case begins with a constructed

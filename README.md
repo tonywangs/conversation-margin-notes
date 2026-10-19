@@ -1,233 +1,150 @@
 # Conversation Margin Notes
 
-A small, local Chromium extension for keeping thoughts beside conversation passages.
-Select text, write a note, and return to it later. Export a portable JSON notebook
-and import it into another browser profile. Changed or repeated passages are
-explicitly marked **uniquely reanchored**, **ambiguous**, or **missing**.
+A local Chromium extension for annotating passages in shared AI conversations.
+Select a passage, keep a private note, return after reloading, and export a portable
+JSON notebook. Repeated or changed passages have explicit anchor statuses; the
+extension never guesses between duplicate quotations.
 
-No account, backend, remote inference, analytics, build step, or persistent host
-permission. The extension asks only for `activeTab`, `scripting`, and `storage`.
-It reads supported conversation text only after you activate it.
+## Install and launch
 
-## Install and try it offline
+1. Download or copy this repository. Open `chrome://extensions`, enable **Developer
+   mode**, choose **Load unpacked**, and select the `extension/` folder. No build,
+   account, server, or API key is required.
+2. Open a public shared conversation, for example this [ChatGPT instrument-control
+   conversation](https://chatgpt.com/share/8d523f18-86c8-44af-8002-a5bcf45ffbb5) or
+   [Gemini logic puzzle](https://gemini.google.com/share/37ac58221046). Let its
+   transcript finish loading.
+3. Pin **Conversation Margin Notes** and click its toolbar icon, or use
+   **Alt+Shift+M**. A separate **Margin Notes — private editor** window opens.
+4. Select a passage in the conversation tab, return to the editor, and choose
+   **Annotate selection**. Type your note and **Save note**. If the page is still
+   changing, refresh and select again.
+5. Reload the conversation tab, then choose **Refresh source & notes** in the
+   editor. Your saved notes remain; their anchor status is recomputed.
+6. Use **Edit**, **Go to passage**, or **Delete → Confirm delete**. **Export all
+   notes** downloads `margin-notes-v1.json`; **Import JSON** merges a notebook
+   without overwriting conflicting records.
 
-1. Copy this repository to your computer. Open `chrome://extensions`, enable
-   **Developer mode**, choose **Load unpacked**, and select the `extension/` folder.
-2. From the repository directory run:
-   ```sh
-   python3 -m http.server 8771 --bind 127.0.0.1 --directory fixtures
-   ```
-3. Open `http://127.0.0.1:8771/conversation.html`. This is a local synthetic fixture;
-   the server binds only to your computer. Internet access is unnecessary.
-4. Pin **Conversation Margin Notes** and click its toolbar icon. Alternatively use
-   **Alt+Shift+M** (configure conflicts at `chrome://extensions/shortcuts`).
-5. Select a passage and click **Annotate selection**, type a note, and save it.
-   Use **Edit**, **Delete → Confirm delete**, or **Go to passage** on a note.
-6. Reload the page and activate the extension again. Notes remain saved locally.
-7. **Export all notes** downloads `margin-notes-v1.json`. In a fresh browser profile,
-   load the same extension, visit the same URL, activate it, and **Import JSON**.
+Keep the source tab open. Closing it disconnects that editor. Reopen the source
+and activate the extension to create another editor. Cross-origin navigation can
+revoke the browser's activeTab grant; activate the extension again on the new page.
+For same-tab routes, verify the displayed conversation and use **Confirm displayed
+conversation** when requested. Fragment routes remain unsupported.
 
-Use the same host, port, path and query when returning to a source. Stored identities remain fragment-free. Nonempty fragments are detected but stay
-unresolved because they might identify a different hash-routed conversation. **All sources** makes notes from other URLs reachable, with
-source mismatch diagnostics. Imports never remap sources automatically.
+To try it offline:
 
-Escape closes the panel; Tab and Shift+Tab move through its controls; Enter or
-Space activates buttons. The panel is non-modal, with visible focus indicators and
-an announcement region. At narrow widths it covers the page: close it to inspect
-the selected passage. Drafts persist locally after 300 ms of quiet input. Wait for **Draft persisted**
-before closing or reloading; pending edits can still be lost. Reload or restart the
-browser, activate the extension, then choose **Recover persisted draft** on the
-original source. Export before uninstalling or clearing browser data.
+```sh
+python3 -m http.server 8771 --bind 127.0.0.1 --directory fixtures
+```
 
-## Try a changing conversation
+Open `http://127.0.0.1:8771/conversation.html` and follow the same steps. This is
+clearly labeled synthetic sample data. The private editor is used for localhost
+as well as online pages. A packaging helper is available:
 
-Open `http://127.0.0.1:8771/dynamic.html` using the same local server. Annotate the
-gold-bordered passage, then try **Append**, **Duplicate**, **Remove**, **Replace
-container**, and **Stream / stop**. Leave an edit open while streaming: its text,
-focus and caret stay in place. **Restore original** returns the exact anchor.
-**Toggle incomplete** models a document that reports unfinished loading.
+```sh
+python3 tests/package-extension.py
+```
 
-Observed DOM changes and native same-tab navigation events invalidate anchors. CSSOM edits
-and viewport-only style changes require manual refresh. Virtualized or
-unloaded history is unsupported unless the page explicitly marks itself incomplete.
-See the [dynamic document contract](docs/contract.md#dynamic-document-contract).
+Extract `dist/conversation-margin-notes.zip`, then load its `extension/` folder.
+The unpacked directory and ZIP contain the same runtime files.
 
-## What an anchor status means
+## Privacy
 
-| Status | Behavior |
+Permissions remain exactly `activeTab`, `scripting`, and `storage`. There are no
+persistent host permissions, web-accessible editor resources, external messaging
+interfaces, analytics, network clients, account integration, or synchronization.
+Page access starts only after you activate the extension.
+
+Note bodies, recovery previews, search text, and exports stay in an extension-owned
+window. The provider page receives neither that UI nor private text. Its adapter
+reads the public transcript and selection and can select a public passage when you
+choose **Go to passage**. Only the extension-owned editor can request notebook and
+draft operations. The page cannot access the editor DOM or directly call its
+message interface. Notes use `chrome.storage.local`, restricted to trusted
+extension contexts. They are not encrypted against access to your browser profile.
+
+The conversation provider still controls its own content and can observe your
+selection and navigation there. Protect exported JSON files; they contain note
+text, quotations, timestamps, and full source URLs including query strings.
+Export before uninstalling or clearing browser data.
+
+## Drafts and anchors
+
+Drafts persist after 300 ms of quiet input. Wait for **Draft persisted on this
+device** before closing the editor; pending keystrokes may be lost. **Recovery
+drafts** offers explicit recovery on the original source, export, and discard.
+Draft exports are labeled recovery JSON, separate from notebook imports.
+Concurrent/stale edits fail without overwriting existing notes; export the draft
+before discarding it and opening a fresh edit. An unrelated notebook change can
+also make an older draft conflict.
+
+| Status | Meaning |
 | --- | --- |
-| Exact | Full normalized source fingerprint and saved position/quote agree. |
-| Uniquely reanchored | Source changed; exactly one literal quotation remains. |
-| Ambiguous | Source changed; quotation appears more than once. No highlight or jump. |
-| Missing | No matching quotation, or inconsistent position in an unchanged source. |
-| Source mismatch | This note belongs to another URL. No attachment. |
-| Pending | Page is changing; highlights are cleared until 150 ms of quiet. |
-| Unresolved | URL and rendered identity disagree, a destination is unmarked, or a fragment route is unsupported. No attachment or writes. |
-| Incomplete | Unsupported/unfinished document or processing limit. No attachment; manual refresh available. |
+| exact | Full normalized source fingerprint and quotation agree. |
+| uniquely reanchored | The source changed and one literal quotation remains. |
+| ambiguous | Multiple matches; no jump or attachment. |
+| missing | No valid match; no jump or attachment. |
+| source mismatch | This note belongs to another URL. |
+| pending / incomplete / unresolved | Source is changing, unsupported, or its identity needs confirmation. |
 
-Context is saved for inspection but never used to guess between duplicates.
-Uniqueness is textual evidence, not proof that a rewritten page preserves meaning.
-There is no fuzzy matching. Observed DOM changes update anchors automatically.
-**Refresh notes & anchors** retries incomplete documents and refreshes saved notes.
+Status updates are polled while the editor is open. **Go to passage** rechecks the
+current source before selecting it. Unique text is evidence, not proof of unchanged
+meaning. There is no fuzzy matching. The extension requires one visible `main` or
+`[data-margin-notes-root]`. Virtualized/unloaded history, iframes, shadow-DOM
+transcripts, PDFs, canvas, and CSS-generated text are unsupported. Limits include
+200,000 normalized source code points, 10,000 root DOM nodes, 2,000 quotation code
+points, 4,000 saved-note code points, 500 notes, and 2 MiB notebook JSON. Recovery
+holds at most 32 drafts / 1 MiB. Nothing is silently evicted.
 
-## Supported pages and limits
+## Verification and live access
 
-Exactly one visible `[data-margin-notes-root]` or, as a fallback, one `main` element
-is required. This milestone supports changing light-DOM conversations: appended/edited messages,
-moved/removed passages, container replacement, inline formatting, code and Unicode. It does **not** establish
-compatibility with live ChatGPT, Claude, Grok or Gemini pages. Their changing DOMs,
-virtualized histories, permissions and navigation have not been tested.
-
-Hidden/editable content, forms, iframes, shadow DOM, PDFs, canvas, SVG and generated
-CSS text are excluded. Do not select across excluded content. The complete
-[document contract](docs/contract.md) defines normalization, code-point offsets,
-source identity and rejection behavior.
-
-Limits are 200,000 normalized code points, 400,000 raw UTF-16 units, 10,000 DOM
-nodes within the root, 2,000 selected code points, 4,000 note-body code points,
-500 total notes and 2 MiB JSON. The panel mounts at most 20 rows and 20 highlights;
-all notes remain reachable through paging and search. Limits reject the operation
-without silently dropping stored notes. Root discovery is capped at 20,000 document
-nodes; nesting and ancestor walks at 128 levels. Automatic updates allow 8 indexes
-and 120 mutation batches per 10 seconds, with at most 1,000 records inspected per
-batch. Overflow shows **incomplete** until manual refresh. Continuous streaming
-shows **pending** without repeatedly indexing the document.
-
-This is local storage, not encrypted storage. Exports contain note text, quotations,
-context, timestamps, fingerprints and full source URLs (including query strings).
-Keep them private. The panel is injected into the page's DOM; a hostile page can
-inspect or alter displayed panel content. Use it on trusted documents. It is not a
-security boundary against the page or other extensions. No note text is executed
-as HTML. Browser storage is restricted to trusted extension contexts, and page
-scripts cannot directly call the worker's internal message interface.
-
-## Reproduce verification
-
-Requires Node.js 22+ and the Chromium dependencies for Playwright. Test dependencies
-and a browser must be installed once while online (or copied from an offline cache):
+Install test dependencies (Node.js 22+):
 
 ```sh
 npm ci
 npx playwright install chromium
+node tests/secure-browser.mjs
+node tests/secure-browser.mjs --live
 ```
 
-Then one command runs unit tests, the installed-extension workflow, seeded DOM
-mutations and artifact limits, with external browser HTTP(S) blocked:
+The first command after setup tests the actual production extension against local
+intercepted HTTPS and loopback fixtures, including privacy boundaries and ambiguous
+anchors. The `--live` command uses the two public URLs above, a fresh browser
+profile, real provider networking, and the installed toolbar action. It performs
+create, reload, edit and export. It requires those links and providers to remain
+accessible; a challenge, unavailable link, or changed DOM fails rather than falling
+back to fixtures. Selection is constructed by browser automation on real transcript
+text. This is not a human toolbar or accessibility audit.
 
-```sh
-npm run verify
-```
+See [production privacy results](results/secure-verification.json),
+[live results](results/live-verification.json), the
+[ChatGPT editor demo](results/live-chatgpt.png), and the
+[Gemini editor demo](results/live-gemini.png).
+A successful earlier probe is not evidence that a later build passed; the JSON
+records `complete` and per-case checks for the latest run.
 
-Use `PLAYWRIGHT_BROWSERS_PATH` for a non-default browser cache. In the managed build
-environment, the verifier also recognizes `/tmp/margin-browsers`. Browser profiles
-and XDG files live in temporary directories and are removed after testing.
-No test browser uses your personal profile. Verification needs no credentials.
+The 2026-10-19 production run completed create, reload, edit and export on both
+pages. ChatGPT reattached exactly. Gemini's selected quotation appeared twice
+after reload: the editor preserved the note, explicitly marked it **ambiguous**,
+disabled passage jumping, and still allowed editing and export. That is a verified
+uncertainty result, not a claim of successful reattachment on that page.
 
-The harness uses Chromium's CDP `Extensions.triggerAction` on a real tab target,
-which invokes the installed extension action and activeTab grant. It does not load
-the panel as a standalone mock app. Selection ranges are constructed in the fixture;
-buttons, downloads, file inputs and keyboard actions use browser automation. Storage
-failure checks include a real quota exhaustion and separate injected write failures.
-A denial proxy blocks external browser connections; Playwright routes also reject
-non-fixture page requests. The extension itself has no network code.
+Observed inaccessible inputs on 2026-10-19:
 
-See [verification evidence](results/verification.json), [test output](results/tests.log),
-[static mutation results](results/mutations.json), [dynamic sequence results](results/dynamic.json), [navigation results](results/navigation.json), and [test design](docs/testing.md).
-Screenshots are generated in `results/desktop.png` and `results/narrow.png`.
-These checks cover synthetic compatibility, not a screen-reader audit, manual
-OS-level toolbar/shortcut testing, or long-term browser storage durability.
+| Provider / public URL | Observed result |
+| --- | --- |
+| [Claude shared conversation](https://claude.ai/share/9581bb8e-5cdf-40c8-b173-3d311fb6ee37) | Direct HTTP returned 403; Chromium reached a Cloudflare security-verification page instead of a transcript. Workflow untested. Requires access from a browser/network where this public page is available. |
+| [Gemini earlier sample](https://gemini.google.com/share/fb7b79067427) | Redirected to the app and reported “Link doesn't exist.” This URL cannot establish compatibility. The live suite uses the separately discovered public logic-puzzle link above. |
 
-## Data format and recovery
+Grok has not been evaluated; no compatibility claim is made. Provider DOMs and
+public links can change. The first ChatGPT access probe showed only the navigation
+shell after seven seconds; a separate published research conversation rendered
+successfully. The live suite allows hydration before selection.
 
-Version 1 JSON contains `{ "version": 1, "notes": [...] }`. A note includes its UUID,
-source URL, text, ISO timestamps and a selector containing quote, prefix, suffix,
-code-point offsets and a SHA-256 source fingerprint. See `extension/core.js` for the
-bounded validator. Unknown fields and versions are rejected rather than ignored.
-
-Import validates every record before committing one merged notebook. Identical
-UUID/content duplicates are skipped. Any conflicting UUID rejects the entire import;
-existing notes remain untouched. Export order and property order are deterministic.
-Keep originals when manually resolving conflicts; changing an ID creates a separate
-note. Source mismatches are retained, never automatically attached to this page.
-
-Concurrent saves use a worker queue and revision checks. If another tab has saved
-since the draft began, your save fails and retains your draft. **Refresh notes &
-anchors** never resets its base revision. Export the draft, or choose **Start a
-separate note**, review it, then save without overwriting the original. Failed writes never update the
-visible saved notebook. If saved data is corrupt, the panel reports an error and
-refuses to overwrite it; recovery requires a valid export or inspecting the local
-extension storage through Chromium's extension developer tools.
-
-The implementation builds on established annotation techniques; see
-[prior work](docs/prior-art.md). This project makes no novelty claim.
-
-Historical static-milestone evidence is preserved byte-for-byte in
-[results/baseline-v1](results/baseline-v1/). Current evidence is regenerated by the
-verification command; historical measurements are not claims about current code.
-
-## Try same-tab conversation navigation
-
-Open `http://127.0.0.1:8771/navigation.html?conversation=A` with the local server.
-Annotate the shared passage in A, open **Edit**, and leave some text unsaved.
-Click **Conversation B (delayed)**. A's highlights and current-source notes clear
-immediately; its draft stays visible with its original source label and Save disabled.
-When B finishes, only B's notes can attach, even though its quotation is identical.
-Return to A and choose **Recover draft on this source** before saving. Cancel is
-an explicit discard; the extension never transfers a draft to another source.
-
-Try Back/Forward, Replace URL, Unmarked destination and Unsupported hash route.
-A marked destination recovers automatically only when its root's absolute
-`data-margin-notes-source` matches the current URL and the content is not marked
-incomplete. After navigation, an unmarked page requires **Confirm displayed
-conversation**: first verify that the rendered transcript belongs to the displayed
-URL. **Refresh notes & anchors** retries loading without confirming identity.
-Fragments remain unresolved; return to a fragment-free URL. No live-provider
-compatibility is claimed. See the [navigation contract](docs/contract.md#same-tab-navigation-and-draft-recovery).
-
-Draft recovery also covers reloads, tab closure and browser restarts after local
-storage acknowledges the text. The panel distinguishes pending edits, persisted
-drafts and saved notes. Pending edits can be lost if the page closes before an
-acknowledgment; unload warnings and best-effort flushes are not durability guarantees.
-A save sent before navigation may finish on its original note. Recovery rereads
-storage and checks its original ID so a delayed new-note save is not duplicated.
-
-The previous dynamic milestone's artifacts are retained byte-for-byte under
-[results/baseline-dynamic](results/baseline-dynamic/), alongside the original static
-baseline. They describe historical code; current evidence is regenerated by verification.
-
-
-## Persistent drafts
-
-Select a passage, type, and wait for **Draft persisted on this device**. You can
-also choose **Persist draft now**. After reload or browser restart, activate the
-extension and use **Recovery drafts**. Recovery is explicit and only available on
-the original resolved source; another source can export or discard the recovery
-copy but cannot attach it. Closing the panel retains the active editor.
-
-Drafts are separate from notebook exports. **Export current draft** includes even
-pending text in `margin-notes-draft-recovery.json`; **Export recovery** downloads
-the selected persisted snapshot. This labeled JSON is for manual recovery and is
-not accepted by notebook Import. It preserves text, quotation, original source,
-target ID and base revision. Copy its `draft.body` into an editor if needed.
-**Cancel draft** discards the active draft; **Discard persisted draft** removes a
-listed recovery copy. Discard is version-checked and does not delete saved notes.
-
-At most 32 drafts and 1 MiB of draft JSON are retained, without expiration or
-silent eviction. Draft bodies support up to 8,000 code points in storage; the
-textarea permits 8,000 UTF-16 units and saved notes still allow 4,000 code points.
-On quota, capacity or storage failure, the editor retains its text and the last
-acknowledged snapshot stays intact. Export pending text, free space by explicitly
-discarding old drafts, then retry. Unsaved text above the saved-note limit can be
-exported or shortened. Local drafts are not encrypted or synced to other devices.
-
-Each tab can have an independent draft. Recovering the same draft in two tabs uses
-version checks: the first write wins and the other editor retains its text for
-export. Refresh the recovery list to see changes from other tabs. A notebook change
-(including an unrelated note) makes older drafts conflict. They can be exported or
-started as separate notes; they cannot silently overwrite newer or deleted notes.
-Saving a separate note keeps the old recovery copy until explicitly discarded.
-If a note saved but draft cleanup failed, both are retained with a diagnostic.
-
-See the [draft contract](docs/drafts.md), [model results](results/drafts-model.json)
-and [installed browser results](results/drafts-browser.json). Previous navigation
-artifacts are preserved in [results/baseline-navigation](results/baseline-navigation/).
+`npm run verify` also runs unit/model checks and the historical in-page UI
+regression suite. That suite now uses an explicit **test-only worker adapter**;
+it does not validate the production editor or its privacy boundary. Its seeded
+mutation/navigation/draft results retain their narrower scope. Historical artifacts
+remain under `results/baseline-*`. Source indexing and data-format contracts are in
+[docs/contract.md](docs/contract.md), [docs/drafts.md](docs/drafts.md), and
+[prior work](docs/prior-art.md). No novelty claim is made.

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
-import {readFile,mkdtemp,mkdir,rm,writeFile} from 'node:fs/promises';
+import {readFile,mkdtemp,mkdir,rm,writeFile,cp,rename,copyFile} from 'node:fs/promises';
 import {existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
@@ -13,6 +13,13 @@ if(!process.env.PLAYWRIGHT_BROWSERS_PATH && existsSync('/tmp/margin-browsers'))p
 const {chromium}=await import('playwright');
 export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
   const start=performance.now(),scratch=await mkdtemp(path.join(tmpdir(),'margin-verify-'));
+  // Historical in-page UI regression suite, using an explicit test-only worker.
+  // Production action/privacy behavior is exercised by secure-browser.mjs.
+  const legacyExtension=path.join(scratch,'legacy-extension');
+  await cp(path.join(root,'extension'),legacyExtension,{recursive:true});
+  await rename(path.join(legacyExtension,'worker.js'),path.join(legacyExtension,'production-worker.js'));
+  await copyFile(path.join(root,'tests','legacy-worker.js'),path.join(legacyExtension,'worker.js'));
+  await copyFile(path.join(root,'tests','legacy-panel.js'),path.join(legacyExtension,'panel.js'));
   const checks=[],contexts=[],errors=[],network={pageBlocked:0,proxyBlocked:0};
   async function deadline(work,label,ms=15000) {let timer;try{return await Promise.race([work,new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error(label+' timed out')),ms);})]);}finally{clearTimeout(timer);}}
   const check=description=>{checks.push(description);console.log('PASS '+description);};
@@ -29,7 +36,7 @@ export async function browserSuite({navigationOnly=false,draftsOnly=false}={}) {
   const env={...process.env,XDG_CONFIG_HOME:path.join(scratch,'config'),XDG_CACHE_HOME:path.join(scratch,'cache')};
   await mkdir(env.XDG_CONFIG_HOME);await mkdir(env.XDG_CACHE_HOME);
   async function launch(name) {
-    const extension=path.join(root,'extension');
+    const extension=legacyExtension;
     const context=await chromium.launchPersistentContext(path.join(scratch,name),{channel:'chromium',headless:true,timeout:30000,viewport:{width:1280,height:900},env,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--enable-unsafe-extension-debugging','--renderer-process-limit=2','--num-raster-threads=1',`--proxy-server=http://127.0.0.1:${proxy.address().port}`,'--proxy-bypass-list=127.0.0.1','--disable-quic','--force-webrtc-ip-handling-policy=disable_non_proxied_udp']});
     contexts.push(context);
     await context.route('**/*',route=>{const url=new URL(route.request().url());if(url.origin===origin || ['chrome-extension:','data:','blob:'].includes(url.protocol))return route.continue();network.pageBlocked++;return route.abort('blockedbyclient');});

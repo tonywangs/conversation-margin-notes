@@ -1,13 +1,13 @@
-✔ Unicode offsets, context, digest and normalization (14.736546ms)
-✔ conservative anchoring: changed duplicates never use position or context to guess (12.380987ms)
-✔ deterministic portable envelope and atomic duplicate policy (7.905963ms)
-✔ malformed imports rejected in full (18.469617ms)
-✔ 500-note capacity, 2 MiB limit and hostile text remain data (279.372389ms)
-✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (1.20954ms)
-✔ draft versions reject stale writes, stale discard, identity changes and deleted records (18.173298ms)
-✔ draft bounds never evict records; Unicode, schema and note format are validated (192.982406ms)
-✔ base revision survives refresh; conflicts and exact already-saved content are distinct (1.151788ms)
-✔ coalesced writer acknowledges only its snapshot, retries failures and stops before discard (14.430604ms)
+✔ Unicode offsets, context, digest and normalization (22.229926ms)
+✔ conservative anchoring: changed duplicates never use position or context to guess (3.93229ms)
+✔ deterministic portable envelope and atomic duplicate policy (5.732248ms)
+✔ malformed imports rejected in full (18.799284ms)
+✔ 500-note capacity, 2 MiB limit and hostile text remain data (275.006372ms)
+✔ source identity retains query, removes fragment, disallows credentials and unsupported schemes (3.919945ms)
+✔ draft versions reject stale writes, stale discard, identity changes and deleted records (24.068766ms)
+✔ draft bounds never evict records; Unicode, schema and note format are validated (173.829213ms)
+✔ base revision survives refresh; conflicts and exact already-saved content are distinct (0.985807ms)
+✔ coalesced writer acknowledges only its snapshot, retries failures and stops before discard (19.394541ms)
 ℹ tests 10
 ℹ suites 0
 ℹ pass 10
@@ -15,7 +15,25 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 907.766244
+ℹ duration_ms 870.265041
+PASS isolated privacy fixture: real transcript rendered (fixture)
+PASS isolated privacy fixture: private draft lives in extension origin; no page UI or page messaging bridge
+PASS isolated privacy fixture: create and attach
+PASS isolated privacy fixture: reload and reattach
+PASS isolated privacy fixture: edit
+PASS isolated privacy fixture: export has edited body, real quotation and source
+PASS isolated privacy fixture: local storage; no marker in source DOM or outgoing request URLs/bodies
+PASS isolated privacy fixture: duplicate real DOM passage becomes ambiguous without attachment
+PASS isolated privacy fixture: persisted recovery and concurrent stale-save rejection preserve private draft
+PASS loopback privacy fixture: real transcript rendered (fixture)
+PASS loopback privacy fixture: private draft lives in extension origin; no page UI or page messaging bridge
+PASS loopback privacy fixture: create and attach
+PASS loopback privacy fixture: reload and reattach
+PASS loopback privacy fixture: edit
+PASS loopback privacy fixture: export has edited body, real quotation and source
+PASS loopback privacy fixture: local storage; no marker in source DOM or outgoing request URLs/bodies
+PASS loopback privacy fixture: duplicate real DOM passage becomes ambiguous without attachment
+PASS loopback privacy fixture: persisted recovery and concurrent stale-save rejection preserve private draft
 
 Draft model cases: 320
 Draft browser groups: 11
@@ -26,4 +44,4 @@ Installed navigation sequences: 256
 Installed dynamic sequences: 256
 Intermediate anchor checks: 608
 DOM negatives: 10
-Runtime: 365711 ms
+Runtime: 386149 ms

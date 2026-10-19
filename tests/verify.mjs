@@ -8,9 +8,13 @@ const started=performance.now(),test=spawnSync(process.execPath,['--test','tests
 let log=test.stdout+test.stderr;process.stdout.write(log);
 if(test.status!==0){await writeFile('results/tests.log',log);process.exit(test.status||1);}
 try {
+  const secure=spawnSync(process.execPath,['tests/secure-browser.mjs'],{encoding:'utf8',timeout:180000});
+  log+=secure.stdout+secure.stderr;process.stdout.write(secure.stdout+secure.stderr);
+  if(secure.status!==0)throw new Error('Production protected-editor verification failed.');
   const {draftModelSuite}=await import('./drafts-model.mjs');const draftModel=await draftModelSuite();
   await writeFile('results/drafts-model.json',JSON.stringify(draftModel,null,2)+'\n');
   const {browserSuite}=await import('./browser.mjs');const browser=await browserSuite();
+  browser.scope='Historical in-page UI regression with a test-only worker; production editor evidence is results/secure-verification.json and results/live-verification.json.';
   const drafts=browser.drafts;delete browser.drafts;await writeFile('results/drafts-browser.json',JSON.stringify(drafts,null,2)+'\n');
   const mutations=browser.mutations;delete browser.mutations;
   const dynamic=browser.dynamic;delete browser.dynamic;

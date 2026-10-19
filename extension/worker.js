@@ -72,18 +72,33 @@ async function dispatch(message,sender) {
 }
 chrome.runtime.onMessage.addListener((message,sender,respond)=>{
   if (sender.id!==chrome.runtime.id || !sender.tab || sender.frameId!==0) return false;
+  if(!sender.url?.startsWith(chrome.runtime.getURL('secure.html')+'?'))return false;
+  // An extension-owned editor binds operations to its source tab. Web pages
+  // cannot load this non-web-accessible document or impersonate its sender URL.
+  if(sender.url?.startsWith(chrome.runtime.getURL('secure.html')+'?')) {
+    const target=Number(new URL(sender.url).searchParams.get('tab'));
+    if(!Number.isSafeInteger(target)||target<0)return false;
+    if(message.type==='connect-source') {
+      chrome.scripting.executeScript({target:{tabId:target},files:['core.js','dom.js','tracker.js','secure-agent.js']})
+        .then(()=>respond({ok:true}),e=>respond({ok:false,error:e.message}));
+      return true;
+    }
+    sender={...sender,tab:{id:target}};
+  }
   const work=queue.then(()=>dispatch(message,sender));
   queue=work.catch(()=>{});
   work.then(value=>respond({ok:true,value}),error=>respond({ok:false,error:String(error.message||error)}));
   return true;
 });
-chrome.action.onClicked.addListener(async tab=>{
+async function openSecure(tab) {
   try {
     C.sourceURL(tab.url);
-    await chrome.scripting.executeScript({target:{tabId:tab.id},files:['core.js','drafts.js','draft-writer.js','dom.js','tracker.js','panel.js']});
-    await chrome.action.setBadgeText({tabId:tab.id,text:''});
+      await chrome.scripting.executeScript({target:{tabId:tab.id},files:['core.js','dom.js','tracker.js','secure-agent.js']});
+      await chrome.windows.create({url:chrome.runtime.getURL(`secure.html?tab=${tab.id}`),type:'popup',width:460,height:850});
+      await chrome.action.setBadgeText({tabId:tab.id,text:''});
   } catch (e) {
     await chrome.action.setBadgeText({tabId:tab.id,text:'!'});
     await chrome.action.setTitle({tabId:tab.id,title:`Cannot open Margin Notes: ${e.message}`});
   }
-});
+}
+chrome.action.onClicked.addListener(openSecure);

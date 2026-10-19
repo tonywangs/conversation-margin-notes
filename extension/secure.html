@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Margin Notes — private editor</title><link rel="stylesheet" href="secure.css"></head>
+<body><header><small>LOCAL NOTEBOOK · EXTENSION WINDOW</small><h1>Margin Notes</h1><p>Your note text stays in this extension window, outside the conversation page.</p></header>
+<p id="source" class="source"></p><p id="anchors" role="status"></p><p id="status" role="status" aria-live="polite">Opening notebook…</p>
+<div class="bar"><button id="capture">Annotate selection</button><button id="refresh">Refresh source & notes</button><button id="confirm" hidden>Confirm displayed conversation</button></div>
+<p>Select a passage in the original tab, then return here to annotate. Keep that tab open. After reloading it, use Refresh source & notes.</p>
+<section id="composer" hidden><h2 id="composer-title">New note</h2><blockquote id="quote"></blockquote><label for="body">Your note</label><textarea id="body" maxlength="8000"></textarea><p id="persistence" role="status"></p><div class="bar"><button id="save">Save note</button><button id="cancel">Discard draft</button><button id="export-draft">Export draft</button></div></section>
+<details><summary>Recovery drafts</summary><div id="drafts"></div></details>
+<label for="search">Find a note</label><input id="search" type="search" maxlength="200"><label for="scope">Show notes</label><select id="scope"><option value="current">This source</option><option value="all">All sources</option></select>
+<div id="notes"></div><div class="bar"><button id="previous">Previous</button><span id="page"></span><button id="next">Next</button></div>
+<footer><h2>Portable notebook</h2><button id="export">Export all notes</button><label for="import">Import JSON (up to 2 MiB)</label><input id="import" type="file" accept=".json,application/json"><p>Notes and drafts use local browser storage, without encryption or sync. Exports contain quotations, source URLs and private text. Export before uninstalling.</p></footer>
+<script src="core.js"></script><script src="drafts.js"></script><script src="draft-writer.js"></script><script src="secure.js"></script></body></html>

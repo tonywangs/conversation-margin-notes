@@ -1,5 +1,12 @@
 # Persistent draft contract
 
+The storage and conflict rules below also apply to the extension-owned editor.
+Detailed in-page navigation controls and test histories describe the retired UI.
+The protected editor provides recovery, discard and export, but no “Start a
+separate note” shortcut. Export a conflicting draft before discarding and opening
+a fresh edit. Its production recovery/conflict checks are recorded separately in
+`results/secure-verification.json`.
+
 Drafts are recoverable work, not saved notes.
 The existing version-1 notebook and permission set remain unchanged.
 

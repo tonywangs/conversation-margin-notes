@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-19T04:09:30.572Z",
+  "mode": "live public pages",
+  "cases": [
+    {
+      "provider": "ChatGPT",
+      "url": "https://chatgpt.com/share/8d523f18-86c8-44af-8002-a5bcf45ffbb5",
+      "checks": [
+        "real transcript rendered",
+        "private draft lives in extension origin; no page UI or page messaging bridge",
+        "create and attach",
+        "reload and reattach",
+        "edit",
+        "export has edited body, real quotation and source",
+        "local storage; no marker in source DOM or outgoing request URLs/bodies"
+      ],
+      "httpStatus": 200,
+      "title": "Python Instrument Control Code",
+      "reloadAnchor": "exact"
+    },
+    {
+      "provider": "Gemini",
+      "url": "https://gemini.google.com/share/37ac58221046",
+      "checks": [
+        "real transcript rendered",
+        "private draft lives in extension origin; no page UI or page messaging bridge",
+        "create and attach",
+        "reload preserves note and correctly rejects 2 ambiguous matches",
+        "edit",
+        "export has edited body, real quotation and source",
+        "local storage; no marker in source DOM or outgoing request URLs/bodies"
+      ],
+      "httpStatus": 200,
+      "title": "‎Gemini - direct access to Google AI",
+      "reloadAnchor": "ambiguous",
+      "reloadOccurrences": 2
+    }
+  ],
+  "complete": true,
+  "browser": "156.0.8078.4",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ]
+}

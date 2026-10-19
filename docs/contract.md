@@ -1,5 +1,12 @@
 # Supported document and anchoring contract (version 1)
 
+The current production UI is an extension-owned window. This document describes
+the shared source/anchor rules; references below to in-page panel behavior describe
+the historical UI. The production editor polls source status and revalidates before
+capture/jump/save. After a reload, **Refresh source & notes** reconnects using the
+existing activeTab grant. See README and `results/live-verification.json` for the
+tested live pages. No provider-specific DOM adapter is installed.
+
 The user explicitly activates the extension on a top-level HTTP(S) document.
 Exactly one `[data-margin-notes-root]` element or, as a fallback, exactly one
 `main` element must exist. Visible light-DOM text inside that root is supported, including

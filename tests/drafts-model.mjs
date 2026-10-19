@@ -20,13 +20,13 @@ function harness(initial) {
    storage:{local:{setAccessLevel:async()=>{},get:async key=>clone({[key]:disk[key]}),set:async value=>{
     boundary.writes++;if(boundary.gate){boundary.entered?.();await boundary.gate;boundary.gate=null;}
     if(boundary.fail){boundary.fail=false;throw new Error('model injected quota failure');}Object.assign(disk,clone(value));
-   }}},tabs:{get:async()=>clone(tab)},runtime:{id:'test',onMessage:{addListener:fn=>{listener=fn;}}},action:{onClicked:{addListener:()=>{}}}
+   }}},tabs:{get:async()=>clone(tab)},runtime:{id:'test',getURL:name=>'chrome-extension://test/'+name,onMessage:{addListener:fn=>{listener=fn;}}},action:{onClicked:{addListener:()=>{}}}
   }});
   context.importScripts=(...names)=>{for(const n of names)vm.runInContext(scripts[n],context);};
   vm.runInContext(scripts['worker.js'],context);
  }
  restart();
- const rpc=message=>new Promise((resolve,reject)=>{listener(clone(message),{id:'test',tab:{id:1},frameId:0},response=>response.ok?resolve(clone(response.value)):reject(new Error(response.error)));});
+ const rpc=message=>new Promise((resolve,reject)=>{const accepted=listener(clone(message),{id:'test',tab:{id:2},frameId:0,url:'chrome-extension://test/secure.html?tab=1'},response=>response.ok?resolve(clone(response.value)):reject(new Error(response.error)));if(!accepted)reject(new Error('Model message sender rejected.'));});
  return {disk,boundary,tab,rpc,restart};
 }
 export async function draftModelSuite() {
